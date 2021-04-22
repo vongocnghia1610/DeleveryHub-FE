@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 
 import { LayoutComponent } from './layout/layout.component';
 import { RegisterComponent } from './register/register.component';
-//import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './login/login.component';
 //import { ServicesComponent } from './services/services.component';
 //import { HomeComponent } from './home/home.component';
 //import { ProfileComponent } from './profile/profile.component';
@@ -22,7 +22,7 @@ import { RegisterComponent } from './register/register.component';
     AppComponent,
     LayoutComponent,
     RegisterComponent,
-    //LoginComponent,
+    LoginComponent,
     //ServicesComponent,
     //HomeComponent,
     //ProfileComponent,
@@ -37,8 +37,8 @@ import { RegisterComponent } from './register/register.component';
     RouterModule.forRoot([
       
       //{ path: 'home', component: HomeComponent, pathMatch: 'full' },
-      //{ path: 'login', component: LoginComponent },
-      { path: '', component: RegisterComponent },
+      { path: '', component: LoginComponent },
+      { path: 'register', component: RegisterComponent },
       //{ path: 'home', component: RegisterComponent },
       //{ path: 'notification', component: NotificationComponent },
       //{ path: 'services', component: ServicesComponent },

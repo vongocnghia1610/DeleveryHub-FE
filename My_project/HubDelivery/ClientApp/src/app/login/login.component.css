@@ -1,0 +1,142 @@
+.container {
+  position: absolute;
+  width: 1500px;
+  height: 750px;
+  left: 0px;
+  top: 137px;
+  background: linear-gradient(180deg, #FFF8DF 0%, rgba(255, 255, 255, 0) 100%), #FDFFB2;
+}
+
+.image_user {
+  /* images 1 */
+  position: absolute;
+  width: 224px;
+  height: 225px;
+  left: 496px;
+  top: 60px;
+  mix-blend-mode: darken;
+}
+
+.textlogin {
+  /* ĐĂNG KÍ */
+  position: absolute;
+  width: 184px;
+  height: 96px;
+  top: 162px;
+  left: 751px;
+  font-family: Fahkwang;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+.username {
+ 
+  position: absolute;
+  width: 635px;
+  height: 40px;
+  left: 383px;
+  top: 430px;
+  mix-blend-mode: darken;
+}
+.password {
+  position: absolute;
+  width: 635px;
+  height: 40px;
+  left: 383px;
+  top: 480px;
+  mix-blend-mode: darken;
+}
+.btnlogin {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  left: 920px;
+  top: 550px;
+  mix-blend-mode: darken;
+  background-color:deepskyblue;
+  color:white;
+}
+.loginwith {
+  /* Hoặc đăng nhập với: */
+  position: absolute;
+  width: 306px;
+  height: 31px;
+  left: 283px;
+  top: 719px;
+  font-family: Encode Sans Semi Condensed;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  font-feature-settings: 'dnom' on;
+  color: #764343;
+  border: 1px solid #FDFF8E;
+}
+.txtdangki {
+  /* Bạn chưa có tải khoản ? */
+  position: absolute;
+  width: 306px;
+  height: 31px;
+  left: 283px;
+  top: 795px;
+  font-family: Encode Sans Semi Condensed;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  font-feature-settings: 'dnom' on;
+  color: #764343;
+  border: 1px solid #FDFF8E;
+}
+.iconfb {
+  /* icon-facebook 1 */
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  left: 556px;
+  top: 702px;
+  
+}
+.icongg {
+  /* google 1 */
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  left: 653px;
+  top: 702px;
+  mix-blend-mode: darken;
+}
+.icondangkingay {
+  /* Button-03 1 */
+  position: absolute;
+  width: 258px;
+  height: 103px;
+  left: 511px;
+  top: 768px;
+  mix-blend-mode: darken;
+}
+.customer {
+  /* Ellipse 1 */
+  position: absolute;
+  width: 99px;
+  height: 93px;
+  left: 1341px;
+  top: 1px;
+  mix-blend-mode: multiply;
+}
+.txtcustomer {
+  /* Customer */
+  position: absolute;
+  width: 130px;
+  height: 35px;
+  left: 1345px;
+  top: 89px;
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
