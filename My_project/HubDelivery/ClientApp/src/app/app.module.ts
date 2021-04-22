@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 import { LayoutComponent } from './layout/layout.component';
-//import { RegisterComponent } from './register/register.component';
+import { RegisterComponent } from './register/register.component';
 //import { LoginComponent } from './login/login.component';
 //import { ServicesComponent } from './services/services.component';
 //import { HomeComponent } from './home/home.component';
@@ -21,7 +21,7 @@ import { LayoutComponent } from './layout/layout.component';
   declarations: [
     AppComponent,
     LayoutComponent,
-    //RegisterComponent,
+    RegisterComponent,
     //LoginComponent,
     //ServicesComponent,
     //HomeComponent,
@@ -38,7 +38,7 @@ import { LayoutComponent } from './layout/layout.component';
       
       //{ path: 'home', component: HomeComponent, pathMatch: 'full' },
       //{ path: 'login', component: LoginComponent },
-      //{ path: 'register', component: RegisterComponent },
+      { path: '', component: RegisterComponent },
       //{ path: 'home', component: RegisterComponent },
       //{ path: 'notification', component: NotificationComponent },
       //{ path: 'services', component: ServicesComponent },
