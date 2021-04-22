@@ -35,7 +35,7 @@ import { LayoutComponent } from './layout/layout.component';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-
+      
       //{ path: 'home', component: HomeComponent, pathMatch: 'full' },
       //{ path: 'login', component: LoginComponent },
       //{ path: 'register', component: RegisterComponent },
