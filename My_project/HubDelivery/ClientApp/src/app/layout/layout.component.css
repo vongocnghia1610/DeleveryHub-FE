@@ -1,0 +1,164 @@
+
+.header {
+  position: absolute;
+  width: 1800px;
+  height: 137px;
+  left: 0px;
+  top: 1px;
+  background: linear-gradient(180deg, #FFD159 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FFA2A2 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FDFFB3 0%, rgba(251, 255, 79, 0.786458) 21.35%, rgba(255, 255, 255, 0) 100%), #FFF8DF;
+}
+
+.superhub_logo1 {
+  position: absolute;
+  width: 136px;
+  height: 127px;
+  left: 0px;
+  top: 0px;
+  background: url('../../assets/ec18b010_logo.png');
+}
+
+.house-user {
+  position: absolute;
+  width: 31px;
+  height: 34px;
+  left: 902px;
+  top: 47px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 41px;
+  color: #000000;
+}
+
+.bars {
+  position: absolute;
+  width: 31px;
+  height: 34px;
+  left: 1235px;
+  top: 47px;
+  font-family: Font Awesome 5 Free;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 41px;
+  color: #000000;
+  background-image: url('../../assets/bars-solid.svg');
+ 
+}
+
+.user {
+  position: absolute;
+  width: 31px;
+  height: 34px;
+  left: 1128px;
+  top: 47px;
+  font-family: Font Awesome 5 Free;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 41px;
+  color: #000000;
+}
+
+.folder {
+  position: absolute;
+  width: 31px;
+  height: 34px;
+  left: 1018px;
+  top: 47px;
+  font-family: Font Awesome 5 Free;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 41px;
+  color: #000000;
+}
+
+.search {
+  /* search 1 */
+  position: absolute;
+  width: 400px;
+  height: 30px;
+  left: 330px;
+  top: 60px;
+}
+.btnsearch {
+  top: 60px;
+  left: 750px;
+  position: absolute;
+  width:100px;
+  height: 30px;
+ 
+}
+
+.container {
+  position: absolute;
+  width: 1500px;
+  height: 750px;
+  left: 0px;
+  top: 137px;
+  background: linear-gradient(180deg, #FFF8DF 0%, rgba(255, 255, 255, 0) 100%), #FDFFB2;
+}
+
+.image_user {
+  /* images 1 */
+  position: absolute;
+  width: 224px;
+  height: 225px;
+  left: 496px;
+  top: 60px;
+  mix-blend-mode: darken;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+  
+  color: white;
+
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 31px;
+  height: 34px;
+  left: 1235px;
+  top: 47px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+ 
+}
