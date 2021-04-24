@@ -12,7 +12,7 @@ import { LoginComponent } from './login/login.component';
 //import { ServicesComponent } from './services/services.component';
 import { HomeComponent } from './home/home.component';
 //import { ProfileComponent } from './profile/profile.component';
-//import { NotificationComponent } from './notification/notification.component';
+import { NotificationComponent } from './notification/notification.component';
 //import { OrderComponent } from './order/order.component';
 
 
@@ -26,7 +26,7 @@ import { HomeComponent } from './home/home.component';
     //ServicesComponent,
     HomeComponent,
     //ProfileComponent,
-    //NotificationComponent,
+    NotificationComponent,
     //OrderComponent
 
   ],
@@ -36,11 +36,11 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     RouterModule.forRoot([
       
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'home', component: HomeComponent, pathMatch: 'full' },
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
-      //{ path: 'home', component: RegisterComponent },
-      //{ path: 'notification', component: NotificationComponent },
+      
+      { path: '', component: NotificationComponent },
       //{ path: 'services', component: ServicesComponent },
       //{ path: '', component: OrderComponent },
 
