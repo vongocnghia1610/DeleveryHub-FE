@@ -1,0 +1,265 @@
+/* Rectangle 5 */
+.avatar {
+  /* Ellipse 1 */
+  position: absolute;
+  width: 235px;
+  height: 235px;
+  top:231px;
+  /*border: 9px solid #000000;*/
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.name {
+  /* Nguyễn Văn B */
+  position: absolute;
+  width: 211px;
+  height: 63px;
+  top: 504px;
+  left: 43px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+.editavatar {
+  /* Chỉnh sửa ảnh đại diện */
+  position: absolute;
+  width: 220px;
+  height: 39px;
+  top:474px;
+  left:43px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.txtthongtincanhan {
+  /* Thông tin cá nhân */
+  position: absolute;
+  width: 260px;
+  height: 31px;
+  top:200px;
+  left:460px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.txttennguoidung {
+  /* Tên người dùng */
+  position: absolute;
+  width: 239px;
+  height: 22px;
+  top: 259px;
+  left: 460px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.tennguoidung {
+  /* example@gmail.com */
+  position: absolute;
+  width: 239px;
+  height: 22px;
+  top: 259px;
+  left: 772px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.txtdiachi {
+  /* Địa chỉ */
+  position: absolute;
+  width: 239px;
+  height: 22px;
+  top:289px;
+  left:460px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.diachi {
+  /* aaa,bbb,ccc */
+  position: absolute;
+  width: 239px;
+  height: 22px;
+  top: 289px;
+  left: 772px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.txtdienthoai {
+  /* Điện thoại */
+  position: absolute;
+  width: 239px;
+  height: 22px;
+  
+  top: 319px;
+  left: 460px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.dienthoai { /* 085-444-5367 */
+  position: absolute;
+  width: 239px;
+  height: 22px;
+  top: 319px;
+  left: 772px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.email { /* example@gmail.com */
+  position: absolute;
+  width: 239px;
+  height: 22px;
+  top: 349px;
+  left: 772px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+
+
+.txtemail {
+  /* Email */
+  position: absolute;
+  width: 239px;
+  height: 22px;
+  top: 349px;
+  left: 460px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.matkhau { /* *************** */
+  position: absolute;
+  width: 239px;
+  height: 22px;
+  top: 379px;
+  left: 772px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.txtmatkhau {
+  /* Mật khẩu */
+  position: absolute;
+  width: 239px;
+  height: 22px;
+  top: 379px;
+  left: 460px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.taikhoanlienket {
+  /* Tài khoản liên kết */
+  position: absolute;
+  width: 260px;
+  height: 31px;
+  top:474px;
+  left:460px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.lichsugiaodich { /* Lịch sử giao dịch */
+  position: absolute;
+  width: 260px;
+  height: 31px;
+  top: 504px;
+  left: 460px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.thongtinuudai { /* Thông tin ưu đãi */
+  position: absolute;
+  width: 260px;
+  height: 31px;
+  top: 534px;
+  left: 460px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.luuthongtin {
+  /* Rectangle 12 */
+  position: absolute;
+  width: 235px;
+  height: 40px;
+  top:600px;
+  left:460px;
+  line-height:50px;
+  text-align:center;
+  background: linear-gradient(180deg, #E5F0A2 0%, rgba(255, 255, 255, 0) 100%), #CECB78;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}
+.huythaydoi {
+  /* Rectangle 13 */
+  position: absolute;
+  width: 235px;
+  height: 40px;
+  top: 600px;
+  left: 798px;
+  line-height: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, #E5F0A2 0%, rgba(255, 255, 255, 0) 100%), #CECB78;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}

@@ -11,7 +11,7 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ServicesComponent } from './services/services.component';
 import { HomeComponent } from './home/home.component';
-//import { ProfileComponent } from './profile/profile.component';
+import { ProfileComponent } from './profile/profile.component';
 import { NotificationComponent } from './notification/notification.component';
 //import { OrderComponent } from './order/order.component';
 
@@ -25,7 +25,7 @@ import { NotificationComponent } from './notification/notification.component';
     LoginComponent,
     ServicesComponent,
     HomeComponent,
-    //ProfileComponent,
+    ProfileComponent,
     NotificationComponent,
     //OrderComponent
 
@@ -41,7 +41,8 @@ import { NotificationComponent } from './notification/notification.component';
       { path: 'register', component: RegisterComponent },
       
       { path: 'notification', component: NotificationComponent },
-      { path: '', component: ServicesComponent },
+      { path: 'services', component: ServicesComponent },
+      { path: '', component: ProfileComponent },
       //{ path: '', component: OrderComponent },
 
 
