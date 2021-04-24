@@ -13,7 +13,7 @@ import { ServicesComponent } from './services/services.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NotificationComponent } from './notification/notification.component';
-//import { OrderComponent } from './order/order.component';
+import { OrderComponent } from './order/order.component';
 
 
 
@@ -27,7 +27,7 @@ import { NotificationComponent } from './notification/notification.component';
     HomeComponent,
     ProfileComponent,
     NotificationComponent,
-    //OrderComponent
+    OrderComponent
 
   ],
   imports: [
@@ -42,8 +42,8 @@ import { NotificationComponent } from './notification/notification.component';
       
       { path: 'notification', component: NotificationComponent },
       { path: 'services', component: ServicesComponent },
-      { path: '', component: ProfileComponent },
-      //{ path: '', component: OrderComponent },
+      { path: 'profile', component: ProfileComponent },
+      { path: '', component: OrderComponent },
 
 
     ])
