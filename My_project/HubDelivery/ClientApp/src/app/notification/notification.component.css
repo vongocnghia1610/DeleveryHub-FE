@@ -1,0 +1,8 @@
+.container {
+  position: absolute;
+  width: 1500px;
+  height: 750px;
+  left: 0px;
+  top: 137px;
+  background: linear-gradient(180deg, #FFF8DF 0%, rgba(255, 255, 255, 0) 100%), #FDFFB2;
+}

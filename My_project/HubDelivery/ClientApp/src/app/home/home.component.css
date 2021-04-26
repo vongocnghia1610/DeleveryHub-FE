@@ -1,0 +1,47 @@
+.container {
+  position: absolute;
+  width: 1500px;
+  height: 750px;
+  left: 0px;
+  top: 137px;
+  background: linear-gradient(180deg, #FFF8DF 0%, rgba(255, 255, 255, 0) 100%), #FDFFB2;
+}
+.dangkikhuyenmai_img {
+  /* đăng-ký-khuyến-mãi 1 */
+  /* đăng-ký-khuyến-mãi 1 */
+  position: absolute;
+  width: 509px;
+  height: 387px;
+  left: 26px;
+  top: 363px;
+  mix-blend-mode: darken;
+}
+.img_shipper {
+  position: absolute;
+  width: 1440px;
+  height: 784px;
+  left: 0px;
+  top: 240px;
+  mix-blend-mode: darken;
+}
+.img_customer {
+  /* Ellipse 1 */
+  position: absolute;
+  width: 99px;
+  height: 93px;
+  left: 1344px;
+  top: 1px;
+  /*background: #C4C4C4;*/
+  /*mix-blend-mode: multiply;*/
+}
+.btndatgiaohangngay {
+  /* sss 1 */
+  position: absolute;
+  width: 324px;
+  height: 58px;
+  left: 558px;
+  top: 386px;
+  /*background: url(sss.jpg);*/
+  mix-blend-mode: darken;
+
+}
