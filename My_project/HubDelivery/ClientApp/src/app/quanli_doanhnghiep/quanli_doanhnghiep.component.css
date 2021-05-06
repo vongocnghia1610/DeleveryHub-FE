@@ -1,0 +1,182 @@
+.nar_bar {
+  /* Rectangle 5 */
+  position: absolute;
+  width: 210px;
+  height: 887px;
+  left: 0px;
+  top: 137px;
+  background: #FFEEB2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.content {
+  /* Rectangle 4 */
+  position: absolute;
+  width: 1230px;
+  height: 887px;
+  left: 210px;
+  top: 138px;
+  background: linear-gradient(180deg, #FFF8DF 0%, rgba(255, 255, 255, 0) 100%), #FDFFB2;
+}
+.img_delivery {
+  /*  */
+  position: absolute;
+  width: 50px;
+  height: 37px;
+  left: 226px;
+  top: 161px;
+  font-family: Font Awesome 5 Free;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 55px;
+  color: #8D5C6E;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.delivery_company {
+  /* DELIVERY COMPANY */
+  position: absolute;
+  width: 366px;
+  height: 33px;
+  left: 305px;
+  top: 173px;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43px;
+  color: #8D5C6E;
+ 
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.quanlidonhang {
+  
+  /* Quản lý đơn hàng */
+  position: absolute;
+  width: 155px;
+  height: 33px;
+  left: 39px;
+  top: 280px;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  color: #8D5C6E;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.quanlikhuyenmai {
+ 
+  /* Quản lý khuyến mại */
+  position: absolute;
+  width: 171px;
+  height: 33px;
+  left: 39px;
+  top: 339px;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  color: #8D5C6E;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.thongkehangthang {
+  /* Thống kê tháng */
+  position: absolute;
+  width: 233px;
+  height: 33px;
+  left: 39px;
+  top: 399px;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  color: #8D5C6E;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.goidichhvu {
+  /* Gói dịch vụ */
+  position: absolute;
+  width: 155px;
+  height: 33px;
+  left: 39px;
+  top: 458px;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  color: #8D5C6E;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.img_goidichvu {
+  /*  */
+  /*  */
+  position: absolute;
+  width: 22px;
+  height: 37px;
+  left: 10px;
+  left: 6px;
+  top: 458px;
+  font-family: Font Awesome 5 Free;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8D5C6E;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.img_thongke {
+  /*  */
+  position: absolute;
+  width: 22px;
+  left: 10px;
+  height: 37px;
+  left: 6px;
+  top: 395px;
+  font-family: Font Awesome 5 Free;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8D5C6E;
+ 
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.img_quanlikhuyenmai {
+  /*  */
+  position: absolute;
+  width: 22px;
+  left: 10px;
+  height: 37px;
+  left: 6px;
+  top: 335px;
+  font-family: Font Awesome 5 Free;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8D5C6E;
+ 
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.img_quanlidonhang {
+  /*  */
+  position: absolute;
+  width: 22px;
+  height: 37px;
+  left: 10px;
+  left: 6px;
+  top: 279px;
+  font-family: Font Awesome 5 Free;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8D5C6E;
+ 
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

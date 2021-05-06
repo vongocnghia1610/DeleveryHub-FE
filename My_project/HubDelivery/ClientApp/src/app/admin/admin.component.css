@@ -1,0 +1,86 @@
+
+.nar_bar_admin {
+  /* Rectangle 5 */
+  position: absolute;
+  width: 294px;
+  height: 887px;
+  left: 0px;
+  top: 137px;
+  background: #FFEEB2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.img_quanliadmin {
+  /*  */
+  position: absolute;
+  width: 50px;
+  height: 37px;
+  left: 17px;
+  top: 172px;
+  font-family: Font Awesome 5 Free;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 29px;
+  color: #8D5C6E;
+  
+
+}
+.txtquanliadmin {
+  /* Dashboards */
+  position: absolute;
+ 
+  height: 33px;
+  left: 30px;
+  top: 174px;
+  font-family: Gemunu Libre ExtraBold;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+ 
+  color: #8D5C6E;
+  display: inline-block;
+  text-align: left;
+}
+.content_admin {
+  /* Rectangle 6 */
+  position: absolute;
+  width: 1146px;
+  height: 887px;
+  left: 294px;
+  top: 138px;
+  background: linear-gradient(180deg, #FFF8DF 0%, rgba(255, 255, 255, 0) 100%), #FDFFB2;
+ 
+}
+/*.txtquanliadmin ul{
+  list-style:none;
+}
+.txtquanliadmin li:hover{
+
+}
+.txtquanliadmin > ul{
+  list-style:none;
+  display:inline-block;
+}
+.txtquanliadmin > ul > li {
+  position:relative;
+  cursor:pointer;
+}
+.dropdown{
+  position:absolute;
+  font-size:18px;
+  width:200%;
+ text-align:left;
+}
+.dropdown li{
+  display:none;
+
+}
+.dropdown li:hover{
+
+}
+.txtquanliadmin li:hover > .dropdown{
+  perspective:1000px;
+}
+  .txtquanliadmin li:hover > .dropdown li {
+    display: block;
+  }*/

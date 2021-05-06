@@ -23,32 +23,23 @@
     <div class="textlogin">Đăng nhập</div>
 
   </div>
- 
-    <input class="username"  placeholder="Nhập username"  />
-    <input  class ="password" type="password" placeholder="Nhập mật khẩu" />
-  <button  type="submit" class="btnlogin">
-    <b >Đăng nhập</b></button>
-  <div class="loginwith"> Hoặc đăng nhập với </div>
+ <form [formGroup]="formGroup" (ngSubmit)="loginProces()"    >
+      <input class="username" type="text" formControlName="Email" placeholder="Nhập username"  />
+      <input  class ="password" type="password" formControlName="Password" placeholder="Nhập mật khẩu" />
+    <button  type="submit" class="btnlogin"  >
+      <b >Đăng nhập</b></button>
+     </form>
+  
+  <div class="loginwith"> Đăng kí doanh nghiệp vận chuyển </div>
   <div class="txtdangki">Bạn chưa có tài khoản</div>
   <div class="iconfb">
-    <img src="../../assets/icon-facebook 1.png" />
-  </div>
-  <div class="icongg">
-    <img src="../../assets/google 1.png" />
-  </div>
+   <a [routerLink]='["/dangkidoanhnghiepvanchuyen"]'><img src="../../assets/dangkingay.png" /> </a>   
+ </div>
   <div class="icondangkingay">
     
-      <img src="../../assets/dangkingay.png" [routerLink]='["/register"]' />
+     <a  [routerLink]='["/register"]'> <img src="../../assets/dangkingay.png" /> </a>
     
   </div>
-  <div class="customer">
-    <svg width="99" height="93" viewBox="0 0 99 93" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g style="mix-blend-mode:multiply">
-        <ellipse cx="49.5" cy="46.5" rx="49.5" ry="46.5" fill="#C4C4C4" />
-      </g>
-    </svg>
-
-  </div>
-  <div class="txtcustomer">Customer</div>
+ 
 </body>
 </html>

@@ -1,6 +1,6 @@
 .container {
   position: absolute;
-  width: 1500px;
+  width: 1800px;
   height: 750px;
   left: 0px;
   top: 137px;
@@ -13,7 +13,7 @@
   width: 224px;
   height: 225px;
   left: 496px;
-  top: 60px;
+  top: 0px;
   mix-blend-mode: darken;
 }
 
@@ -22,7 +22,7 @@
   position: absolute;
   width: 184px;
   height: 96px;
-  top: 162px;
+  top: 100px;
   left: 751px;
   font-family: Fahkwang;
   font-style: normal;
@@ -37,7 +37,7 @@
   width: 635px;
   height: 40px;
   left: 383px;
-  top: 430px;
+  top: 380px;
   mix-blend-mode: darken;
 }
 .password {
@@ -45,7 +45,7 @@
   width: 635px;
   height: 40px;
   left: 383px;
-  top: 480px;
+  top: 430px;
   mix-blend-mode: darken;
 }
 .btnlogin {
@@ -53,7 +53,7 @@
   width: 100px;
   height: 40px;
   left: 920px;
-  top: 550px;
+  top: 480px;
   mix-blend-mode: darken;
   background-color:deepskyblue;
   color:white;
@@ -61,10 +61,10 @@
 .loginwith {
   /* Hoặc đăng nhập với: */
   position: absolute;
-  width: 306px;
+  width: 400px;
   height: 31px;
-  left: 283px;
-  top: 719px;
+  left: 383px;
+  top: 540px;
   font-family: Encode Sans Semi Condensed;
   font-style: normal;
   font-weight: 600;
@@ -79,8 +79,8 @@
   position: absolute;
   width: 306px;
   height: 31px;
-  left: 283px;
-  top: 795px;
+  left: 383px;
+  top: 630px;
   font-family: Encode Sans Semi Condensed;
   font-style: normal;
   font-weight: 600;
@@ -93,50 +93,19 @@
 .iconfb {
   /* icon-facebook 1 */
   position: absolute;
-  width: 67px;
+  width: 258px;
   height: 67px;
-  left: 556px;
-  top: 702px;
-  
-}
-.icongg {
-  /* google 1 */
-  position: absolute;
-  width: 67px;
-  height: 67px;
-  left: 653px;
-  top: 702px;
+  left: 800px;
+  top: 510px;
   mix-blend-mode: darken;
 }
+
 .icondangkingay {
   /* Button-03 1 */
   position: absolute;
   width: 258px;
   height: 103px;
-  left: 511px;
-  top: 768px;
+  left: 800px;
+  top: 605px;
   mix-blend-mode: darken;
-}
-.customer {
-  /* Ellipse 1 */
-  position: absolute;
-  width: 99px;
-  height: 93px;
-  left: 1341px;
-  top: 1px;
-  mix-blend-mode: multiply;
-}
-.txtcustomer {
-  /* Customer */
-  position: absolute;
-  width: 130px;
-  height: 35px;
-  left: 1345px;
-  top: 89px;
-  font-family: Red Hat Display;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
 }

@@ -265,12 +265,27 @@
   transform: rotate(90deg);
 }
 
-.ipchitietdonhang {
-  /* Rectangle 21 */
+
+.txtmathang {
+  /* Số điện thoại: */
   position: absolute;
-  width: 505px;
-  height: 200px;
+  width: 161px;
+  height: 23px;
   left: 950px;
+  top: 301px;
+  font-family: Exo 2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.ipmathang {
+  /* Rectangle 15 */
+  position: absolute;
+  width: 263px;
+  height: 32px;
+  left: 1150px;
   top: 301px;
   background: #E3F8A9;
 }
@@ -287,6 +302,29 @@
   font-size: 24px;
   line-height: 29px;
   color: #000000;
+}
+.txtkhoiluong {
+  /* Địa chỉ giao: */
+  position: absolute;
+  width: 135px;
+  height: 23px;
+  left: 950px;
+  top: 358px;
+  font-family: Exo 2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.ipkhoiluong {
+  /* Rectangle 20 */
+  position: absolute;
+  width: 263px;
+  height: 32px;
+  left: 1150px;
+  top: 358px;
+  background: #E3F8A9;
 }
 .txtgiaohangtietkiem1 {
   /* Rectangle 25 */
@@ -311,35 +349,8 @@
   line-height: 30px;
   color: #000000;
 }
-.txtghtk1_gia {
-  /* 22.000đ */
-  position: absolute;
-  width: 165px;
-  height: 29px;
-  left: 274px;
-  top: 616px;
-  font-family: Faustina;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-}
-.txtghtk1_cb {
-  /*  */
-  position: absolute;
-  width: 93px;
-  height: 28px;
-  left: 414px;
-  top: 614px;
-  font-family: Font Awesome 5 Free;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 28px;
-  /* identical to box height */
-  color: #000000;
-}
+
+
 .txtgiaohangtietkiem2 {
   /* Rectangle 27 */
   position: absolute;
@@ -364,38 +375,9 @@
   color: #000000;
 }
 
-.txtghtk2_gia {
-  /* 25.000đ */
-  position: absolute;
-  width: 165px;
-  height: 29px;
-  left: 274px;
-  top: 670px;
-  font-family: Faustina;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-}
 
-.txtghtk2_cb {
-  /*  */
-  
 
-  position: absolute;
-  width: 93px;
-  height: 28px;
-  left: 414px;
-  top: 665px;
-  font-family: Font Awesome 5 Free;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 28px;
-  /* identical to box height */
-  color: #000000;
-}
+
 .txtgiaohangtietkiem3 {
   /* Rectangle 26 */
   position: absolute;
@@ -420,36 +402,9 @@
   color: #000000;
 }
 
-.txtghtk3_gia {
-  /* 27.000đ */
-  position: absolute;
-  width: 165px;
-  height: 29px;
-  left: 272px;
-  top: 719px;
-  font-family: Faustina;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-}
 
-.txtghtk3_cb {
-  /*  */
-  position: absolute;
-  width: 93px;
-  height: 28px;
-  left: 414px;
-  top: 716px;
-  font-family: Font Awesome 5 Free;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 28px;
-  /* identical to box height */
-  color: #000000;
-}
+
+
 .txtphuongthucthanhtoan {
   /* Chọn phương thức thanh toán */
   position: absolute;

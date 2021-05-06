@@ -4,12 +4,14 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --extract-css",
+    "start": "ng serve --port 3000 --host 0.0.0.0 --proxy-config proxy.conf.json --extract-css",
     "build": "ng build --extract-css",
     "build:ssr": "npm run build -- --app=ssr --output-hashing=media",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "ng:serve": "ng serve --port 3000 --host 0.0.0.0 --proxy-config proxy.conf.json"
+  
   },
   "private": true,
   "dependencies": {
