@@ -1,5 +1,5 @@
 
-import { Component, OnInit, Inject, ApplicationModule } from '@angular/core';
+import { Component, OnInit, Inject, ApplicationModule} from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {FormControl, FormsModule, Validators} from '@angular/forms';
 import { from } from 'rxjs/observable/from';
@@ -8,15 +8,7 @@ import {Observable} from 'rxjs';
 import { AuthServiceService } from '../auth-service.service';
 import { RouterModule } from '@angular/router';
 import {Router} from '@angular/router';
-// export class User {
-//   constructor(
-//     public Email: string,
-//     public Password: string,
 
-//   ) {
-
-//   }
-// }
 
 @Component({
   selector: 'app-login',
@@ -25,6 +17,7 @@ import {Router} from '@angular/router';
 })
 
 export class LoginComponent implements OnInit {
+
   formGroup : FormGroup;
   constructor(private http:HttpClient,
     private router:Router) { }
@@ -50,16 +43,11 @@ export class LoginComponent implements OnInit {
       this.login(this.formGroup.value).subscribe((result) =>{
         {
           
-
           if(result.error=="null")
           {
             
-           // console.log(result);
-           
-           
             this.router.navigate(['/home']);
-
-
+            
           }
           
           
@@ -83,6 +71,7 @@ export class LoginComponent implements OnInit {
      
     
   }
+  
  
 
   

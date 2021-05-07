@@ -53,11 +53,12 @@ import {AuthServiceService} from './auth-service.service';
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
+      { path: '', component: RegisterComponent },
       { path: 'dichvukhachhang', component: DichvukhachhangComponent },
       { path: 'dichvuvanchuyen', component: DichvuvanchuyenComponent },
       { path: 'home', component: HomeComponent, pathMatch: 'full' },
-      { path: '', component: LoginComponent },
-      { path: 'register', component: RegisterComponent },
+      { path: 'login', component: LoginComponent },
+     
       { path: 'dichvudoanhnghiep', component: DichvudoanhnghiepComponent },
       
       { path: 'notification', component: NotificationComponent },
