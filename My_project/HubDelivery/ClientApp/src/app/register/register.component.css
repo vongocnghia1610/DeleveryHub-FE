@@ -107,6 +107,29 @@ color: #000000;
   line-height: 24px;
   color: #000000;
 }
+.txtemail{
+  position: absolute;
+  width: 121px;
+  height: 27px;
+  left: 149px;
+  top: 565px;
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.email{
+  position: absolute;
+  width: 279px;
+  height: 27px;
+  left: 258px;
+  top: 565px;
+  background: #D5E08D;
+}
+
+
 .phoneumber {
   /* Rectangle 8 */
   position: absolute;

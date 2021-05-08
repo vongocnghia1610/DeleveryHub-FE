@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
   <meta charset="utf-8" />
 
@@ -25,24 +25,28 @@
     <div class="textregister">Đăng kí</div>
    
   </div>
- 
+ <form [formGroup]="formGroup" (ngSubmit)="registerProces()">
   <div class="txtname"> Tên đầy đủ </div>
-  <input type="text" class="name" />
+  <input type="text" class="name" formControlName="TenKhachHang" />
   <div class="txtngsinh"> Địa chỉ</div>
-  <input type="text" class="ngsinh" />
+  <input type="text" class="ngsinh" formControlName="DiaChi" />
   <div class="txtaddress"> Số điện thoại </div>
-  <input type="text" class="address" />
-  
- 
+  <input type="text" class="address"  formControlName="SoDienThoai"/>
+  <div class="txtemail">Email</div>
+  <input type="text" class="email"  formControlName="Email"/>
   <div class="txtpassw"> Mật khẩu </div>
 
-  <input type="password" class="passw" />
+  <input type="password" class="passw" formControlName="Password" />
   <div class="txtrepeatepw"> Nhập lại mật khẩu </div>
-  <input type="password" class="repeatepw" />
   
+  <input type="password" class="repeatepw"  formControlName="ConfirmPassword" />
+  
+<input type="checkbox" id="chkbox" class="checkbox" formControlName="Checkbox" id="action"  required  />
   <div class="txtdongydieukhoan"> Bạn đồng ý với những điều khoản và dịch vụ của chúng tôi ?</div>
-  <input type="checkbox" class="checkbox" />
-  <button  class="btnregister">Hoàn tất đăng kí</button>
+ 
+  <button  type="submit" class="btnregister">Hoàn tất đăng kí</button>
+  
+</form>
 
 </body>
 </html>
