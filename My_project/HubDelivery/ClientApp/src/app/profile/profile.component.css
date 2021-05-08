@@ -1,43 +1,6 @@
-/* Rectangle 5 */
-.avatar {
-  /* Ellipse 1 */
-  position: absolute;
-  width: 235px;
-  height: 235px;
-  top:231px;
-  /*border: 9px solid #000000;*/
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.name {
-  /* Nguyễn Văn B */
-  position: absolute;
-  width: 211px;
-  height: 63px;
-  top: 504px;
-  left: 43px;
-  font-family: Encode Sans;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-}
-.editavatar {
-  /* Chỉnh sửa ảnh đại diện */
-  position: absolute;
-  width: 220px;
-  height: 39px;
-  top:474px;
-  left:43px;
-  font-family: Encode Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  color: #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+
+
+
 .txtthongtincanhan {
   /* Thông tin cá nhân */
   position: absolute;
@@ -257,6 +220,9 @@
   height: 40px;
   top: 600px;
   left: 798px;
+  color: #8D5C6E;
+  font-size: 25px;
+  
   line-height: 50px;
   text-align: center;
   background: linear-gradient(180deg, #E5F0A2 0%, rgba(255, 255, 255, 0) 100%), #CECB78;
