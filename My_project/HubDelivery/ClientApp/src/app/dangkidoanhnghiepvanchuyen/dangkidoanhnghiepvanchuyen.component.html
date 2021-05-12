@@ -11,43 +11,45 @@
   </div>
   <div class="txtdeliverydangkidoanhnghiepvanchuyen">Delivery Company</div>
   <div class="txttrothanhdoitac">Trở thành đối tác của chúng tôi </div>
-  <div class="txttendoanhnghiep">Tên doanh nghiệp</div>
-  <input class="edittxttendoanhnghiep" />
+
+
+
+  <form  class="form-group" [formGroup]="formGroup" (ngSubmit)="dangkidoanhnghiepProces()"    >
+  <div class="txttendoanhnghiep ">Tên doanh nghiệp</div>
+  <input type="text" class="edittxttendoanhnghiep " id="TenDoanhNghiep" formControlName="TenDoanhNghiep" />
+
   <div class="txtdiachidoanhnghiep">Địa chỉ</div>
-  <input class="edittxt_diachidoanhnghiep" />
-  <div class="txtmasothue">Mã số thuế</div>
-  <input class="edittxtmasothue" />
-  <div class="txtloaihinh">Logo doanh nghiệp</div>
-  <input class="edittxtloaihinh" type="file"   name="select" id="selectedFile" />
-  <div  class="txtlogodoanhnghiep">Giấy phép</div>
+  <input type="text" class="edittxt_diachidoanhnghiep" id="DiaChi" formControlName="DiaChi" />
 
 
+  <div class="txtloaihinh">Giấy phép</div>
+  <input class="edittxtloaihinh" type="file" id="doc" accept=".png,.jpg" formControlName="doc" (change)="onFileChangedoc($event.target.files)" #fileInput>
 
-  
- <input type="file" class="edittxtlogodoanhnghiep"   name="select" id="selectedFile" />
+  <div class="txtmasothue">Logo doanh nghiệp</div>
+  <input type="file" formControlName="logo"  class="edittxtmasothue" id="logo" accept=".png,.jpg"  (change)="onFileChangelogo($event.target.files)"    #fileInput>
 
+ 
 
-
-
+ 
+    <div class="txtnguoidaidiendoanhnghiep">Điện thoại</div>
+    <input type="text" class="edittxtnguoidaidien" id="SoDienThoai" formControlName="SoDienThoai"/>
+    <div class="txtdienthoaidoanhnghiep">Email</div>
+    <input class="editdienthoaidoanhnghiep" id="Email" formControlName="Email" />
+    <div class="txtemaildoanhnghiep">Mật khẩu</div>
+    <input type="password" class="edittxtemaildoanhnghiep" id="Password" formControlName="Password"/>
     
-    <div class="txtnguoidaidiendoanhnghiep">Người đại diện</div>
-    <input class="edittxtnguoidaidien" />
-    <div class="txtdienthoaidoanhnghiep">Chức vụ</div>
-    <input class="editdienthoaidoanhnghiep" />
-    <div class="txtemaildoanhnghiep">Điện thoại</div>
-    <input class="edittxtemaildoanhnghiep" />
-    <div class="txttendangnhapdoanhnghiep">Email</div>
-    <input class="edittxttendangnhapdoanhnghiep" />
-    <div  class="txtmatkhaudoanhnghiep">Mật khẩu</div>
-    <input  type="password" class="edittxtmatkhaudoanhnghiep" />
+  
     <div class="txtdongydieukhoan">Xem điều khoản của chúng tôi Tại đây , bạn đồng ý với các điều khoản?</div>
-    <input type="checkbox" class="chkboxdongydieukhoan" />
+    <input type="checkbox" class="chkboxdongydieukhoan"  formControlName="CheckBox" />
 
-    <button class="txtxacnhan">Xác nhận</button>
+    <button  type="submit" class="txtxacnhan">Xác nhận</button>
 
+
+</form>
+    
 
   </body>
-
+ 
 
   </html>
 

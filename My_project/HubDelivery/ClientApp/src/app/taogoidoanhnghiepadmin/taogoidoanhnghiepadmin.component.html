@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8" />
+
+</head>
+<body>
+
+  
+  <div class="container">
+   
+    <div class="textregister">Thêm gói doanh nghiệp</div>
+   
+  </div>
+ <form [formGroup]="formGroup" (ngSubmit)="registergoi()">
+  <div class="txtname"> Tên gói </div>
+  <input type="text" class="name" formControlName="TenGoi" />
+  <div class="txtngsinh"> Thông tin</div>
+  <input type="text" class="ngsinh" formControlName="ThongTin" />
+  <div class="txtaddress"> Chi phí </div>
+  <input type="text" class="address"  formControlName="ChiPhi"/>
+  
+  <div class="txtpassw"> Hạn sử dụng</div>
+
+  <input type="number" class="passw" formControlName="HanSuDung" />
+  <div class="txtrepeatepw"> Số đơn hàng </div>
+  
+  <input type="number" class="repeatepw"  formControlName="SoDonHang" />
+  
+
+ 
+ 
+  <button  type="submit" class="btnregister">Hoàn tất</button>
+  
+</form>
+
+</body>
+</html>
+
