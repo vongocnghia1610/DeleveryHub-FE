@@ -6,12 +6,13 @@ import{FormGroup} from'@angular/forms';
 import {Observable} from 'rxjs';
 import { RouterModule } from '@angular/router';
 import {Router} from '@angular/router';
+
 @Component({
-  selector: 'app-taogoidoanhnghiepadmin',
-  templateUrl: './taogoidoanhnghiepadmin.component.html',
-  styleUrls: ['./taogoidoanhnghiepadmin.component.css']
+  selector: 'app-taogoikhachhang',
+  templateUrl: './taogoikhachhang.component.html',
+  styleUrls: ['./taogoikhachhang.component.css']
 })
-export class TaogoidoanhnghiepadminComponent implements OnInit {
+export class TaogoikhachhangComponent implements OnInit {
 
   formGroup : FormGroup;
   constructor(private http:HttpClient,
@@ -29,23 +30,24 @@ var token = currentUser.token; // your token
 console.log(token);
 headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
-    console.log("I am server");
-    return this.http.post(`http://54.255.93.14/admin/create-goidoanhnghiep`, data, {headers:headers});
+    
+    return this.http.post(`http://54.255.93.14/admin/create-goikhachhang`, data, {headers:headers});
   }
   initForm(){
     this.formGroup= new FormGroup({
-      TenGoi: new FormControl("",[ Validators.required]),
+      TenDichVuKhachHang: new FormControl("",[ Validators.required]),
       ThongTin: new FormControl("", [Validators.required]),
       ChiPhi: new FormControl("",[ Validators.required]),
       HanSuDung: new FormControl("",[ Validators.required]),
     SoDonHang: new FormControl("",[ Validators.required]),
-
+    GiamGia: new FormControl("",[ Validators.required]),
+    KhoiLuongToiDa: new FormControl("",[ Validators.required]),
    
     }); 
 
   }
  
-    registergoi(){
+    registergoikhachhang(){
 
       if (this.formGroup.valid){
       this.register(this.formGroup.value).subscribe((result) =>{
@@ -71,7 +73,5 @@ headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', t
   }
   
      
-    
-    
 
 }
