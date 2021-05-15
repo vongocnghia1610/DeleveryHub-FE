@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="utf-8" />
 
-</head>
-<body>
 
-  
-  <div class="container">
+
+  <app-admin></app-admin>
+
    
     <div class="textregister">Thêm gói doanh nghiệp</div>
    
-  </div>
+  
  <form [formGroup]="formGroup" (ngSubmit)="registergoi()">
   <div class="txtname"> Tên gói </div>
   <input type="text" class="name" formControlName="TenGoi" />
@@ -34,6 +29,4 @@
   
 </form>
 
-</body>
-</html>
 

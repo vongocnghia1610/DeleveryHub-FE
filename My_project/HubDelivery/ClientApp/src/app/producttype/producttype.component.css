@@ -1,6 +1,6 @@
 .contain{
     position: absolute;
-    width: 1200px;
+    width: 700px;
     height: 300px;
     left: 300px;
     top: 400px;
@@ -10,7 +10,7 @@
     position: absolute;
     width: 800px;
     height: 300px;
-    left: 300px;
+    left: 3o0px;
     top: 150px;
     text-align: left;
   }
@@ -88,6 +88,19 @@
     width: 100px;
     height: 27px;
     left: 800px;
+    top: 200px;
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+  }
+  .btnsubmit{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 800px;
     top: 250px;
     font-family: Red Hat Display;
     font-style: normal;
@@ -96,3 +109,4 @@
     line-height: 24px;
     color: #000000;
   }
+  

@@ -1,0 +1,54 @@
+
+<app-admin></app-admin>
+<form [formGroup]="formGroup" (ngSubmit)="updateenterprise()">
+  <div class="txtname"> ID </div>
+  <input type="text" disabled class="name" formControlName="idDoanhNghiep" />
+  <div class="txtngsinh"> Tên</div>
+  <input type="text" class="ngsinh" formControlName="Ten" />
+  <div class="txtaddress">Địa chỉ</div>
+  <input type="text" class="address"  formControlName="DiaChi"/>
+  <div class="txtsodienthoai"> Số điện thoại</div>
+  <input type="number" class="sodienthoai"  formControlName="SoDienThoai"/>
+  <button type="submit" class="btnupdate">Update</button>
+  </form>
+<table class="contain" border="1" >
+  <thead>
+  <tr >
+    <th  style="text-align: center">Tên doanh nghiệp</th>
+    <th  style="text-align: center">Địa chỉ</th>
+    <th style="text-align: center">Email</th>
+    <!-- <th  style="text-align: center">Giấy phép</th>
+    <th  style="text-align: center">Logo</th> -->
+    <th style="text-align: center">Số điện thoại</th>
+   
+    <th  style="text-align: center">Số đơn hàng</th>
+    <th  style="text-align: center">Tên gói</th>
+    <th  style="text-align: center">Ngày hết hạn</th>
+    <th  style="text-align: center">Trạng thái</th>
+    <th  style="text-align: center">Chỉnh sửa</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let data of array ">
+
+    <td>  {{data.TenDoanhNghiep}}</td>
+    <td>  {{data.DiaChi}}</td>
+    <td>  {{data.Email}}</td>
+    <!-- <td>  {{data.GiayPhep}}</td>
+    <td>  {{data.Logo}}</td> -->
+    <td>  {{data.SoDienThoai}}</td>
+    <td>  {{data.SoDonHang}}</td>
+    <td>  {{data.TenGoi}}</td>
+    <td>  {{data.NgayHethan}}</td>
+    <td>  {{data.TrangThai}}</td>
+    
+    
+    
+   
+    
+   <td><button (click)="currentData(data._id)">Chỉnh sửa</button></td>
+
+  </tr>
+</tbody>
+</table>
+

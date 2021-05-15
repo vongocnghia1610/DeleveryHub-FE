@@ -5,13 +5,12 @@
 
 </head>
 <body>
+<app-admin></app-admin>
 
-  
-  <div class="container">
    
     <div class="textregister">Cập nhật gói doanh nghiệp</div>
    
-  </div>
+  
  <form [formGroup]="formGroup" (ngSubmit)="updategoidoanhnghiep()">
   <div class="txtname"> Tên gói </div>
   <input type="text" class="name" formControlName="TenGoi" />

@@ -1,0 +1,39 @@
+
+<app-admin></app-admin>
+<table class="contain" border="1" >
+  <thead>
+  <tr >
+    <th  style="text-align: center">Tên doanh nghiệp</th>
+    <th  style="text-align: center">Địa chỉ</th>
+    <th style="text-align: center">Email</th>
+    <!-- <th  style="text-align: center">Giấy phép</th>
+    <th  style="text-align: center">Logo</th> -->
+    <th style="text-align: center">Số điện thoại</th>
+   
+    
+    <th  style="text-align: center">Trạng thái</th>
+    <th  style="text-align: center">Xác nhận</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let data of array ">
+
+    <td>  {{data.TenDoanhNghiep}}</td>
+    <td>  {{data.DiaChi}}</td>
+    <td>  {{data.Email}}</td>
+    <!-- <td>  {{data.GiayPhep}}</td>
+    <td>  {{data.Logo}}</td> -->
+    <td>  {{data.SoDienThoai}}</td>
+   
+    <td>  {{data.TrangThai}}</td>
+    
+    
+    
+   
+    
+   <td><button (click)="confirm(data._id)">Confirm</button></td>
+
+  </tr>
+</tbody>
+</table>
+

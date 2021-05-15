@@ -29,10 +29,14 @@ import { TaogoidoanhnghiepadminComponent } from './taogoidoanhnghiepadmin/taogoi
 import { TaogoikhachhangComponent } from './taogoikhachhang/taogoikhachhang.component';
 import { CapnhatgoidoanhnghiepComponent } from './capnhatgoidoanhnghiep/capnhatgoidoanhnghiep.component';
 import { CapnhatgoikhachhangComponent } from './capnhatgoikhachhang/capnhatgoikhachhang.component';
-import { EnterpriseComponent } from './enterprise/enterprise.component';
+import { listEnterpriseComponent } from './listenterprise/listenterprise.component';
 import { ShowgoidoanhnghiepComponent } from './showgoidoanhnghiep/showgoidoanhnghiep.component';
 import { ShowgoikhachhangComponent } from './showgoikhachhang/showgoikhachhang.component';
 import { ShowcustomerComponent } from './showcustomer/showcustomer.component';
+import { ConfirmenterpriseComponent } from './confirmenterprise/confirmenterprise.component';
+import { ProducttypeComponent } from './producttype/producttype.component';
+import { EnterprisedeliveryComponent } from './enterprisedelivery/enterprisedelivery.component';
+import { ShippingpackageEnterpriseComponent } from './shippingpackage-enterprise/shippingpackage-enterprise.component';
 
 
 @NgModule({
@@ -76,7 +80,7 @@ import { ShowcustomerComponent } from './showcustomer/showcustomer.component';
   
   
   
-    EnterpriseComponent,
+    listEnterpriseComponent,
   
   
   
@@ -86,12 +90,16 @@ import { ShowcustomerComponent } from './showcustomer/showcustomer.component';
   
     ShowgoikhachhangComponent,
   
+  ShowcustomerComponent,
   
+  ConfirmenterpriseComponent,
   
-    ShowcustomerComponent,
+  ProducttypeComponent,
   
+  EnterprisedeliveryComponent,
   
-  
+  ShippingpackageEnterpriseComponent,
+
 
   
   
@@ -133,9 +141,13 @@ import { ShowcustomerComponent } from './showcustomer/showcustomer.component';
       { path:'taogoidoanhnghiepadmin', component: TaogoidoanhnghiepadminComponent },
       { path: 'capnhatgoidoanhnghiep/:id', component: CapnhatgoidoanhnghiepComponent },
       { path: 'capnhatgoikhachhang/:id', component: CapnhatgoikhachhangComponent },
-      { path: 'enterprise', component: EnterpriseComponent },
+      { path: 'listenterprise', component: listEnterpriseComponent },
       { path: 'showgoidoanhnghiep', component:  ShowgoidoanhnghiepComponent},
       { path: 'showgoikhachhang', component:  ShowgoikhachhangComponent},
+      { path: 'showcustomer', component:  ShowcustomerComponent},
+      { path: 'confirmenterprise', component: ConfirmenterpriseComponent },
+      { path: 'producttype', component: ProducttypeComponent },
+      { path: 'enterprisedelivery', component: EnterprisedeliveryComponent },
 
     ])
   ],

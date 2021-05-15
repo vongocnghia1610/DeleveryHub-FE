@@ -1,0 +1,39 @@
+<app-admin></app-admin>
+<form [formGroup]="formGroup" >
+  <div class="txtname"> ID </div>
+  <input  type="text" class="name" formControlName="idLoaiSanPham" disabled />
+  <div class="txtngsinh">Loại hàng hóa</div>
+  <input type="text" class="ngsinh" formControlName="LoaiHangHoa" />
+  <div class="txtaddress">Số kí</div>
+  <input type="text" class="address" formControlName="SoKy" />
+  <button type="submit" (click)=" updateproducttype()" class="btnupdate">Update</button>
+  <button type="submit" (click)="registerproducttype()" class="btnsubmit">Summit</button>
+  </form>
+<table class="contain" border="1" >
+  <thead>
+  <tr >
+    <th  style="text-align: center">Trạng thái</th>
+    <th  style="text-align: center">Tên product type</th>
+    <th style="text-align: center">Số kí</th>
+    
+    
+    <th  style="text-align: center">Xóa hoặc chỉnh sửa</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let data of array ">
+
+    <td>  {{data.Status}}</td>
+    <td>  {{data.LoaiHangHoa}}</td>
+    <td>  {{data.SoKy}}</td>
+   
+    
+    
+   
+    
+   <td> <button  (click)="Xoa(data_id)" >Xóa</button><button  (click)="currentData(data._id)">Chỉnh sửa</button></td>
+
+  </tr>
+</tbody>
+</table>
+

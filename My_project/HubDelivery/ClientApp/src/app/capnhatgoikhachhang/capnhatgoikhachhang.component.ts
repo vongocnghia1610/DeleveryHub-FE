@@ -56,7 +56,6 @@ export class CapnhatgoikhachhangComponent implements OnInit {
           KhoiLuongToiDa: new FormControl(this.a[5][1]),
           GiamGia : new FormControl(this.a[0][1])
 
-
         })
          
          
@@ -100,6 +99,7 @@ headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', t
   
   }
   
+
       currentData(id)
       {
        

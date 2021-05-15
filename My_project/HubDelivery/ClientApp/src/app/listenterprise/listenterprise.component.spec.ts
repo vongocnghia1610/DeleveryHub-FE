@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EnterpriseComponent } from './enterprise.component';
+import { listEnterpriseComponent } from './listenterprise.component';
 
-describe('EnterpriseComponent', () => {
-  let component: EnterpriseComponent;
-  let fixture: ComponentFixture<EnterpriseComponent>;
+describe('listEnterpriseComponent', () => {
+  let component: listEnterpriseComponent;
+  let fixture: ComponentFixture<listEnterpriseComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EnterpriseComponent ]
+      declarations: [ listEnterpriseComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EnterpriseComponent);
+    fixture = TestBed.createComponent(listEnterpriseComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

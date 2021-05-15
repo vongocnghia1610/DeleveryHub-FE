@@ -1,21 +1,24 @@
 import { Component, OnInit, Inject, ApplicationModule} from '@angular/core';
-import { HttpClient, HttpHeaders, HttpParams , HttpRequest} from '@angular/common/http';
-import {} from '@angular/common'
-import { from } from 'rxjs/observable/from';
-import{Router} from '@angular/router'
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {FormControl, FormsModule, Validators} from '@angular/forms';
+import { from } from 'rxjs/observable/from';
 import{FormGroup} from'@angular/forms';
-import {Observable,} from 'rxjs';
+import {Observable} from 'rxjs';
+import { RouterModule } from '@angular/router';
+import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-showcustomer',
-  templateUrl: './showcustomer.component.html',
-  styleUrls: ['./showcustomer.component.css']
+  selector: 'app-;istenterprise',
+  templateUrl: './listenterprise.component.html',
+  styleUrls: ['./listenterprise.component.css']
 })
-export class ShowcustomerComponent implements OnInit {
+
+export class listEnterpriseComponent implements OnInit {
+  
   formGroup =new FormGroup({
-    idKhachHang: new FormControl(""),
+    idDoanhNghiep: new FormControl(""),
     Ten: new FormControl(""),
+    DiaChi: new FormControl(""),
     SoDienThoai: new FormControl(""),
     
     
@@ -36,7 +39,7 @@ export class ShowcustomerComponent implements OnInit {
         console.log(token);
         headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
             
-     return this.http.get(`http://54.255.93.14/admin/show-customers`, {headers:headers}).subscribe(data=>
+     return this.http.get(`http://54.255.93.14/admin/show-enterprises`, {headers:headers}).subscribe(data=>
      
      {
       this.getdata();
@@ -47,9 +50,11 @@ export class ShowcustomerComponent implements OnInit {
       console.log(this.a)
       console.log(this.a[1][1])
       this.formGroup= new FormGroup({
-      idKhachHang: new FormControl(this.a[5][1]),
-      Ten: new FormControl(this.a[7][1]),
-      SoDienThoai: new FormControl(this.a[9][1]),})
+      idDoanhNghiep: new FormControl(this.a[4][1]),
+      Ten: new FormControl(this.a[5][1]),
+      SoDienThoai: new FormControl(this.a[7][1]),
+     DiaChi: new FormControl(this.a[8][1]),
+    })
      })
       
       }
@@ -58,10 +63,10 @@ export class ShowcustomerComponent implements OnInit {
     let headers= new HttpHeaders();
     var currentUser = JSON.parse(localStorage.getItem('currentUser'));
     var token = currentUser.token; // your token
-
+    console.log(token);
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
         
-   this.http.get(`http://54.255.93.14/admin/show-customers`, {headers:headers}).subscribe((res)=>
+   this.http.get(`http://54.255.93.14/admin/show-enterprises`, {headers:headers}).subscribe((res)=>
 
     {
      this.array=Object.entries(res)
@@ -80,9 +85,9 @@ export class ShowcustomerComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
     
         
-        return this.http.put(`http://54.255.93.14/admin/editprofile-customer`, data, {headers:headers});
+        return this.http.put(`http://54.255.93.14/admin/editprofile-enterprise`, data, {headers:headers});
       }
-  updatekhachhang(){
+  updateenterprise(){
 
 
     if (this.formGroup.valid){
@@ -102,6 +107,4 @@ export class ShowcustomerComponent implements OnInit {
 
 }
 
-  
 }
-
