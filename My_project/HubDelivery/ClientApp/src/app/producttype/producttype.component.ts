@@ -6,17 +6,21 @@ import{Router} from '@angular/router'
 import {FormControl, FormsModule, Validators} from '@angular/forms';
 import{FormGroup} from'@angular/forms';
 import {Observable,} from 'rxjs';
+import { stringify } from '@angular/core/src/util';
+
 
 @Component({
-  selector: 'app-showcustomer',
-  templateUrl: './showcustomer.component.html',
-  styleUrls: ['./showcustomer.component.css']
+  selector: 'app-producttype',
+  templateUrl: './producttype.component.html',
+  styleUrls: ['./producttype.component.css']
 })
-export class ShowcustomerComponent implements OnInit {
+export class ProducttypeComponent implements OnInit {
+
   formGroup =new FormGroup({
-    idKhachHang: new FormControl(""),
-    Ten: new FormControl(""),
-    SoDienThoai: new FormControl(""),
+    idLoaiSanPham: new FormControl(""),
+   LoaiHangHoa: new FormControl(""),
+    SoKy: new FormControl(""),
+    
     
     
     })
@@ -36,7 +40,7 @@ export class ShowcustomerComponent implements OnInit {
         console.log(token);
         headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
             
-     return this.http.get(`http://54.255.93.14/admin/show-customers`, {headers:headers}).subscribe(data=>
+     return this.http.get(`http://54.255.93.14/admin/show-product-type`, {headers:headers}).subscribe(data=>
      
      {
       this.getdata();
@@ -47,9 +51,9 @@ export class ShowcustomerComponent implements OnInit {
       console.log(this.a)
       console.log(this.a[1][1])
       this.formGroup= new FormGroup({
-      idKhachHang: new FormControl(this.a[5][1]),
-      Ten: new FormControl(this.a[7][1]),
-      SoDienThoai: new FormControl(this.a[9][1]),})
+       idLoaiSanPham: new FormControl(this.a[1][1]),
+      LoaiHangHoa: new FormControl(this.a[2][1]),
+      SoKy: new FormControl(this.a[3][1]),})
      })
       
       }
@@ -61,7 +65,7 @@ export class ShowcustomerComponent implements OnInit {
 
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
         
-   this.http.get(`http://54.255.93.14/admin/show-customers`, {headers:headers}).subscribe((res)=>
+   this.http.get(`http://54.255.93.14/admin/show-product-type`, {headers:headers}).subscribe((res)=>
 
     {
      this.array=Object.entries(res)
@@ -80,20 +84,21 @@ export class ShowcustomerComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
     
         
-        return this.http.put(`http://54.255.93.14/admin/editprofile-customer`, data, {headers:headers});
+        return this.http.put(`http://54.255.93.14/admin/update-product-type`, data, {headers:headers});
       }
-  updatekhachhang(){
+  updateproducttype(){
 
 
     if (this.formGroup.valid){
     this.update(this.formGroup.value).subscribe((result) =>{
      
       
-      if(result)
+    
        console.log( result);
-      this.getdata();
+     
        alert("Update thành công");
-
+       this.getdata();
+      
     });
 
   }
@@ -101,7 +106,61 @@ export class ShowcustomerComponent implements OnInit {
   else alert("Bạn chưa nhập đầy đủ thông tin");
 
 }
+Xoa(j){
 
+  let headers= new HttpHeaders();
+ var currentUser = JSON.parse(localStorage.getItem('currentUser'));
+ var token = currentUser.token; // your token
+ headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
+ 
+ console.log(j);
+
+
+return this.http.delete(`http://54.255.93.14/admin/delete-product-type`,{headers:headers} ).subscribe(
   
+ result=>{
+   
+  this.getdata();
+ 
+});
+
+}
+register(data):Observable<any>{
+  
+  let headers= new HttpHeaders();
+  var currentUser = JSON.parse(localStorage.getItem('currentUser'));
+  var token = currentUser.token; // your token
+  console.log(token);
+  headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
+  
+  
+      return this.http.post(`http://54.255.93.14/admin/create-product-type`, data, {headers:headers});
+    }
+registerproducttype(){
+
+  if (this.formGroup.valid){
+  this.register(this.formGroup.value).subscribe((result) =>{
+   
+    
+    
+      console.log( result);
+    
+      alert("Đăng kí thành công");
+      this.getdata()
+  
+  
+      
+      
+    
+
+  });
+
+ 
+ 
 }
 
+else alert("Bạn chưa nhập đầy đủ thông tin");
+
+}
+
+}

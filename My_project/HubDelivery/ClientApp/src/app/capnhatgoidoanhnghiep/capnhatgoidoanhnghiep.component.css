@@ -1,209 +1,186 @@
 
 
-.container {
-  
-    position: absolute;
-    width: 1500px;
-    height: 750px;
-    left: 0px;
-    top: 137px;
-    background: linear-gradient(180deg, #FFF8DF 0%, rgba(255, 255, 255, 0) 100%), #FDFFB2;
-  }
-  .image_user {
-    /* images 1 */
-    position: absolute;
-    width: 224px;
-    height: 225px;
-    left: 496px;
-    top: 60px;
-    
-    mix-blend-mode: darken;
-  }
-  .textregister {
-   
-    /* ĐĂNG KÍ */
-  
+
+
+
+
+.textregister {
+ 
+  /* ĐĂNG KÍ */
+
+position: absolute;
+width: 350px;
+height: 96px;
+top:200px;
+left:651px;
+font-family: Fahkwang;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 31px;
+
+color: #000000;
+
+
+}
+.name {
+  /* Rectangle 5 */
   position: absolute;
-  width: 350px;
-  height: 96px;
-  top:162px;
-  left:551px;
-  font-family: Fahkwang;
+  width: 279px;
+  height: 27px;
+  left: 408px;
+  top: 322px;
+  background: #D5E08D;
+}
+.txtname {
+  /* Tên đầy đủ: */
+  position: absolute;
+  width: 121px;
+  height: 27px;
+  left: 300px;
+  top: 322px;
+  font-family: Red Hat Display;
   font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 31px;
-  
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
   color: #000000;
+}
+.ngsinh {
+  /* Rectangle 7 */
+  position: absolute;
+  width: 279px;
+  height: 27px;
+  left: 408px;
+  top: 371px;
+  background: #D5E08D;
+}
+.txtngsinh {
+  /* Ngày sinh: */
+  position: absolute;
+  width: 121px;
+  height: 27px;
+  left: 300px;
+  top: 371px;
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.address {
+  /* Rectangle 6 */
+  position: absolute;
+  width: 279px;
+  height: 27px;
+  left: 408px;
+  top: 420px;
+  background: #D5E08D;
+}
+.txtaddress {
+  /* Địa chỉ: */
+  position: absolute;
+  width: 121px;
+  height: 27px;
+  left: 300px;
+  top: 420px;
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+
+
+.passw {
+  /* Rectangle 9 */
+  position: absolute;
+  width: 279px;
+  height: 27px;
+  left: 823px;
+  top: 322px;
+  background: #D5E08D;
+}
+.txtpassw {
+  /* Mật khẩu: */
+  position: absolute;
+  width: 121px;
+  height: 27px;
+  left: 700px;
+  top: 322px;
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.repeatepw { /* Rectangle 10 */
+  position: absolute;
+  width: 279px;
+  height: 27px;
+  left: 823px;
+  top: 371px;
+  background: #D5E08D;
+}
+.txtrepeatepw {
+  /* Nhập lại mật khẩu: */
+  position: absolute;
+  width: 154px;
+  height: 27px;
+  left: 700px;
+  top: 371px;
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+
+.btnregister {
+  /* HOÀN TẤT ĐĂNG KÍ */
+  position: absolute;
+  width: 284px;
+  height: 47px;
+  left:551px;
+  top: 480px;
+  font-family: Exo 2;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  background: #D5E08D;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color:#9B3B3B ;
+}
+
+  .btnquaylai {
+    /* HOÀN TẤT ĐĂNG KÍ */
+    position: absolute;
+    width: 140px;
+    height: 47px;
+    left: 900px;
+    top: 480px;
+
   
-  
-  }
-  .name {
-    /* Rectangle 5 */
-    position: absolute;
-    width: 279px;
-    height: 27px;
-    left: 258px;
-    top: 422px;
+    font-weight: 800;
+    font-size: 24px;
+
     background: #D5E08D;
-  }
-  .txtname {
-    /* Tên đầy đủ: */
-    position: absolute;
-    width: 121px;
-    height: 27px;
-    left: 149px;
-    top: 422px;
-    font-family: Red Hat Display;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-  }
-  .ngsinh {
-    /* Rectangle 7 */
-    position: absolute;
-    width: 279px;
-    height: 27px;
-    left: 258px;
-    top: 471px;
-    background: #D5E08D;
-  }
-  .txtngsinh {
-    /* Ngày sinh: */
-    position: absolute;
-    width: 121px;
-    height: 27px;
-    left: 149px;
-    top: 471px;
-    font-family: Red Hat Display;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-  }
-  .address {
-    /* Rectangle 6 */
-    position: absolute;
-    width: 279px;
-    height: 27px;
-    left: 258px;
-    top: 520px;
-    background: #D5E08D;
-  }
-  .txtaddress {
-    /* Địa chỉ: */
-    position: absolute;
-    width: 121px;
-    height: 27px;
-    left: 149px;
-    top: 520px;
-    font-family: Red Hat Display;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-  }
-  .txtemail{
-    position: absolute;
-    width: 121px;
-    height: 27px;
-    left: 149px;
-    top: 565px;
-    font-family: Red Hat Display;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-  }
-  .email{
-    position: absolute;
-    width: 279px;
-    height: 27px;
-    left: 258px;
-    top: 565px;
-    background: #D5E08D;
-  }
-  
-  
-  .phoneumber {
-    /* Rectangle 8 */
-    position: absolute;
-    width: 279px;
-    height: 27px;
-    left: 258px;
-    top: 565px;
-    background: #D5E08D;
-  }
-  .txtphonenumber {
-    /* Điện thoại: */
-    position: absolute;
-    width: 121px;
-    height: 27px;
-    left: 149px;
-    top: 569px;
-    font-family: Red Hat Display;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-  }
-  .passw {
-    /* Rectangle 9 */
-    position: absolute;
-    width: 279px;
-    height: 27px;
-    left: 823px;
-    top: 422px;
-    background: #D5E08D;
-  }
-  .txtpassw {
-    /* Mật khẩu: */
-    position: absolute;
-    width: 121px;
-    height: 27px;
-    left: 645px;
-    top: 422px;
-    font-family: Red Hat Display;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-  }
-  .repeatepw { /* Rectangle 10 */
-    position: absolute;
-    width: 279px;
-    height: 27px;
-    left: 823px;
-    top: 471px;
-    background: #D5E08D;
-  }
-  .txtrepeatepw {
-    /* Nhập lại mật khẩu: */
-    position: absolute;
-    width: 154px;
-    height: 27px;
-    left: 645px;
-    top: 471px;
-    font-family: Red Hat Display;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
+   
+    color:#9B3B3B ;
   }
   .id { /* Rectangle 10 */
     position: absolute;
     width: 279px;
     height: 27px;
     left: 823px;
-    top: 520px;
+    top: 420px;
     background: #D5E08D;
   }
   .txtid {
@@ -211,96 +188,14 @@
     position: absolute;
     width: 154px;
     height: 27px;
-    left: 645px;
-    top: 520px;
-    font-family: Red Hat Display;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-  }
-  .gioitinh {
-    /* Rectangle 11 */
-    position: absolute;
-    width: 279px;
-    height: 27px;
-    left: 823px;
-    top: 518px;
-    background: #D5E08D;
-  }
-  .txtgioitinh {
-    /* Giới tính: */
-    position: absolute;
-    width: 121px;
-    height: 27px;
-    left: 645px;
-    top: 520px;
-    font-family: Red Hat Display;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-  }
-  .txtdongydieukhoan {
-    /* Bạn đồng ý với các điều khoản và dịch vụ của chúng tôi? */
-    position: absolute;
-    width: 465px;
-    height: 27px;
-    left: 645px;
-    top: 520px;
-    font-family: Red Hat Display;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-  }
-  .btnregister {
-    /* HOÀN TẤT ĐĂNG KÍ */
-    position: absolute;
-    width: 140px;
-    height: 47px;
-    left: 539px;
-    top: 600px;
-    font-family: Exo 2;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-
-    background: #D5E08D;
-    
-    color:#9B3B3B ;
-  }
-  .btnquaylai {
-    /* HOÀN TẤT ĐĂNG KÍ */
-    position: absolute;
-    width: 140px;
-    height: 47px;
     left: 700px;
-    top: 600px;
 
-  
-    font-weight: 800;
-    font-size: 24px;
-
-    background: #D5E08D;
-   
-    color:#9B3B3B ;
-  }
-  .checkbox {
-    /*  */
-    position: absolute;
-    width: 46px;
-    height: 29px;
-    left: 1121px;
-    top: 515px;
-    font-family: Font Awesome 5 Free;
+    top: 420px;
+    font-family: Red Hat Display;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 24px;
     color: #000000;
   }
   
