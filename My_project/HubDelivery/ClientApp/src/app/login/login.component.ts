@@ -41,20 +41,16 @@ export class LoginComponent implements OnInit {
     if (this.formGroup.valid){
       
       this.login(this.formGroup.value).subscribe((result) =>{
-        {
+        
           
           if(result.error=="null")
           {
-            
-            this.router.navigate(['/home']);
+            console.log(result.data.token);
+            localStorage.setItem('currentUser', JSON.stringify({ token: result.data.token }));
+           
+            this.router.navigate(['/dangkidoanhnghiepvanchuyen']);
             
           }
-          
-          
-            
-          
-          
-        }
 
       }, error=>{
         

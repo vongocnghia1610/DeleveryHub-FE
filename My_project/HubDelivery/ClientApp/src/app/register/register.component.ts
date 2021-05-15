@@ -63,7 +63,7 @@ export class RegisterComponent implements OnInit {
      else{
       if (this.formGroup.valid){
       this.register(this.formGroup.value).subscribe((result) =>{
-        
+     
         if(result)
          console.log( result);
          alert("Đăng kí thành công");
@@ -75,8 +75,9 @@ export class RegisterComponent implements OnInit {
       }, error=>{
         
         if( error.error != "Dang ky that bai")
+        {
         alert("Email này đã được đăng kí rồi !!");
-        
+        }
       });
 
      

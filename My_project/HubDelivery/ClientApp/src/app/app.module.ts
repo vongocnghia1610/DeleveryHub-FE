@@ -23,6 +23,9 @@ import { ProfileDoanhnghiepComponent } from './profile-doanhnghiep/profile-doanh
 import { DichvukhachhangComponent } from './dichvukhachhang/dichvukhachhang.component';
 import { DichvudoanhnghiepComponent } from './dichvudoanhnghiep/dichvudoanhnghiep.component';
 import {AuthServiceService} from './auth-service.service';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
+
+import { TaogoidoanhnghiepadminComponent } from './taogoidoanhnghiepadmin/taogoidoanhnghiepadmin.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +48,12 @@ import {AuthServiceService} from './auth-service.service';
   
     DichvudoanhnghiepComponent,
   
+    ChangepasswordComponent,
+  
+  
+  
+    TaogoidoanhnghiepadminComponent,
+  
 
   ],
   imports: [
@@ -53,11 +62,12 @@ import {AuthServiceService} from './auth-service.service';
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: RegisterComponent },
+      { path: 'register', component: RegisterComponent },
       { path: 'dichvukhachhang', component: DichvukhachhangComponent },
       { path: 'dichvuvanchuyen', component: DichvuvanchuyenComponent },
       { path: 'home', component: HomeComponent, pathMatch: 'full' },
       { path: 'login', component: LoginComponent },
+      { path: '', component: ChangepasswordComponent },
      
       { path: 'dichvudoanhnghiep', component: DichvudoanhnghiepComponent },
       
@@ -69,7 +79,7 @@ import {AuthServiceService} from './auth-service.service';
       {path:'admin', component:AdminComponent},
       {path:'quanli_doanh_nghiep', component:QuanlidoanhnghiepComponent},
       {path:'dangkidoanhnghiepvanchuyen', component:DangkidoanhnghiepvanchuyenComponent},
-
+      { path: 'taogoidoanhnghiepdmin', component: TaogoidoanhnghiepadminComponent },
 
     ])
   ],
