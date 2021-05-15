@@ -5,7 +5,6 @@ import {FormControl, FormsModule, Validators} from '@angular/forms';
 import { from } from 'rxjs/observable/from';
 import{FormGroup} from'@angular/forms';
 import {Observable} from 'rxjs';
-import { AuthServiceService } from '../auth-service.service';
 import { RouterModule } from '@angular/router';
 import {Router} from '@angular/router';
 
@@ -22,6 +21,7 @@ export class LoginComponent implements OnInit {
   constructor(private http:HttpClient,
     private router:Router) { }
   ngOnInit() {
+   
     this.initForm();
     //this.login(this.formGroup.valid);
   }
@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
             console.log(result.data.token);
             localStorage.setItem('currentUser', JSON.stringify({ token: result.data.token }));
            
-            this.router.navigate(['/dangkidoanhnghiepvanchuyen']);
+            this.router.navigate(['/']);
             
           }
 

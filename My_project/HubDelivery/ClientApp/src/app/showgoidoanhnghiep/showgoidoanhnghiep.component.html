@@ -1,0 +1,31 @@
+<div class="txttaogoidoanhnghiep">
+  <label  > Tạo gói doanh nghiệp </label>
+  <button (click)="taogoidoanhnghiep()" >Tạo gói </button>
+</div>
+
+<table class="contain" border="1" >
+  <thead>
+  <tr >
+    <th  style="text-align: center">Tên gói</th>
+    <th style="text-align: center">Thông tin</th>
+    <th  style="text-align: center">Chi phí</th>
+    <th style="text-align: center">Số đơn hàng</th>
+    <th  style="text-align: center">Hạn sử dụng</th>
+    <th  style="text-align: center">Xóa hoặc chỉnh sửa</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let data of array ">
+
+    <td>  {{data.TenGoi}}</td>
+    <td>  {{data.ThongTin}}</td>
+    <td>  {{data.ChiPhi}}</td>
+    <td>  {{data.SoDonHang}}</td>
+    <td>  {{data.HanSuDung}}</td>
+   
+    
+   <td><button (click)="Xoa(data._id)" >Xóa</button > <button><a [routerLink]="['/capnhatgoidoanhnghiep/'+data._id]"  > Cập nhật</a></button></td>
+
+  </tr>
+</tbody>
+</table>

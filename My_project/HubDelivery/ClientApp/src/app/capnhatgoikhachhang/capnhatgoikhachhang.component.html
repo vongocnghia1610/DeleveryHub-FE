@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8" />
+
+</head>
+<body>
+
+  
+  <div class="container">
+   
+    <div class="textregister">Cập nhật gói khách hàng</div>
+   
+  </div>
+ <form [formGroup]="formGroup" (ngSubmit)="updategoikhachhang()">
+  <div class="txtname"> Tên gói khách hàng </div>
+  <input type="text" class="name" formControlName="TenDichVuKhachHang" />
+  <div class="txtngsinh"> Thông tin</div>
+  <input type="text" class="ngsinh" formControlName="ThongTin" />
+  <div class="txtaddress"> Chi phí </div>
+  <input type="text" class="address"  formControlName="ChiPhi"/>
+  
+  <div class="txtpassw"> Hạn sử dụng</div>
+
+  <input type="number" class="passw" formControlName="HanSuDung" />
+  <div class="txtrepeatepw"> Số đơn hàng </div>
+  
+  <input type="number" class="repeatepw"  formControlName="SoDonHang" />
+ 
+  <input type="number" class="repeatepw"  formControlName="SoDonHang" />
+  <div class="txtgioitinh"> Giảm giá </div>
+  <input type="number" class="gioitinh"  formControlName="GiamGia" />
+  <div class="txtemail"> Khối lượng tối đa </div>
+  <input type="number" class="email"  formControlName="KhoiLuongToiDa" />
+  <div class="txtid"> ID </div>
+  <input type="text" disabled class="id"  formControlName="idGoiKhachHang" />
+  <button  type="submit" class="btnregister">Hoàn tất</button>
+  
+</form>
+<button class="btnquaylai" (click)="Quaylaitrang()">Quay lại</button>
+</body>
+</html>
+

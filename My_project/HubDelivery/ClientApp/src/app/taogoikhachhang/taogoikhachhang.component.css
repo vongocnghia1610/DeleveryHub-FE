@@ -50,9 +50,10 @@
   .txtname {
     /* Tên đầy đủ: */
     position: absolute;
-    width: 121px;
+    
     height: 27px;
-    left: 149px;
+    width: 180px;
+    left: 110px;
     top: 422px;
     font-family: Red Hat Display;
     font-style: normal;
@@ -73,9 +74,10 @@
   .txtngsinh {
     /* Ngày sinh: */
     position: absolute;
-    width: 121px;
+    width: 180px;
+    left: 110px;
     height: 27px;
-    left: 149px;
+  
     top: 471px;
     font-family: Red Hat Display;
     font-style: normal;
@@ -96,9 +98,10 @@
   .txtaddress {
     /* Địa chỉ: */
     position: absolute;
-    width: 121px;
+    
     height: 27px;
-    left: 149px;
+    width: 180px;
+    left: 110px;
     top: 520px;
     font-family: Red Hat Display;
     font-style: normal;
@@ -109,9 +112,10 @@
   }
   .txtemail{
     position: absolute;
-    width: 121px;
+   
     height: 27px;
-    left: 149px;
+    width: 180px;
+    left: 110px;
     top: 565px;
     font-family: Red Hat Display;
     font-style: normal;
@@ -241,7 +245,7 @@
     width: 284px;
     height: 47px;
     left: 539px;
-    top: 580px;
+    top: 600px;
     font-family: Exo 2;
     font-style: normal;
     font-weight: 800;

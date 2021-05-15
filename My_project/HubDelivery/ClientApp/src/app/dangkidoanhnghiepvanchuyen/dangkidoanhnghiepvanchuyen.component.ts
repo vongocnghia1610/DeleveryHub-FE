@@ -5,7 +5,6 @@ import {FormControl, FormsModule, Validators} from '@angular/forms';
 import { from } from 'rxjs/observable/from';
 import{FormGroup} from'@angular/forms';
 import {Observable} from 'rxjs';
-import { AuthServiceService } from '../auth-service.service';
 import { RouterModule } from '@angular/router';
 import {Router} from '@angular/router';
 import { ElementRef, ViewChild} from '@angular/core';
