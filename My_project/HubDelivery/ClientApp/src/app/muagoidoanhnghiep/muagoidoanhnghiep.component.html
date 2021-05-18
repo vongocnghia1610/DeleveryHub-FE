@@ -1,0 +1,61 @@
+<app-enterprisedelivery></app-enterprisedelivery>
+<div class="txttaogoidoanhnghiep">
+  <label  > Gói bạn đang mua </label>
+  
+</div>
+
+<table class="goidangmua" border="1" >
+  <thead>
+  <tr >
+    <th  style="text-align: center">Delete At</th>
+    <th style="text-align: center">ID</th>
+    <th  style="text-align: center">Tên gói</th>
+    <th style="text-align: center">Thông tin</th>
+    <th  style="text-align: center">Chi phí</th>
+    <th  style="text-align: center">Hạn sử dụng</th>
+    <th  style="text-align: center">Số đơn hàng</th>
+    <th style="text-align: center">Ngày tạo gói</th>
+    <th  style="text-align: center">ngày update</th>
+    <th  style="text-align: center">_v</th>
+  </tr>
+</thead>
+<tbody>
+  <tr >
+
+   
+    <td *ngFor="let data of a ">  {{data[1]}}</td>
+   
+   
+    
+
+
+  </tr>
+</tbody>
+</table>
+
+<table class="contain" border="1" >
+  <thead>
+  <tr >
+    <th  style="text-align: center">Tên gói</th>
+    <th style="text-align: center">Thông tin</th>
+    <th  style="text-align: center">Chi phí</th>
+    <th style="text-align: center">Số đơn hàng</th>
+    <th  style="text-align: center">Hạn sử dụng</th>
+    <th  style="text-align: center">Thanh toán</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let data of kq ">
+
+    <td>  {{data.TenGoi}}</td>
+    <td>  {{data.ThongTin}}</td>
+    <td>  {{data.ChiPhi}}</td>
+    <td>  {{data.SoDonHang}}</td>
+    <td>  {{data.HanSuDung}}</td>
+   
+    
+   <td> <button (click)="Paypal(data._id)">Paypal</button> <button (click)="VNPay(data._id)">VNPay</button></td>
+
+  </tr>
+</tbody>
+</table>

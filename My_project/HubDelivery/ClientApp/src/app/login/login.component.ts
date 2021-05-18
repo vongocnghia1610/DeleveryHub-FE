@@ -47,6 +47,7 @@ export class LoginComponent implements OnInit {
           {
             console.log(result.data.token);
             localStorage.setItem('currentUser', JSON.stringify({ token: result.data.token }));
+            localStorage.setItem('id', JSON.stringify({ id: result.data._id }));
            console.log(result)
            if(result.data.Role=="DOANHNGHIEP")
             this.router.navigate(['/enterprisedelivery']);

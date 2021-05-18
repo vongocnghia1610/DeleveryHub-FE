@@ -5,38 +5,58 @@
     <title></title>
 </head>
 <body>
-  <div class="container"></div>
+  <app-enterprisedelivery>
+
+  </app-enterprisedelivery>  
   <!-- <div class="avatar">
     <img src="../../assets/avatar.png" />
   </div>
   <div class="editavatar">Chỉnh sửa ảnh đại diện</div>
   <div class="name">Nguyễn Văn B</div> -->
-  <div class="txtthongtindoanhnghiep">Thông tin  doanh nghiệp</div>
+  
+  <div style="color: #04AA6D; font-size: 25px;" class="txtthongtindoanhnghiep">Thông tin  doanh nghiệp</div>
   <div class="txttendoanhnghiep">Tên doanh nghiệp</div>
-  <div class="txtdiachi">Địa chỉ</div>
-  <div class="txtgiayphep">Giấy phép</div>
+  <div class="txtdiachi">Số điện thoại</div>
+  <div class="txtgiayphep">Địa chỉ</div>
   <div class="txtlogo">Logo</div>
-  <div class="txtnguoidaidien">Người đại diện</div>
-  <div class="txtchucvu">Chức vụ</div>
-  <div class="txtemail">Email</div>
-  <div class="txtsodienthoai">Số điện thoại</div>
+  <div ng-repeat=" link of link" >
+    <img class="logo" src="{{link}}">
+  </div>
+ 
 
 
-  <input type="text" class="tendoanhnghiep" />
-  <input type="text" class="diachi" />
-  <input type="file" class="giayphep" />
-  <input type="file" class="logo" />
-  <input type="text" class="nguoidaidien" />
-  <input type="text" class="chucvu" />
-  <input type="text" class="email" />
-  <input type="text" class="sodienthoai" />
-  <div class="taikhoanlienket">Lịch sử đơn hàng</div>
-  <div class="lichsugiaodich">Thông tin gói dịch vụ</div>
+
+  <div class="txtimggiayphep">Giấy phép</div>
+ 
+<form [formGroup]="formGroup">
+  <input   type="text" class="tendoanhnghiep" formControlName="TenDoanhNghiep"  />
+  <input type="text"   class="diachi" formControlName="DiaChi" />
+ 
+  <input type="file"   class="inputlogo" formControlName="Logo"  (change)="onFileChangelogo($event.target.files)"    #fileInput />
+
+
+  <input  type="text" class="giayphep" formControlName="SoDienThoai" />
+ </form>
   <div class="luuthongtin">
-    <img src="../../assets/luuthongtin.png" />
+    <button (click)="updatedoanhnghiepProces()" style=" font-size: 25px;
+    
+    line-height: 50px;
+    text-align: center;
+    background: linear-gradient(180deg, #E5F0A2 0%, rgba(255, 255, 255, 0) 100%), #CECB78;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;">Lưu thông tin</button>
+    
   </div>
-  <div class="huythaydoi">
-  <b> Quay lại </b> 
-  </div>
+ 
+<div class="changepass">
+  <button (click)="changepass()" style=" font-size: 25px;
+    
+  line-height: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, #E5F0A2 0%, rgba(255, 255, 255, 0) 100%), #CECB78;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;">Đổi mật khẩu</button>
+</div>
+
 </body>
 </html>

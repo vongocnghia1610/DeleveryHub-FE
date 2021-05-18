@@ -37,6 +37,10 @@ import { ConfirmenterpriseComponent } from './confirmenterprise/confirmenterpris
 import { ProducttypeComponent } from './producttype/producttype.component';
 import { EnterprisedeliveryComponent } from './enterprisedelivery/enterprisedelivery.component';
 import { ShippingpackageEnterpriseComponent } from './shippingpackage-enterprise/shippingpackage-enterprise.component';
+import { ThongkeOrderComponent } from './thongke-order/thongke-order.component';
+import { OrderkhachhangComponent } from './orderkhachhang/orderkhachhang.component';
+import { CreateshippingpackageComponent } from './createshippingpackage/createshippingpackage.component';
+import { MuagoidoanhnghiepComponent } from './muagoidoanhnghiep/muagoidoanhnghiep.component';
 
 
 @NgModule({
@@ -99,6 +103,14 @@ import { ShippingpackageEnterpriseComponent } from './shippingpackage-enterprise
   EnterprisedeliveryComponent,
   
   ShippingpackageEnterpriseComponent,
+  
+  ThongkeOrderComponent,
+  
+  OrderkhachhangComponent,
+  
+  CreateshippingpackageComponent,
+  
+  MuagoidoanhnghiepComponent,
 
 
   
@@ -132,7 +144,7 @@ import { ShippingpackageEnterpriseComponent } from './shippingpackage-enterprise
       
       { path: 'notification', component: NotificationComponent },
       
-      { path: 'profile', component: ProfileComponent },
+    
       { path: 'profile-doanhnghiep', component: ProfileDoanhnghiepComponent },
       { path: 'order', component: OrderComponent },
       {path:'admin', component:AdminComponent},
@@ -148,6 +160,11 @@ import { ShippingpackageEnterpriseComponent } from './shippingpackage-enterprise
       { path: 'confirmenterprise', component: ConfirmenterpriseComponent },
       { path: 'producttype', component: ProducttypeComponent },
       { path: 'enterprisedelivery', component: EnterprisedeliveryComponent },
+      { path: 'shippingpackage-enterprise', component: ShippingpackageEnterpriseComponent },
+      { path: 'thongke-order', component: ThongkeOrderComponent },
+      { path: 'orderkhachhang', component: OrderkhachhangComponent },
+      { path: 'createshippingpackage', component: CreateshippingpackageComponent },
+      { path: 'muagoidoanhnghiep', component: MuagoidoanhnghiepComponent },
 
     ])
   ],
