@@ -9,12 +9,12 @@
 
 <div class="navbar"></div>
 <div class="vertical-menu">
-  <a href="#" class="active">Home</a>
-  <a href="#">Tạo gói shipping</a>
-  <a href="#">Mua gói doanh nghiệp</a>
-  <a href="#">Oder by customer</a>
-  <a href="#">Thống kê</a>
-  <a href="#">Profile</a>
+  <a  class="active">Home</a>
+  <a (click)="getdata()">Tạo gói shipping</a>
+  <a [routerLink]='["/muagoidoanhnghiep"]'>Mua gói doanh nghiệp</a>
+  <a [routerLink]='["/orderkhachhang"]'>Oder by customer</a>
+  <a [routerLink]='["/thongke-order"]'>Thống kê</a>
+  <a [routerLink]='["/profile-doanhnghiep"]'>Profile</a>
 </div>
 
 </body>

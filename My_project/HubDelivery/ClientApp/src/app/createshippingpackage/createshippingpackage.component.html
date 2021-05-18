@@ -1,0 +1,44 @@
+<app-enterprisedelivery></app-enterprisedelivery>
+
+
+
+<div class="textregister">Cập nhật gói  shipping</div>
+   
+  
+<form [formGroup]="formGroup">
+ <div class="txtname"> Loại vận chuyển </div>
+
+ <input type="text" class="name" formControlName="LoaiVanChuyen" />
+
+ <div class="txtngsinh"> Khuyến mãi</div>
+ <input type="number" class="ngsinh" formControlName="KhuyenMai" />
+ <div class="txtaddress"> Chi phí </div>
+ <input type="number" class="address"  formControlName="ChiPhi"/>
+ 
+ <div class="txtpassw"> Nơi nhận</div>
+
+ <input type="text" class="passw" formControlName="NoiNhan" />
+ <div class="txtrepeatepw">Nơi giao </div>
+ 
+ <input type="text" class="repeatepw"  formControlName="NoiGiao" />
+
+
+
+<div class="txtemail">Chọn loại sản phẩm </div>
+<select  class="email" name="options[2]" id="dropdownList" formControlName="IdLoaiHangHoa">
+  <option   *ngFor="let data of array " value={{data._id}}>{{data.LoaiHangHoa}}</option>
+  
+</select>
+<script>
+ $(document).ready(function(){
+    $('#dropdownList').on('change',function(){
+      
+        var optionText = $("#dropdownList option:selected").text();
+        alert("Selected Option Text: "+optionText);
+    });
+});
+</script>
+
+<button (click)="createshippingpackake()"  type="submit" class="btnregister">Hoàn tất</button>
+<button (click)="quaylai()"  type="submit" class="btnquaylai">Quay lại</button>
+</form>

@@ -1,0 +1,48 @@
+<app-enterprisedelivery></app-enterprisedelivery>
+
+<div class="txttaogoidoanhnghiep">
+ <label style="color: #04AA6D; font-size: 23px; "  > Thống kê tất cả đơn hàng của doanh nghiệp </label><br><br>
+ <div style="color: #04AA6D; font-size: 18px; ">
+  <button (click)="getdataoneweek()" (click)="clickonew()">Thống kê trong tuần  </button>
+  <button (click)="getdatathreemonth()"  (click)="clickthreem()">Thống kê trong ba tháng  </button>
+  <button type="button" (click)="clickoney()" (click)="getdataoneyear()" >Thống kê trong một năm  </button> <br>
+</div>
+  
+  
+
+
+</div>
+
+<table class="contain" border="1" >
+  <caption style="color: red;" *ngFor="let data of message ">{{data}}</caption>
+  <thead>
+    
+  <tr >
+
+    <th  style="text-align: center">Đơn hàng</th>
+    <th style="text-align: center">Doanh thu</th>
+   
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let data of array ">
+
+    <td>  {{data.donhang}}</td>
+    <td>  {{data.doanhthu}}</td>
+  
+   
+    
+
+  </tr>
+</tbody>
+</table>
+<script>
+  function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
