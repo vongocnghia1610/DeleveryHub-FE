@@ -90,6 +90,26 @@ IdPackageOld: new FormControl(this.a[2][1]),
 
 
 }
+Xoa(j){
+  let headers= new HttpHeaders();
+ var currentUser = JSON.parse(localStorage.getItem('currentUser'));
+ var token = currentUser.token; // your token
+ headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
+ console.log(j);
+let data=
+{
+  idPackage:j
+}
+
+return this.http.put(`http://54.255.93.14/enterprises/delete-shipping-package`,j,{headers:headers} ).subscribe(
+  
+ result=>{
+   
+  this.getdata();
+ 
+});
+
+}
 taoshippingpackage(){
   this.router.navigate(['./createshippingpackage'])
 }

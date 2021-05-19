@@ -1,0 +1,33 @@
+<div class="txttaogoidoanhnghiep">Danh sách địa chỉ giao hàng</div>
+<button (click)="addaddress()" class="addaddress">Thêm địa chỉ </button>
+<form [formGroup]="formGroup" >
+ 
+  <input hidden disabled type="text" class="name" formControlName="_id" />
+  <div class="txtngsinh"> Địa chỉ</div>
+  <input type="text" class="ngsinh" formControlName="address" />
+  
+  <button (click)="updateaddress()" type="submit" class="btnupdate">Update</button>
+  </form>
+<table class="contain" border="1" >
+  <thead>
+  <tr >
+    <th  style="text-align: center">Địa chỉ</th>
+  
+    
+    <th  style="text-align: center">Xóa hoặc chỉnh sửa</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let data of array ">
+
+    <td>  {{data.address}}</td>
+    
+    
+   
+    
+   <td><button (click)="currentData(data._id)">Chỉnh sửa</button> <button (click)="Xoa(data._id)">Delete</button></td>
+
+  </tr>
+</tbody>
+</table>
+

@@ -20,9 +20,8 @@
   height: 24px;
   left: 107px;
   top: 243px;
-  font-family: Exo 2;
-  font-style: normal;
-  font-weight: 800;
+ 
+
   font-size: 24px;
   line-height: 29px;
   color: #000000;
@@ -36,25 +35,12 @@
   top: 243px;
   font-family: Exo 2;
   font-style: normal;
-  font-weight: 800;
+
   font-size: 24px;
   line-height: 29px;
   color: #000000;
 }
-.txtchitietdonhang {
-  /* Chi tiết đơn hàng */
-  position: absolute;
-  width: 251px;
-  height: 24px;
-  left: 1086px;
-  top: 243px;
-  font-family: Exo 2;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-}
+
 .txtnguoigui {
   /* Người gửi: */
   position: absolute;
@@ -64,7 +50,7 @@
   top: 301px;
   font-family: Exo 2;
   font-style: normal;
-  font-weight: 500;
+
   font-size: 24px;
   line-height: 29px;
   color: #000000;
@@ -76,12 +62,13 @@
   height: 32px;
   left: 199px;
   top: 301px;
+  font-size: 20px;
   background: #E3F8A9;
 }
 .txtdiachigui {
   /* Địa chỉ gửi: */
   position: absolute;
-  width: 135px;
+  width: 170px;
   height: 23px;
   left: 22px;
   top: 358px;
@@ -266,141 +253,42 @@
 }
 
 
-.txtmathang {
-  /* Số điện thoại: */
-  position: absolute;
-  width: 161px;
-  height: 23px;
-  left: 950px;
-  top: 301px;
-  font-family: Exo 2;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-}
-.ipmathang {
-  /* Rectangle 15 */
-  position: absolute;
-  width: 263px;
-  height: 32px;
-  left: 1150px;
-  top: 301px;
-  background: #E3F8A9;
-}
-.txtchondoitac {
-  /* Chọn đối tác giao hàng */
-  position: absolute;
-  width: 354px;
-  height: 24px;
-  left: 125px;
-  top: 565px;
-  font-family: Exo 2;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-}
-.txtkhoiluong {
-  /* Địa chỉ giao: */
-  position: absolute;
-  width: 135px;
-  height: 23px;
-  left: 950px;
-  top: 358px;
-  font-family: Exo 2;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-}
-.ipkhoiluong {
-  /* Rectangle 20 */
-  position: absolute;
-  width: 263px;
-  height: 32px;
-  left: 1150px;
-  top: 358px;
-  background: #E3F8A9;
-}
-.txtgiaohangtietkiem1 {
-  /* Rectangle 25 */
-  position: absolute;
-  width: 439px;
-  height: 32px;
-  left: 38px;
-  top: 615px;
-  background: #E3F8A9;
-}
-.txtghtk1_ten {
-  /* Giaohangtietkiem */
-  position: absolute;
-  width: 241px;
-  height: 30px;
-  left: 40px;
-  top: 618px;
-  font-family: Faustina;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-}
 
 
-.txtgiaohangtietkiem2 {
+
+
+
+
+
+
+
+.khuyenmai{
   /* Rectangle 27 */
   position: absolute;
-  width: 439px;
+  width: 560px;
   height: 32px;
-  left: 38px;
-  top: 666px;
+  left: 966px;
+  top: 358px;
+  font-size: 24px;
   background: #E3F8A9;
 }
-.txtghtk2_ten {
-  /* Giaohangtietkiem */
+.tongchiphi{
+  /* Rectangle 27 */
   position: absolute;
-  width: 241px;
-  height: 30px;
-  left: 40px;
-  top: 669px;
-  font-family: Faustina;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-}
-
-
-
-
-.txtgiaohangtietkiem3 {
-  /* Rectangle 26 */
-  position: absolute;
-  width: 439px;
+  width: 560px;
   height: 32px;
-  left: 40px;
-  top: 717px;
+  left: 966px;
+  top: 415px;
+  font-size: 24px;
   background: #E3F8A9;
 }
-.txtghtk3_ten {
-  /* Giaohangtietkiem */
-  position: absolute;
-  width: 241px;
-  height: 30px;
-  left: 38px;
-  top: 719px;
-  font-family: Faustina;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-}
+
+
+
+
+
+
+
 
 
 
@@ -411,10 +299,10 @@
   width: 400px;
   height: 24px;
   left: 1021px;
-  top: 565px;
+  top: 243px;
   font-family: Exo 2;
   font-style: normal;
-  font-weight: 800;
+
   font-size: 24px;
   line-height: 29px;
   color: #000000;
@@ -433,28 +321,14 @@
   line-height: 29px;
   color: #000000;
 }
-.tienmat_cb {
-  /*  */
-  position: absolute;
-  
-  width: 93px;
-  height: 28px;
-  left: 1351px;
-  top: 633px;
-  font-family: Font Awesome 5 Free;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
-}
-.txtatm {
+
+.txtvnpay {
   /* Thanh toán qua thẻ ATM */
   position: absolute;
   width: 285px;
   height: 23px;
   left: 960px;
-  top: 672px;
+  top: 470px;
   font-family: Exo 2;
   font-style: normal;
   font-weight: 500;
@@ -462,29 +336,15 @@
   line-height: 29px;
   color: #000000;
 }
-.atm_cb {
-  /*  */
-  position: absolute;
-  width: 93px;
-  height: 28px;
-  left: 1351px;
-  top: 672px;
-  font-family: Font Awesome 5 Free;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 28px;
-  /* identical to box height */
-  color: #000000;
-}
 
-.txtvidientu {
+
+.txtpaypal {
   /* Thanh toán qua ví điện tử */
   position: absolute;
   width: 284px;
   height: 23px;
   left: 960px;
-  top: 749px;
+  top: 510px;
   font-family: Exo 2;
   font-style: normal;
   font-weight: 500;
@@ -498,7 +358,7 @@
   width: 93px;
   height: 28px;
   left: 1351px;
-  top: 749px;
+  top: 370px;
   font-family: Font Awesome 5 Free;
   font-style: normal;
   font-weight: 900;
@@ -507,43 +367,25 @@
   /* identical to box height */
   color: #000000;
 }
-.imgbank {
-  /* ww 1 */
-  position: absolute;
-  width: 248px;
-  height: 28px;
-  left: 960px;
-  top: 696px;
 
 
-}
 
-.imgmomo {
-  /* momo 1 */
-  position: absolute;
-  width: 47px;
-  height: 47px;
-  left: 1000px;
-  top: 782px;
- 
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-}
 .imgpaypal {
   /* tải xuống (1) 1 */
   position: absolute;
   width: 75px;
   height: 41.61px;
-  left: 1090px;
-  top: 787px;
+  left: 1250px;
+  top: 510px;
  
 }
-.btndatgiaongay {
+.btndatgiaongaypaypal {
   /* Đặt giao ngay */
   position: absolute;
   width: 284px;
   height: 47px;
-  left: 564px;
-  top: 840px;
+  left: 1250px;
+  top: 510px;
   font-family: Exo 2;
   font-style: normal;
   font-weight: 800;
@@ -553,5 +395,47 @@
   border-radius: 30px;
 
   text-align:center;
+  background: #E3F8A9;
+}
+.btndatgiaongayvnpay {
+  /* Đặt giao ngay */
+  position: absolute;
+  width: 284px;
+  height: 47px;
+  left: 1250px;
+  top: 450px;
+  font-family: Exo 2;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 50px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+
+  text-align:center;
+  background: #E3F8A9;
+}
+.txtchongoi {
+  /* Số điện thoại: */
+  position: absolute;
+  width: 161px;
+  height: 23px;
+  left: 966px;
+  top: 301px;
+  font-family: Exo 2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.ipchongoi {
+  /* Rectangle 19 */
+  position: absolute;
+  width: 263px;
+  height: 32px;
+  left: 1100px;
+  top: 301px;
+  font-size: 20px;
   background: #E3F8A9;
 }

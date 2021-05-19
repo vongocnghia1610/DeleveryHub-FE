@@ -7,7 +7,7 @@
   width: 260px;
   height: 31px;
   top:200px;
-  left:460px;
+  left:600px;
   font-family: Encode Sans;
   font-style: normal;
   font-weight: 600;
@@ -100,20 +100,7 @@
   line-height: 22px;
   color: #000000;
 }
-.email { /* example@gmail.com */
-  position: absolute;
-  width: 239px;
-  height: 22px;
-  top: 349px;
-  left: 772px;
-  font-family: Encode Sans;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 18px;
-  line-height: 22px;
-  text-decoration-line: underline;
-  color: #000000;
-}
+
 
 
 .txtemail {
@@ -130,39 +117,14 @@
   line-height: 22px;
   color: #000000;
 }
-.matkhau { /* *************** */
-  position: absolute;
-  width: 239px;
-  height: 22px;
-  top: 379px;
-  left: 772px;
-  font-family: Encode Sans;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 18px;
-  line-height: 22px;
-  color: #000000;
-}
-.txtmatkhau {
-  /* Mật khẩu */
-  position: absolute;
-  width: 239px;
-  height: 22px;
-  top: 379px;
-  left: 460px;
-  font-family: Encode Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  color: #000000;
-}
+
+
 .taikhoanlienket {
   /* Tài khoản liên kết */
   position: absolute;
   width: 260px;
   height: 31px;
-  top:474px;
+  top:354px;
   left:460px;
   font-family: Encode Sans;
   font-style: normal;
@@ -172,40 +134,14 @@
   color: #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.lichsugiaodich { /* Lịch sử giao dịch */
-  position: absolute;
-  width: 260px;
-  height: 31px;
-  top: 504px;
-  left: 460px;
-  font-family: Encode Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.thongtinuudai { /* Thông tin ưu đãi */
-  position: absolute;
-  width: 260px;
-  height: 31px;
-  top: 534px;
-  left: 460px;
-  font-family: Encode Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+
+
 .luuthongtin {
   /* Rectangle 12 */
   position: absolute;
   width: 235px;
   height: 40px;
-  top:600px;
+  top:400px;
   left:460px;
   line-height:50px;
   text-align:center;
@@ -213,12 +149,12 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 24px;
 }
-.huythaydoi {
+.changepass {
   /* Rectangle 13 */
   position: absolute;
   width: 235px;
   height: 40px;
-  top: 600px;
+  top: 400px;
   left: 798px;
   color: #8D5C6E;
   font-size: 25px;

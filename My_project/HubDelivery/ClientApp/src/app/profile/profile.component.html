@@ -11,25 +11,23 @@
   </div>
   <div class="editavatar">Chỉnh sửa ảnh đại diện</div>
   <div class="name">Nguyễn Văn B</div> -->
+ 
   <div class="txtthongtincanhan">Thông tin cá nhân</div>
   <div class="txttennguoidung">Tên người dùng</div>
-  <div class="txtdiachi">Địa chỉ</div>
+  <div class="txtdiachi">Email</div>
   <div class="txtdienthoai">Điện thoại</div>
-  <div class="txtemail">Email</div>
-  <div class="txtmatkhau">Mật khẩu</div>
-  <input type="text" class="tennguoidung" />
-  <input type="text" class="diachi" />
-  <input type="text" class="dienthoai" />
-  <input type="email" class="email" />
-  <input type="password" class="matkhau" />
-  <div class="taikhoanlienket">Tài khoản liên kết</div>
-  <div class="lichsugiaodich">Lịch sử đơn hàng</div>
-  <div class="thongtinuudai">Thông tin gói dịch vụ</div>
+  <form [formGroup]="formGroup">
+  <input type="text" class="tennguoidung" formControlName="TenKhachHang" />
+  <input disabled type="text" class="diachi" formControlName="Email" />
+  <input type="text" class="dienthoai" formControlName="SoDienThoai" />
+</form>
+  <a [routerLink]='["/goi-customer"]' class="taikhoanlienket">Thông tin gói dịch vụ</a>
+  
   <div class="luuthongtin">
-    <img src="../../assets/luuthongtin.png" />
+    <img (click)="updateinfo()" src="../../assets/luuthongtin.png" />
   </div>
-  <div class="huythaydoi">
-  <b> Quay lại </b> 
+  <div class="changepass">
+  <b> <a [routerLink]='["/changepassword"]' style=" color: #8D5C6E;">Đổi mật khẩu </a></b> 
   </div>
 </body>
 </html>
