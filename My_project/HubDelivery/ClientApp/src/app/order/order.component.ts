@@ -66,7 +66,7 @@ export class OrderComponent implements OnInit {
   console.log(token);
   headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
   
-    this.http.get(`http://54.255.93.14/enterprises/show-shipping-package`, {headers:headers}).subscribe((res)=>
+    this.http.get(`http://54.255.93.14/customers/show-shipping-package`, {headers:headers}).subscribe((res)=>
  
      {
      
