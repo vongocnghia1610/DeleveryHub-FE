@@ -1,0 +1,37 @@
+
+<div class="txttaogoidoanhnghiep">
+  <label  > Gói bạn đang mua : </label>
+  <div *ngFor="let data of array"> {{data[1]}}</div>
+</div>
+
+
+<table class="contain" border="1" >
+  <thead>
+  <tr >
+    <th  style="text-align: center">Tên gói</th>
+    <th style="text-align: center">Thông tin</th>
+    <th  style="text-align: center">Chi phí</th>
+    <th style="text-align: center">Số đơn hàng</th>
+    <th  style="text-align: center">Hạn sử dụng</th>
+    <th  style="text-align: center">Khối lượng tối đa</th>
+    <th  style="text-align: center">Giảm giá</th>
+    <th  style="text-align: center">Thanh toán</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let data of kq ">
+
+    <td>  {{data.TenDichVuKhachHang}}</td>
+    <td>  {{data.ThongTin}}</td>
+    <td>  {{data.ChiPhi}}</td>
+    <td>  {{data.SoDonHang}}</td>
+    <td>  {{data.HanSuDung}}</td>
+    <td>  {{data.KhoiLuongToiDa}}</td>
+    <td>  {{data.GiamGia}}</td>
+   
+    
+   <td> <button (click)="Paypal(data._id)">Paypal</button> <button (click)="vnPay(data._id)">VNPay</button></td>
+
+  </tr>
+</tbody>
+</table>

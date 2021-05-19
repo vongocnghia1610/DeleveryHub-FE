@@ -41,6 +41,8 @@ import { ThongkeOrderComponent } from './thongke-order/thongke-order.component';
 import { OrderkhachhangComponent } from './orderkhachhang/orderkhachhang.component';
 import { CreateshippingpackageComponent } from './createshippingpackage/createshippingpackage.component';
 import { MuagoidoanhnghiepComponent } from './muagoidoanhnghiep/muagoidoanhnghiep.component';
+import { AddressCustomerComponent } from './address-customer/address-customer.component';
+import { GoiCustomerComponent } from './goi-customer/goi-customer.component';
 
 
 @NgModule({
@@ -111,6 +113,10 @@ import { MuagoidoanhnghiepComponent } from './muagoidoanhnghiep/muagoidoanhnghie
   CreateshippingpackageComponent,
   
   MuagoidoanhnghiepComponent,
+  
+  AddressCustomerComponent,
+  
+  GoiCustomerComponent,
 
 
   
@@ -165,6 +171,8 @@ import { MuagoidoanhnghiepComponent } from './muagoidoanhnghiep/muagoidoanhnghie
       { path: 'orderkhachhang', component: OrderkhachhangComponent },
       { path: 'createshippingpackage', component: CreateshippingpackageComponent },
       { path: 'muagoidoanhnghiep', component: MuagoidoanhnghiepComponent },
+      { path: 'address-customer', component: AddressCustomerComponent },
+      { path: 'goi-customer', component: GoiCustomerComponent },
 
     ])
   ],

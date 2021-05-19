@@ -1,0 +1,25 @@
+.contain{
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    left: 300px;
+    top: 250px;
+    text-align: center;
+  }
+  .txttaogoidoanhnghiep{
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    left: 300px;
+    top: 150px;
+    text-align: left;
+    font-size: 24px;
+  }
+  .goidangmua{
+    position: absolute;
+    width: 800px;
+    height: 200px;
+    left: 300px;
+    top: 200px;
+    text-align: center;
+  }

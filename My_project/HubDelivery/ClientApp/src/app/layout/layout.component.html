@@ -16,16 +16,19 @@ u<!DOCTYPE html>
     </div>
    
      
-    <div class="dropdown">
+    <div class="goi">
+      <a [routerLink]='["./goi-customer"]' style="color: black;">
+        <svg  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="box-open" class="svg-inline--fa fa-box-open fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M425.7 256c-16.9 0-32.8-9-41.4-23.4L320 126l-64.2 106.6c-8.7 14.5-24.6 23.5-41.5 23.5-4.5 0-9-.6-13.3-1.9L64 215v178c0 14.7 10 27.5 24.2 31l216.2 54.1c10.2 2.5 20.9 2.5 31 0L551.8 424c14.2-3.6 24.2-16.4 24.2-31V215l-137 39.1c-4.3 1.3-8.8 1.9-13.3 1.9zm212.6-112.2L586.8 41c-3.1-6.2-9.8-9.8-16.7-8.9L320 64l91.7 152.1c3.8 6.3 11.4 9.3 18.5 7.3l197.9-56.5c9.9-2.9 14.7-13.9 10.2-23.1zM53.2 41L1.7 143.8c-4.6 9.2.3 20.2 10.1 23l197.9 56.5c7.1 2 14.7-1 18.5-7.3L320 64 69.8 32.1c-6.9-.8-13.5 2.7-16.6 8.9z"></path></svg>
+      </a>
 
-      <input class="dropbtn" type="image" src="../../assets/bars-solid.svg" />
-      <div class="dropdown-content">
+      <!-- <input class="dropbtn" type="image"  /> -->
+      <!-- <div class="dropdown-content">
         <a href="#">Đối tác công ty </a>
         <a href="#">Dịch vụ công ty </a>
         <a href="#">Thông tin công ty</a>
         <a [routerLink]='["/"]'>Log out </a>
 
-      </div>
+      </div> -->
       </div>
       
    
@@ -33,7 +36,7 @@ u<!DOCTYPE html>
  
     <div class="user">
       
-          <a [routerLink]='["/login"]'>
+          <a [routerLink]='["/profile"]'>
            
               <svg width="32" height="37" viewBox="0 0 32 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.75 18.5C20.6719 18.5 24.75 14.4922 24.75 9.5C24.75 4.57812 20.6719 0.5 15.75 0.5C10.7578 0.5 6.75 4.57812 6.75 9.5C6.75 14.4922 10.7578 18.5 15.75 18.5ZM22.0078 20.75H20.8125C19.2656 21.5234 17.5781 21.875 15.75 21.875C13.9219 21.875 12.1641 21.5234 10.6172 20.75H9.42188C4.21875 20.75 0 25.0391 0 30.2422V33.125C0 35.0234 1.47656 36.5 3.375 36.5H28.125C29.9531 36.5 31.5 35.0234 31.5 33.125V30.2422C31.5 25.0391 27.2109 20.75 22.0078 20.75Z" fill="black" />
@@ -48,8 +51,28 @@ u<!DOCTYPE html>
 
      
      
-      <a [routerLink]='["/dichvuvanchuyen"]'>
+      <a [routerLink]='["/order"]'>
         <svg   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg>
+      </a>
+       
+
+    </div>
+    <div class="address" >
+
+     
+     
+      <a style="color: black;" [routerLink]='["/address-customer"]'>
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" class="svg-inline--fa fa-map-marker-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>
+      </a>
+       
+
+    </div>
+    <div class="logout" >
+
+     
+     
+      <a style="color: black;" [routerLink]='["/dichvuvanchuyen"]'>
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sign-out-alt" class="svg-inline--fa fa-sign-out-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M497 273L329 441c-15 15-41 4.5-41-17v-96H152c-13.3 0-24-10.7-24-24v-96c0-13.3 10.7-24 24-24h136V88c0-21.4 25.9-32 41-17l168 168c9.3 9.4 9.3 24.6 0 34zM192 436v-40c0-6.6-5.4-12-12-12H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h84c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12H96c-53 0-96 43-96 96v192c0 53 43 96 96 96h84c6.6 0 12-5.4 12-12z"></path></svg>
       </a>
        
 

@@ -1,0 +1,90 @@
+.contain{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 300px;
+    top: 400px;
+    text-align: center;
+  }
+  .addaddress{
+    position: absolute;
+    width: 150px;
+    height: 27px;
+    left: 650px;
+    top: 300px;
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+  }
+  .txttaogoidoanhnghiep{
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    left: 450px;
+    top: 200px;
+    text-align: left;
+    font-size: 25px;
+  }
+  .name {
+    /* Rectangle 5 */
+    position: absolute;
+    width: 350px;
+    height: 27px;
+    left: 458px;
+    top: 202px;
+    background: #D5E08D;
+  }
+  .txtname {
+    /* Tên đầy đủ: */
+    position: absolute;
+    width: 121px;
+    height: 27px;
+    left: 349px;
+    top: 202px;
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+  }
+  .ngsinh {
+    /* Rectangle 7 */
+    position: absolute;
+    width: 350px;
+    height: 27px;
+    left: 458px;
+    top: 251px;
+    background: #D5E08D;
+  }
+  .txtngsinh {
+    /* Ngày sinh: */
+    position: absolute;
+    width: 121px;
+    height: 27px;
+    left: 349px;
+    top: 251px;
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+  }
+  
+  .btnupdate{
+    position: absolute;
+    width: 150px;
+    height: 27px;
+    left: 450px;
+    top: 300px;
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+  }

@@ -122,7 +122,7 @@
 }
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
+.goi {
   position: relative;
   display: inline-block;
   width: 31px;
@@ -130,76 +130,36 @@
   left: 1235px;
   top: 47px;
   border: none;
+  color: #000000;
+}
+.address {
+  position: relative;
+  display: inline-block;
+  width: 31px;
+  height: 34px;
+  left: 1290px;
+  top: 47px;
+  border: none;
+  color: #000000;
+}
+.logout {
+  position: relative;
+  display: inline-block;
+  width: 31px;
+  height: 34px;
+  left: 1323px;
+  top: 47px;
+  border: none;
+  color: #000000;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
 
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 8px 16px;
-    text-decoration: none;
- border: none;
-  }
-
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {
-      background-color: #ddd;
-   
-    }
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown.dropbtn:hover .dropdown-content{
  
-}
+
+
+
 .username{
   left: 1280px;
   top: 47px;
 
 }
-/* .txtquanliadmin ul{
-  list-style:none;
-}
-.txtquanliadmin li:hover{
-
-}
-.txtquanliadmin > ul{
-  list-style:none;
-  display:inline-block;
-}
-.txtquanliadmin > ul > li {
-  position:relative;
-  cursor:pointer;
-}
-.dropdown{
-  position:absolute;
-  font-size:18px;
-  width:200%;
- text-align:left;
-}
-.dropdown li{
-  display:none;
-
-}
-.dropdown li:hover{
-
-}
-.txtquanliadmin li:hover > .dropdown{
-  perspective:1000px;
-}
-  .txtquanliadmin li:hover > .dropdown li {
-    display: block;
-  } */
