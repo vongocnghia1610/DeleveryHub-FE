@@ -35,23 +35,23 @@
   <!--Thông tin người gửi-->
   <form [formGroup]="formGroup">
   <div class="txtthongtinnguoigui">Thông tin người gửi </div>
-  <div class="txtnguoigui">Địa chỉ nhận</div>
+  <div class="txtnguoigui">Địa chỉ gửi</div>
   <div class="txtsdt">Khối lượng</div>
   <div class="txtdiachigui">Tên mặt hàng</div>
  
   <div class="txtthongtinnguoinhan">Thông tin người nhận</div>
   
   <div class="txtnguoinhan">Người nhận</div>
-  <div class="txtdiachinhan">Địa chỉ giao</div>
+  <div class="txtdiachinhan">Địa chỉ nhận</div>
   <div class="txtsdtnhan">Số điện thoại</div>
   
   
 
   <input type="number" class="ipsdt" formControlName="KhoiLuong" />
-  <input class="ipnguoigui" type="text" formControlName="NoiLayHang" />
+  <input class="ipdiachinhan" type="text" formControlName="NoiGiaoHang" />
   <input class="ipdiachigui" type="text" formControlName="TenLoaiHang" />
   <input class="ipnguoinhan" type="text" formControlName="TenNguoiNhan" />
-  <select  class="ipdiachinhan" formControlName="NoiGiaoHang" >
+  <select  class="ipnguoigui" formControlName="NoiLayHang" >
     <option *ngFor="let data of a" value={{data.address}}>{{data.address}}</option>
   </select>
   <select class="ipchongoi" formControlName="id_GoiShipping" >
