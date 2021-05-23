@@ -1,17 +1,65 @@
-.contain{
-    position: absolute;
-    width: 800px;
-    height: 300px;
-    left: 300px;
-    top: 300px;
-    text-align: center;
-  }
-  .txttaogoidoanhnghiep{
-    position: absolute;
-    width: 800px;
-    height: 300px;
-    left: 300px;
-    top: 150px;
-    text-align: left;
-  }
- 
+.contain {
+  position: absolute;
+  width: 800px;
+  height: 300px;
+  left: 300px;
+  top: 300px;
+  text-align: center;
+}
+.txttaogoidoanhnghiep {
+  position: absolute;
+  width: 800px;
+  height: 300px;
+  left: 300px;
+  top: 150px;
+  text-align: left;
+}
+
+#divChart1 {
+  display: block;
+  width: 500px;
+  height: 500px;
+  left: 300px;
+  top: 400px;
+  position: absolute;
+}
+#divChart2 {
+  display: block;
+  width: 500px;
+  height: 500px;
+  left: 900px;
+  top: 400px;
+  position: absolute;
+}
+#divChart3 {
+  display: block;
+  width: 700px;
+  height: 700px;
+  left: 100px;
+  top: 400px;
+  position: absolute;
+}
+#divChart4 {
+  display: block;
+  width: 700px;
+  height: 700px;
+  left: 700px;
+  top: 400px;
+  position: absolute;
+}
+#divChart5 {
+  display: block;
+  width: 500px;
+  height: 500px;
+  left: 300px;
+  top: 400px;
+  position: absolute;
+}
+#divChart6 {
+  display: block;
+  width: 500px;
+  height: 500px;
+  left: 900px;
+  top: 400px;
+  position: absolute;
+}
