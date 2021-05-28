@@ -1,11 +1,6 @@
 <app-enterprisedelivery></app-enterprisedelivery>
 <div class="txttaogoidoanhnghiep">
   <label style="color: #04AA6D; font-size: 23px; "  > Thống kê tất cả order khách hàng của doanh nghiệp </label>
- 
-  
-  
-
-
 </div>
 
 <table class="contain" border="1" >
@@ -25,7 +20,7 @@
     <th style="text-align: center">Nơi nhận </th>
     <th style="text-align: center">Thanh toán </th>
     <th style="text-align: center">Tổng chi phí </th>
-    <th style="text-align: center">Xác nhận đơn hàng</th>
+    <th style="text-align: center">Thao tác</th>
   </tr>
 </thead>
 <tbody>
@@ -42,7 +37,7 @@
     <td>  {{data.NoiGiaoHang}}</td>
     <td>  {{data.ThanhToan}}</td>
     <td>  {{data.TongChiPhi}}</td>
-    <td><button (click)="delivered(data._id)">Đã giao</button> <button (click)="delivering(data._id)">Đang giao</button></td>
+    <td><button *ngIf="data.TrangThai=='Đang Giao'" (click)="delivered(data._id)">Đã giao</button> <button *ngIf="data.TrangThai=='Chờ xác nhận'" (click)="delivering(data._id)">Xác nhận</button></td>
    
     
 

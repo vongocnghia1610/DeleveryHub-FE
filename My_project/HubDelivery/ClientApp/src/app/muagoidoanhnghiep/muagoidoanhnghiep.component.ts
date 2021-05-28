@@ -54,10 +54,8 @@ export class MuagoidoanhnghiepComponent implements OnInit {
     this.http.get(`http://54.255.93.14/me/information`, { headers: headers }).subscribe(data => {
       console.log(data)
       this.array = Object.entries(data)
-      
-    this.a=this.array[0][1];
-    console.log(this.a)
 
+      this.a = this.array[0][1];
 
     });
 

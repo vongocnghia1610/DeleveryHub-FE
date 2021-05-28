@@ -16,14 +16,16 @@ import { from } from 'rxjs/observable/from';
 export class ShippingpackageEnterpriseComponent implements OnInit {
 
   array: any = []
+  mang: any = []
   a = []
   formGroup = new FormGroup({
     LoaiVanChuyen: new FormControl(""),
-    IdPackageOld: new FormControl(""),
+    idPackageOld: new FormControl(""),
     ChiPhi: new FormControl(""),
     NoiNhan: new FormControl(""),
     NoiGiao: new FormControl(""),
-    LoaiHangHoa: new FormControl(""),
+    IdLoaiHangHoa: new FormControl(""),
+    KhuyenMai: new FormControl(""),
 
 
 
@@ -33,7 +35,23 @@ export class ShippingpackageEnterpriseComponent implements OnInit {
   ngOnInit() {
 
     this.getdata();
+    let headers = new HttpHeaders();
+    var currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    var token = currentUser.token; // your token
+    console.log(token);
+    headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
+
+    this.http.get(`http://54.255.93.14/enterprises/show-product-type`, { headers: headers }).subscribe((res) => {
+
+
+      this.mang = Object.entries(res)
+      this.mang = Object.values(this.mang[0][1])
+      return this.mang;
+
+
+
+    });
   }
   getdata() {
     let headers = new HttpHeaders();
@@ -42,7 +60,6 @@ export class ShippingpackageEnterpriseComponent implements OnInit {
     console.log(token);
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
-
     this.http.get(`http://54.255.93.14/enterprises/show-shipping-package-by-enterprise`, { headers: headers }).subscribe((res) => {
 
 
@@ -50,9 +67,6 @@ export class ShippingpackageEnterpriseComponent implements OnInit {
       this.array = Object.values(this.array[0][1])
       console.log(this.array);
       return this.array;
-
-
-
     });
   }
 
@@ -76,14 +90,14 @@ export class ShippingpackageEnterpriseComponent implements OnInit {
       this.formGroup = new FormGroup({
 
         LoaiVanChuyen: new FormControl(this.a[3][1]),
-        IdPackageOld: new FormControl(this.a[2][1]),
+        idPackageOld: new FormControl(this.a[2][1]),
         ChiPhi: new FormControl(this.a[4][1]),
         NoiNhan: new FormControl(this.a[5][1]),
         NoiGiao: new FormControl(this.a[6][1]),
-        LoaiHangHoa: new FormControl(this.a[12][1]),
-
+        IdLoaiHangHoa: new FormControl(this.a[12][1]),
+        KhuyenMai: new FormControl(this.a[0][1])
       })
-
+      //this.formGroup.patchValue({ IdLoaiHangHoa: this.a[12][1] });
 
     });
     ;
@@ -100,11 +114,10 @@ export class ShippingpackageEnterpriseComponent implements OnInit {
     {
       idPackage: j
     }
-
-    return this.http.put(`http://54.255.93.14/enterprises/delete-shipping-package`, j, { headers: headers }).subscribe(
+    return this.http.put(`http://54.255.93.14/enterprises/delete-shipping-package`, data, { headers: headers }).subscribe(
 
       result => {
-
+        console.log("aa")
         this.getdata();
 
       });
@@ -121,42 +134,25 @@ export class ShippingpackageEnterpriseComponent implements OnInit {
     console.log(token);
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
-
+    console.log(data)
     return this.http.put(`http://54.255.93.14/enterprises/update-shipping-package`, data, { headers: headers });
   }
-  // private prepareSave(): any {
-  //   let input = new FormData();
-  //   // This can be done a lot prettier; for example automatically assigning values by looping through `this.form.controls`, but we'll keep it as simple as possible here
-
-
-
-
-  //   input.append('NoiGiao', this.formGroup.get('NoiGiao').value);
-  //   input.append('idLoaiHangHoa', this.formGroup.get('idLoaiHangHoa').value);
-  //   input.append('idPackageOld', this.formGroup.get('idPackageOld').value);
-  //   input.append('LoaiHangHoa', this.formGroup.get('LoaiHangHoa').value);
-  //   input.append('ChiPhi', this.formGroup.get('ChiPhi').value);
-  //   input.append('NoiNhan', this.formGroup.get('NoiNhan').value);
-
-
-  //   return input;
-  // }
 
   updateshippingpackake() {
-
+    this.formGroup.patchValue({ IdLoaiHangHoa: this.a[7][1] });
     if (this.formGroup.valid) {
       this.update(this.formGroup.value).subscribe((result) => {
-
-
         if (result)
-          console.log(result);
+          this.getdata();
+          this.formGroup.patchValue({ IdLoaiHangHoa: this.a[12][1] });
+
+
+        console.log(result);
 
         alert("Update thành công");
 
       });
-
     }
-
     else alert("Bạn chưa nhập đầy đủ thông tin");
 
   }

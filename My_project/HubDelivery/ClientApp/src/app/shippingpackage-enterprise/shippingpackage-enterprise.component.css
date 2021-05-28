@@ -2,10 +2,10 @@
 
 .contain{
   position: absolute;
-  width: 650px;
+  width: 1000px;
   height: 47px;
-  left: 500px;
-  top: 500px;
+  left: 300px;
+  top: 550px;
  
   
   
@@ -32,7 +32,29 @@
   top: 365px;
   background: #D5E08D;
 }
-
+.khuyenmai{
+  position: absolute;
+    width: 279px;
+    height: 27px;
+    left: 458px;
+    top: 370px;
+    background: #D5E08D;
+}
+.txtkhuyenmai {
+  /* Địa chỉ: */
+  position: absolute;
+  
+  height: 27px;
+  width: 180px;
+  left: 310px;
+  top: 370px;
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
 
   .textregister {
    
@@ -203,7 +225,7 @@
     width: 150px;
     height: 47px;
     left: 750px;
-    top: 370px;
+    top: 420px;
     font-family: Exo 2;
     font-style: normal;
     font-weight: 800;
@@ -258,7 +280,7 @@
     position: absolute;
   width: 250px;
   height: 96px;
-  top:450px;
+  top:500px;
   left:500px;
   font-family: Fahkwang;
   font-style: normal;
