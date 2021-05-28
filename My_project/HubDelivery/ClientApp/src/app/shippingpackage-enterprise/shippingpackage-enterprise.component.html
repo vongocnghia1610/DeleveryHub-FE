@@ -14,10 +14,11 @@
  <input type="text" class="name" formControlName="LoaiVanChuyen" />
 
  <div class="txtngsinh"> ID Package</div>
- <input disabled type="text" class="ngsinh" formControlName="IdPackageOld" />
+ <input disabled type="text" class="ngsinh" formControlName="idPackageOld" />
  <div class="txtaddress"> Chi phí </div>
  <input type="number" class="address"  formControlName="ChiPhi"/>
- 
+ <div class="txtkhuyenmai"> Khuyến mãi </div>
+ <input type="number" class="khuyenmai"  formControlName="KhuyenMai"/>
  <div class="txtpassw"> Nơi nhận</div>
 
  <input type="text" class="passw" formControlName="NoiNhan" />
@@ -25,8 +26,11 @@
  
  <input type="text" class="repeatepw"  formControlName="NoiGiao" />
   <div class="txtgioitinh">Loại hàng hóa </div>
-  <input disabled type="text" class="gioitinh" formControlName="LoaiHangHoa" />
-
+  <input disabled type="text" class="gioitinh" formControlName="IdLoaiHangHoa" />
+  <!-- <select  class="gioitinh" formControlName="IdLoaiHangHoa">
+    <option   *ngFor="let data of mang " value={{mang._id}}>{{data.LoaiHangHoa}}</option>
+    
+  </select> -->
 
  <button (click)="updateshippingpackake()"  type="submit" class="btnregister">Hoàn tất</button>
  
@@ -36,10 +40,12 @@
   <thead>
   <tr >
     <th  style="text-align: center">Trạng thái</th>
+    <th  style="text-align: center">ID Package</th>
     <th style="text-align: center">Khuyến mãi</th>
     <th  style="text-align: center">Nơi nhận</th>
     <th style="text-align: center">Nơi giao</th>
     <th  style="text-align: center">Loại vận chuyển</th>
+    <th  style="text-align: center">Loại hàng hóa</th>
     <th  style="text-align: center">Chi phí</th>
     <th  style="text-align: center">Chỉnh sửa</th>
   </tr>
@@ -48,10 +54,12 @@
   <tr style="text-align: center" *ngFor="let data of array ">
 
     <td>  {{data.Status}}</td>
+    <td>  {{data._id}}</td>
     <td>  {{data.KhuyenMai}}</td>
     <td>  {{data.NoiNhan}}</td>
     <td>  {{data.NoiGiao}}</td>
     <td>  {{data.LoaiVanChuyen}}</td>
+    <td>  {{data.LoaiHangHoa}}</td>
     <td>  {{data.ChiPhi}}</td>
    
     
