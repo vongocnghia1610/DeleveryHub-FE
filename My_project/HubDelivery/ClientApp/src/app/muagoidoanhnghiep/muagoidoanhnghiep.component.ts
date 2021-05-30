@@ -77,7 +77,6 @@ export class MuagoidoanhnghiepComponent implements OnInit {
       this.array = Object.values(this.array[0][1])
       console.log(this.array)
       console.log(this.array[1])
-      if (this.array[1] == null) {
         let x = {
           id_GoiDichVu: j
         }
@@ -91,16 +90,55 @@ export class MuagoidoanhnghiepComponent implements OnInit {
 
 
 
-        });
-      }
-      else alert("Bạn đã mua gói  doanh nghiệp r")
+        }, error => {
+
+          alert(error.error.error)
+    
+        }
+        );
+      
 
     });
-
-
-
-
   }
+  VNPay(j) {
+    let headers = new HttpHeaders();
+    var currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    var token = currentUser.token; // your token
+
+    headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
+
+
+    this.http.get(`http://54.255.93.14/me/information`, { headers: headers }).subscribe(data => {
+
+      this.array = Object.entries(data)
+
+      this.array = Object.values(this.array[0][1])
+      console.log(this.array)
+      console.log(this.array[1])
+      let x = {
+        id_GoiDichVu: j
+      }
+      this.http.post(`http://54.255.93.14/enterprises/create_payment_vnpayurl_package`, x, { headers: headers }).subscribe(result => {
+        console.log(result)
+
+        this.link = Object.entries(result)
+
+        console.log(this.link[0][1])
+        window.open(this.link[0][1], '_blank')
+
+
+
+      }
+      , error => {
+
+        alert(error.error.error)
+  
+      });
+
+    }
+    );
+  }
+
   create(data): Observable<any> {
     let headers = new HttpHeaders();
     var currentUser = JSON.parse(localStorage.getItem('currentUser'));

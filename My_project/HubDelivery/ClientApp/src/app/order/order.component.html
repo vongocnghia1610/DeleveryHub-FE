@@ -47,18 +47,18 @@
   
   
 
-  <input type="number" class="ipsdt" formControlName="KhoiLuong" />
-  <input class="ipdiachinhan" type="text" formControlName="NoiGiaoHang" />
-  <input class="ipdiachigui" type="text" formControlName="TenLoaiHang" />
-  <input class="ipnguoinhan" type="text" formControlName="TenNguoiNhan" />
-  <select  class="ipnguoigui" formControlName="NoiLayHang" >
+  <input type="number" class="ipsdt" formControlName="KhoiLuong" required/>
+  <input class="ipdiachinhan" type="text" formControlName="NoiGiaoHang" required/>
+  <input class="ipdiachigui" type="text" formControlName="TenLoaiHang" required/>
+  <input class="ipnguoinhan" type="text" formControlName="TenNguoiNhan" required/>
+  <select  class="ipnguoigui" formControlName="NoiLayHang" required>
     <option *ngFor="let data of a" value={{data.address}}>{{data.address}}</option>
   </select>
-  <select class="ipchongoi" formControlName="id_GoiShipping" >
+  <select class="ipchongoi" formControlName="id_GoiShipping" required>
         <option *ngFor="let value of kq" value={{value._id}}>{{value.NoiNhan}}-->{{value.NoiGiao}}:{{value.ChiPhi}}đ</option>
         
   </select>
- <input class="ipsdtnhan" type="text" formControlName="SoDienThoaiNguoiNhan"/>
+ <input class="ipsdtnhan" type="text" formControlName="SoDienThoaiNguoiNhan" required/>
   <!--Thông tin người nhận-->
  
   <div class="line1"></div>
@@ -98,7 +98,7 @@
   </div>
   <div class="btndatgiaongayvnpay">
 
-    <img src="../../assets/datgiaongay.png" />
+    <img (click)="VNPay()" src="../../assets/datgiaongay.png" />
   </div>
 </body>
 </html>
