@@ -12,7 +12,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent implements OnInit {
-
+  tongtien: any
   array: any = []
   a = []
   kq: any = []
@@ -78,63 +78,105 @@ export class OrderComponent implements OnInit {
 
     });
   }
+  tinhtien()
+  {
+    if(this.formGroup.controls['id_GoiShipping'].value!='' && this.formGroup.controls['KhoiLuong'].value!=null)
+    {
+      // let headers = new HttpHeaders();
+      // var currentUser = JSON.parse(localStorage.getItem('currentUser'));
+      // var token = currentUser.token; // your token
 
+      // headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
+      // var body1 =
+      // {
+      //   KhoiLuong : this.formGroup.controls['KhoiLuong'].value,
+      //   id_GoiShipping : this.formGroup.controls['id_GoiShipping'].value
+      // }
+
+      // this.http.get(`http://54.255.93.14/customers/show-cost`,{ headers: headers }).subscribe(data => {
+
+      //   console.log(data);
+      //   var result = JSON.stringify(data)
+      //   var result1 = JSON.parse(result)
+      //   if (result1["data"] != "null") {
+      //     window.open(result1["data"], '_blank')
+      //   }
+      //   else {
+      //     alert(result1["error"])
+
+      //   }
+      // }, error => {
+
+      //   alert(error.error)
+
+      // });
+      this.tongtien = "12000";
+      console.log(this.tongtien)
+    }
+
+  }
   Paypal() {
-    let headers = new HttpHeaders();
-    var currentUser = JSON.parse(localStorage.getItem('currentUser'));
-    var token = currentUser.token; // your token
+    if (this.formGroup.valid) {
+      let headers = new HttpHeaders();
+      var currentUser = JSON.parse(localStorage.getItem('currentUser'));
+      var token = currentUser.token; // your token
 
-    headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
+      headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
-    
-    this.http.post(`http://54.255.93.14/customers/create-donhang`, this.formGroup.value, { headers: headers }).subscribe(data => {
 
-      console.log(data);
-      var result=JSON.stringify(data) 
-      var result1 = JSON.parse(result)
-      if(result1["data"]!="null")
-      {
-      window.open(result1["data"], '_blank')
-      }
-      else
-      {
-        alert(result1["error"])
+      this.http.post(`http://54.255.93.14/customers/create-donhang`, this.formGroup.value, { headers: headers }).subscribe(data => {
 
-      }
-    },error => {
+        console.log(data);
+        var result = JSON.stringify(data)
+        var result1 = JSON.parse(result)
+        if (result1["data"] != "null") {
+          window.open(result1["data"], '_blank')
+        }
+        else {
+          alert(result1["error"])
 
-      alert(error.error)
+        }
+      }, error => {
 
-    });
-  
-  
+        alert(error.error)
+
+      });
+    }
+    else {
+      alert("Vui lòng nhập đủ thông tin");
+    }
+
   }
   VNPay() {
-    let headers = new HttpHeaders();
-    var currentUser = JSON.parse(localStorage.getItem('currentUser'));
-    var token = currentUser.token; // your token
+    if (this.formGroup.valid) {
 
-    headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
+      let headers = new HttpHeaders();
+      var currentUser = JSON.parse(localStorage.getItem('currentUser'));
+      var token = currentUser.token; // your token
 
+      headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
-    this.http.post(`http://54.255.93.14/customers/create_payment_vnpayurl`, this.formGroup.value, { headers: headers }).subscribe(data => {
-      
-      console.log(data);
-      var result=JSON.stringify(data) 
-      var result1 = JSON.parse(result)
-      if(result1["data"]!="null")
-      {
-      window.open(result1["data"], '_blank')
-      }
-      else
-      {
-        alert(result1["error"])
+      this.http.post(`http://54.255.93.14/customers/create_payment_vnpayurl`, this.formGroup.value, { headers: headers }).subscribe(data => {
 
-      }
-    },error => {
+        console.log(data);
+        var result = JSON.stringify(data)
+        var result1 = JSON.parse(result)
+        if (result1["data"] != "null") {
+          window.open(result1["data"], '_blank')
+        }
+        else {
+          alert(result1["error"])
 
-      alert(error.error.error)
+        }
+      }, error => {
 
-    });
+        alert(error.error.error)
+
+      });
+    }
+
+    else {
+      alert("Vui lòng nhập đủ thông tin");
+    }
   }
 }

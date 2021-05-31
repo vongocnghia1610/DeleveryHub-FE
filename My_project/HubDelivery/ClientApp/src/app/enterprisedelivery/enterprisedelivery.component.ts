@@ -37,13 +37,7 @@ export class EnterprisedeliveryComponent implements OnInit {
       })
       
    }
-    
-      
-      
-           
-           
-        
-    
+  
     currentData()
     {
      
