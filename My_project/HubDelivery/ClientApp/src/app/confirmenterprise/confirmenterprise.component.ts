@@ -65,11 +65,4 @@ export class ConfirmenterpriseComponent implements OnInit {
      
       
   }    
-      
-
-
-  
-
-
-
 }

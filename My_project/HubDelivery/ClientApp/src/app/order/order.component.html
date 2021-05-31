@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+ 
 <head>
+  
     <meta charset="utf-8" />
     <title></title>
 </head>
@@ -36,7 +38,7 @@
   <form [formGroup]="formGroup">
   <div class="txtthongtinnguoigui">Thông tin người gửi </div>
   <div class="txtnguoigui">Địa chỉ gửi</div>
-  <div class="txtsdt">Khối lượng</div>
+  <div class="txtsdt" >Khối lượng</div>
   <div class="txtdiachigui">Tên mặt hàng</div>
  
   <div class="txtthongtinnguoinhan">Thông tin người nhận</div>
@@ -47,7 +49,7 @@
   
   
 
-  <input type="number" class="ipsdt" formControlName="KhoiLuong" required/>
+  <input type="number" class="ipsdt" (change)="tinhtien()" formControlName="KhoiLuong" required/>
   <input class="ipdiachinhan" type="text" formControlName="NoiGiaoHang" required/>
   <input class="ipdiachigui" type="text" formControlName="TenLoaiHang" required/>
   <input class="ipnguoinhan" type="text" formControlName="TenNguoiNhan" required/>
@@ -85,11 +87,11 @@
  
  
  
-  <div class="khuyenmai">Khuyến mãi:</div>
+  <div class="khuyenmai">Khuyến mãi: </div>
   
   
   
-  <div class="tongchiphi">Tổng chi phí: </div>
+  <div class="tongchiphi">Tổng chi phí  <b class="khoangcach" style="text-align:center;">: {{tongtien}}VNĐ</b></div>
 </form>
   <!--button đặt giao ngay-->
   <div class="btndatgiaongaypaypal">
