@@ -258,14 +258,6 @@
 
 
 
-
-
-
-
-
-
-
-
 .khuyenmai{
   /* Rectangle 27 */
   position: absolute;
@@ -273,6 +265,16 @@
   height: 32px;
   left: 966px;
   top: 358px;
+  font-size: 24px;
+  background: #E3F8A9;
+}
+.khuyenmaiDN{
+  /* Rectangle 27 */
+  position: absolute;
+  width: 560px;
+  height: 32px;
+  left: 966px;
+  top: 301px;
   font-size: 24px;
   background: #E3F8A9;
 }
@@ -425,7 +427,7 @@
   width: 161px;
   height: 23px;
   left: 966px;
-  top: 301px;
+  top: 200px;
   font-family: Exo 2;
   font-style: normal;
   font-weight: 500;
@@ -439,7 +441,7 @@
   width: 263px;
   height: 32px;
   left: 1100px;
-  top: 301px;
+  top: 200px;
   font-size: 20px;
   background: #E3F8A9;
 }
