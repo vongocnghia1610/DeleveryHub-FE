@@ -13,6 +13,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class OrderComponent implements OnInit {
   tongtien: any
+  thanhtien: any
+  KMKH: any
+  KMDN: any
+
   array: any = []
   a = []
   kq: any = []
@@ -82,36 +86,35 @@ export class OrderComponent implements OnInit {
   {
     if(this.formGroup.controls['id_GoiShipping'].value!='' && this.formGroup.controls['KhoiLuong'].value!=null)
     {
-      // let headers = new HttpHeaders();
-      // var currentUser = JSON.parse(localStorage.getItem('currentUser'));
-      // var token = currentUser.token; // your token
+      let headers = new HttpHeaders();
+      var currentUser = JSON.parse(localStorage.getItem('currentUser'));
+      var token = currentUser.token; // your token
 
-      // headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
-      // var body1 =
-      // {
-      //   KhoiLuong : this.formGroup.controls['KhoiLuong'].value,
-      //   id_GoiShipping : this.formGroup.controls['id_GoiShipping'].value
-      // }
+      headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
+      var param =
+      {
+        KhoiLuong : this.formGroup.controls['KhoiLuong'].value,
+        id_GoiShipping : this.formGroup.controls['id_GoiShipping'].value
+      }
+      this.http.get(`http://54.255.93.14/customers/show-cost`,{ headers: headers ,params:param}).subscribe(data => {
 
-      // this.http.get(`http://54.255.93.14/customers/show-cost`,{ headers: headers }).subscribe(data => {
+        console.log(data);
+        var result = JSON.stringify(data)
+        var result1 = JSON.parse(result)
+        
+        if (this.tongtien==null) {
+          this.KMDN = result1["data"]["SoTienGiamDuocDoDoanhNghiep"];
+          this.KMKH = result1["data"]["SoTienGiamDuocDoGoi"];
+          this.tongtien = result1["data"]["TongGiaChuaGiam"];
+          this.thanhtien = result1["data"]["TongChiPhi"];
+          console.log(this.tongtien)
+        }
 
-      //   console.log(data);
-      //   var result = JSON.stringify(data)
-      //   var result1 = JSON.parse(result)
-      //   if (result1["data"] != "null") {
-      //     window.open(result1["data"], '_blank')
-      //   }
-      //   else {
-      //     alert(result1["error"])
+      }, error => {
 
-      //   }
-      // }, error => {
+        alert(error.error)
 
-      //   alert(error.error)
-
-      // });
-      this.tongtien = "12000";
-      console.log(this.tongtien)
+      });
     }
 
   }

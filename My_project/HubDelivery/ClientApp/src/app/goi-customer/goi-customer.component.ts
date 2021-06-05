@@ -69,16 +69,8 @@ export class GoiCustomerComponent implements OnInit {
 
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
-
-    this.http.get(`http://54.255.93.14/me/information`, { headers: headers }).subscribe(data => {
-      console.log(data)
-
-      this.array = Object.entries(data)
-
-      this.array = Object.values(this.array[0][1])
-      console.log(this.array)
-      console.log(this.array[1])
-      if (this.array[0] == null) {
+      
+      if (this.goihientai["data"]["SoDonHang"] == null || this.goihientai["data"]["SoDonHang"] <= 0 || Date.parse(this.goihientai["data"]["NgayHetHan"]) < Date.now()) {
         let x = {
           id_GoiDichVu: j
         }
@@ -96,7 +88,6 @@ export class GoiCustomerComponent implements OnInit {
       }
       else alert("Bạn đã mua gói  doanh nghiệp r")
 
-    });
 
 
 
@@ -112,12 +103,8 @@ export class GoiCustomerComponent implements OnInit {
 
     this.http.get(`http://54.255.93.14/me/information`, { headers: headers }).subscribe(data => {
 
-      this.array = Object.entries(data)
-
-      this.array = Object.values(this.array[0][1])
-      console.log(this.array)
-      console.log(this.array[1])
-      if (this.array[0] == null) {
+      
+      if (this.goihientai["data"]["SoDonHang"] == null || this.goihientai["data"]["SoDonHang"] <= 0 || Date.parse(this.goihientai["data"]["NgayHetHan"]) < Date.now()) {
         let x = {
           id_GoiDichVu: j
         }
@@ -133,7 +120,7 @@ export class GoiCustomerComponent implements OnInit {
 
         });
       }
-      else alert("Bạn đã mua gói  doanh nghiệp r")
+      else alert("Bạn đã mua gói  doanh nghiệp rồi")
 
     });
 
