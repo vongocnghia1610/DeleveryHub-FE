@@ -1,0 +1,17 @@
+.contain{
+    position: absolute;
+    width: 1500px;
+    height: 300px;
+    left: 250px;
+    top: 200px;
+    text-align: center;
+  }
+  .txttaogoidoanhnghiep{
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    left: 300px;
+    top: 150px;
+    text-align: left;
+  }
+ 

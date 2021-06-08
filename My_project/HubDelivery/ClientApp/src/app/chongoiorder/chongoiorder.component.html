@@ -1,0 +1,46 @@
+<app-enterprisedelivery></app-enterprisedelivery>
+<div class="txttaogoidoanhnghiep">
+  <label style="color: #04AA6D; font-size: 23px; "  > Thống kê tất cả order khách hàng của doanh nghiệp </label>
+</div>
+
+<table class="contain" border="1" >
+  <caption > Order khách hàng</caption>
+  <thead>
+    
+  <tr >
+
+    <th  style="text-align: center">Tên loại hàng</th>
+    <th style="text-align: center">Loại hàng hóa</th>
+    <th  style="text-align: center">Trạng thái</th>
+    <th style="text-align: center">Khối lượng</th>
+    <th  style="text-align: center">Giảm giá</th>
+    <th style="text-align: center">Tên người nhận</th>
+    <th  style="text-align: center">Số điện thoại người nhận</th>
+    <th style="text-align: center">Nơi lấy hàng</th>
+    <th style="text-align: center">Nơi nhận </th>
+    <th style="text-align: center">Thanh toán </th>
+    <th style="text-align: center">Tổng chi phí </th>
+    <th style="text-align: center">Thao tác</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let data of array ">
+
+    <td>  {{data.TenLoaiHang}}</td>
+    <td>  {{data.LoaiHangHoa}}</td>
+    <td>  {{data.TrangThai}}</td>
+    <td>  {{data.KhoiLuong}}</td>
+    <td>  {{data.GiamGia}}</td>
+    <td>  {{data.TenNguoiNhan}}</td>
+    <td>  {{data.SoDienThoaiNguoiNhan}}</td>
+    <td>  {{data.NoiLayHang}}</td>
+    <td>  {{data.NoiGiaoHang}}</td>
+    <td>  {{data.ThanhToan}}</td>
+    <td>  {{data.TongChiPhi}}</td>
+    <td><button *ngIf="data.TrangThai=='Đang Giao'" (click)="delivered(data._id)">Đã giao</button> <button *ngIf="data.TrangThai=='Chờ xác nhận'" (click)="delivering(data._id)">Xác nhận</button></td>
+   
+    
+
+  </tr>
+</tbody>
+</table>
