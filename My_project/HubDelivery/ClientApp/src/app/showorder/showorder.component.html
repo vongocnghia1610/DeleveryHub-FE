@@ -1,0 +1,36 @@
+<app-layout></app-layout>
+  <div class="txttaogoidoanhnghiep">
+  <label  > Danh sách order </label>
+ 
+</div>
+
+<table class="contain" border="1" >
+  <thead>
+  <tr >
+    <th  style="text-align: center">Tên người nhận</th>
+    <th style="text-align: center">Thanh toán</th>
+    <th  style="text-align: center">Trạng thái</th>
+    <th style="text-align: center">Loại hàng</th>
+   
+   
+    
+    <th  style="text-align: center">Chi tiết</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let data of array ">
+
+    <td>  {{data.TenNguoiNhan}}</td>
+    <td>  {{data.ThanhToan}}</td>
+    <td>  {{data.TrangThai}}</td>
+    <td>  {{data.LoaiHangHoa}}</td>
+    
+    
+    
+   
+    
+   <td><button (click)="Chitiet(data._id)" >Chi tiết</button ></td>
+
+  </tr>
+</tbody>
+</table>
