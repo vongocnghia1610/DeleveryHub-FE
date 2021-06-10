@@ -1,8 +1,8 @@
 .contain{
     position: absolute;
-    width: 1500px;
+    width: 800px;
     height: 300px;
-    left: 50px;
+    left: 300px;
     top: 200px;
     text-align: center;
   }
@@ -14,4 +14,3 @@
     top: 150px;
     text-align: left;
   }
- 

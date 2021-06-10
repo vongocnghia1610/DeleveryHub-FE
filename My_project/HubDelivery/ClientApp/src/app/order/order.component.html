@@ -56,10 +56,8 @@
   <select  class="ipnguoigui" formControlName="NoiLayHang" required>
     <option *ngFor="let data of a" value={{data.address}}>{{data.address}}</option>
   </select>
-  <select class="ipchongoi" formControlName="id_GoiShipping" required>
-        <option *ngFor="let value of kq" value={{value._id}}>{{value.NoiNhan}}-->{{value.NoiGiao}}:{{value.ChiPhi}}đ</option>
-        
-  </select>
+ 
+ 
  <input class="ipsdtnhan" type="text" formControlName="SoDienThoaiNguoiNhan" required/>
   <!--Thông tin người nhận-->
  
@@ -75,7 +73,7 @@
   <div class="txtphuongthucthanhtoan">Chọn phương thức thanh toán</div>
   <!-- <div class="txttienmat">Tiền mặt</div> -->
   
-  <div class="txtchongoi">Chọn gói</div>
+ 
   
   <div class="txtvnpay">Thanh toán qua VNPay</div>
   

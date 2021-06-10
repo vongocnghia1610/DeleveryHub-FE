@@ -18,18 +18,29 @@ import {Router} from '@angular/router';
 export class LoginComponent implements OnInit {
 
   formGroup : FormGroup;
+  role:boolean=false
   constructor(private http:HttpClient,
     private router:Router) { }
+  
   ngOnInit() {
    
     this.initForm();
+    localStorage.removeItem('currentUser')
+    localStorage.removeItem('id')
+    history.pushState(null, null,location.href)
+    window.onpopstate=function(){
+      history.go(1)
+    }
+  
+
     //this.login(this.formGroup.valid);
   }
   login(data):Observable<any>{
-    console.log("I am server");
+    
     return this.http.post(`http://54.255.93.14/auth/login`, data);
   }
   initForm(){
+    this.role=false
     this.formGroup= new FormGroup({
       Email: new FormControl("", [Validators.required]),
       Password: new FormControl("",[ Validators.required])
@@ -49,11 +60,24 @@ export class LoginComponent implements OnInit {
             localStorage.setItem('currentUser', JSON.stringify({ token: result.data.token }));
             localStorage.setItem('id', JSON.stringify({ id: result.data._id }));
            console.log(result)
+          
            if(result.data.Role=="DOANHNGHIEP")
+           {
+            this.role=true
             this.router.navigate(['/enterprisedelivery']);
-          else if(result.data.Role=="KHACHHANG")
+           }
+           else if(result.data.Role=="KHACHHANG")
+           {
+             console.log(this.role)
+           
+             
           this.router.navigate(['/home']);
-          else this.router.navigate(['/admin']);
+           }
+          else{
+            this.role=result.data.Role
+             this.router.navigate(['/admin']);
+          }
+
             
           }
 

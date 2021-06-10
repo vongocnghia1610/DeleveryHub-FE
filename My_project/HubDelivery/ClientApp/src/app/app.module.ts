@@ -44,6 +44,10 @@ import { MuagoidoanhnghiepComponent } from './muagoidoanhnghiep/muagoidoanhnghie
 import { AddressCustomerComponent } from './address-customer/address-customer.component';
 import { GoiCustomerComponent } from './goi-customer/goi-customer.component';
 import { ChonGoiOrderComponent } from './chongoiorder/chongoiorder.component';
+import { LayoutnotloginComponent } from './layoutnotlogin/layoutnotlogin.component';
+import { ShoworderComponent } from './showorder/showorder.component';
+import { DetailorderComponent } from './detailorder/detailorder.component';
+
 
 @NgModule({
   declarations: [
@@ -120,6 +124,13 @@ import { ChonGoiOrderComponent } from './chongoiorder/chongoiorder.component';
 
     ChonGoiOrderComponent,
 
+    LayoutnotloginComponent,
+
+    ShoworderComponent,
+
+    DetailorderComponent,
+
+
 
 
 
@@ -137,7 +148,7 @@ import { ChonGoiOrderComponent } from './chongoiorder/chongoiorder.component';
       { path: 'register', component: RegisterComponent },
       { path: 'dangkidoanhnghiepvanchuyen', component: DangkidoanhnghiepvanchuyenComponent },
       { path: 'changepassword', component: ChangepasswordComponent },
-      { path: 'login', component: LoginComponent },
+      { path: '', component: LoginComponent },
       { path: 'home', component: HomeComponent, pathMatch: 'full' },
       { path: 'dichvuvanchuyen', component: DichvuvanchuyenComponent },
       { path: 'dichvukhachhang', component: DichvukhachhangComponent },
@@ -174,6 +185,9 @@ import { ChonGoiOrderComponent } from './chongoiorder/chongoiorder.component';
       { path: 'address-customer', component: AddressCustomerComponent },
       { path: 'goi-customer', component: GoiCustomerComponent },
       { path: 'chongoiorder', component: ChonGoiOrderComponent },
+      { path: 'showorder', component: ShoworderComponent},
+      { path: 'detailorder', component: DetailorderComponent},
+     
 
 
     ])

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8" />
+
+</head>
+<body>
+
+
+   <app-layout></app-layout>
+    <div class="textregister">Chi tiết đơn hàng</div>
+   
+  
+ <form [formGroup]="formGroup" >
+  <div class="txtnguoinhan"> Người nhận </div>
+  <input type="text" class="nguoinhan" disabled formControlName="TenNguoiNhan" />
+  <div class="txtgiamgia"> Giảm giá</div>
+  <input type="text" class="giamgia" disabled  formControlName="GiamGia" />
+  <div class="txttongchiphi"> Tổng chi phí </div>
+  <input type="text" class="tongchiphi" disabled  formControlName="TongChiPhi"/>
+
+  <div class="txtkhoiluong"> Khối luong</div>
+
+  <input type="number" class="khoiluong"  disabled  formControlName="KhoiLuong" />
+  <div class="txtloaihanghoa"> Loại hàng hóa </div>
+  
+  <input type="text" class="loaihanghoa" disabled   formControlName="LoaiHangHoa" />
+  <div class="txtnoigiaohang"> Nơi giao hàng</div>
+  <input type="text" class="noigiaohang"  disabled  formControlName="NoiGiaoHang"/>
+  <div class="txtnoinhanhang"> Nơi nhận hang</div>
+  <input type="text" class="noinhanhang" disabled  formControlName="NoiNhanHang"/>
+  <div class="txtsdtnguoinhan"> SĐT nhận</div>
+  <input type="text" class="sdtnguoinhan" disabled  formControlName="SoDienThoaiNguoiNhan"/>
+  <div class="txttenloaihang"> Tên loại hàng</div>
+  <input type="text" class="tenloaihang" disabled  formControlName="TenLoaiHang"/>
+  <div class="txtthanhtoan"> Thanh toán</div>
+  <input type="text" class="thanhtoan" disabled  formControlName="ThanhToan"/>
+
+ 
+ 
+ 
+  <button class="btnquaylai" (click)="Quaylai()">Quay lại</button>
+</form>
+
+</body>
+</html>
+

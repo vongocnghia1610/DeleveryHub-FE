@@ -1,6 +1,6 @@
-<app-enterprisedelivery></app-enterprisedelivery>
+<app-layout></app-layout>
 <div class="txttaogoidoanhnghiep">
-  <label style="color: #04AA6D; font-size: 23px; "  > Thống kê tất cả order khách hàng của doanh nghiệp </label>
+  <label style="color: #04AA6D; font-size: 23px; "  > tất cả gói vận chuyển của doanh nghiệp </label>
 </div>
 
 <table class="contain" border="1" >
@@ -9,35 +9,29 @@
     
   <tr >
 
-    <th  style="text-align: center">Tên loại hàng</th>
+    <th  style="text-align: center">Tên doanh nghiệp</th>
     <th style="text-align: center">Loại hàng hóa</th>
-    <th  style="text-align: center">Trạng thái</th>
-    <th style="text-align: center">Khối lượng</th>
-    <th  style="text-align: center">Giảm giá</th>
-    <th style="text-align: center">Tên người nhận</th>
-    <th  style="text-align: center">Số điện thoại người nhận</th>
-    <th style="text-align: center">Nơi lấy hàng</th>
-    <th style="text-align: center">Nơi nhận </th>
-    <th style="text-align: center">Thanh toán </th>
-    <th style="text-align: center">Tổng chi phí </th>
-    <th style="text-align: center">Thao tác</th>
+    <th  style="text-align: center">Khuyến mãi</th>
+    <th style="text-align: center">Loại vận chuyển</th>
+    <th  style="text-align: center">Nơi giao</th>
+    <th style="text-align: center">Nơi nhận</th>
+    <th  style="text-align: center">Chi phí</th>
+    <th  style="text-align: center">Chọn gói</th>
+   
   </tr>
 </thead>
 <tbody>
   <tr *ngFor="let data of array ">
 
-    <td>  {{data.TenLoaiHang}}</td>
+    <td>  {{data.TenDoanhNghiep}}</td>
     <td>  {{data.LoaiHangHoa}}</td>
-    <td>  {{data.TrangThai}}</td>
-    <td>  {{data.KhoiLuong}}</td>
-    <td>  {{data.GiamGia}}</td>
-    <td>  {{data.TenNguoiNhan}}</td>
-    <td>  {{data.SoDienThoaiNguoiNhan}}</td>
-    <td>  {{data.NoiLayHang}}</td>
-    <td>  {{data.NoiGiaoHang}}</td>
-    <td>  {{data.ThanhToan}}</td>
-    <td>  {{data.TongChiPhi}}</td>
-    <td><button *ngIf="data.TrangThai=='Đang Giao'" (click)="delivered(data._id)">Đã giao</button> <button *ngIf="data.TrangThai=='Chờ xác nhận'" (click)="delivering(data._id)">Xác nhận</button></td>
+    <td>  {{data.KhuyenMai}}</td>
+    <td>  {{data.LoaiVanChuyen}}</td>
+    <td>  {{data.NoiGiao}}</td>
+    <td>  {{data.NoiNhan}}</td>
+    <td>  {{data.ChiPhi}}</td>
+   
+    <td><button  (click)="Choose(data._id)">Chọn</button> </td>
    
     
 
