@@ -1,0 +1,49 @@
+
+<app-admin></app-admin>
+  <div class="txtname"> Tổng đơn hàng </div>
+  <input type="text" disabled class="name" value='{{tongdonhang}} đơn' />
+  <div class="txtngsinh"> Tổng tiền gói khách hàng đã giảm</div>
+  <input type="text" disabled class="name1" value="{{tongtiengiam}} VNĐ" />
+  <div class="txtaddress">Tổng tiền tất cả đơn hàng</div>
+  <input type="text" disabled class="name2" value=" {{tongtien}} VNĐ" />
+  <div class="txtsodienthoai"> Tổng tiền đưa doanh nghiệp</div>
+  <input type="text" disabled class="name3" value="{{tongtienduadoanhnghiep}} VNĐ" />
+  <div class="txttienloi"> Tổng tiền lời (5%)</div>
+  <input type="text" disabled class="name4" value="{{tongtienloi5}} VNĐ" />
+  <div class="txtname1"> Công ty ... </div>
+
+  <button (click)="btnthangnay()" class="btnthangnay btn">Tháng {{thangnay}}</button>
+  <button (click)="btnthangtruoc()" class="btnthangtruoc btn">Tháng {{thangtruoc}}</button>
+<table class="contain" border="1" *ngIf="check==true">
+  <thead>
+  <tr>
+    <th  style="text-align: center">ID Đơn hàng</th>
+    <th  style="text-align: center">ID Khách hàng</th>
+    <th  style="text-align: center">Tên loại hàng</th>
+
+    <th  style="text-align: center">Giảm giá</th>
+    <th style="text-align: center">Tên người nhận</th>
+    <th style="text-align: center">Thời gian</th>
+    <th style="text-align: center">Tiền đơn hàng </th>
+    <th style="text-align: center">Tiền gói khách hàng đã giảm</th>
+    <th  style="text-align: center">Tổng tiền đưa cho doanh nghiệp</th>
+    <th style="text-align: center">Xem chi tiết </th>
+
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let data of array ">
+    <td>  {{data._id}}</td>
+    <td>  {{data.id_KhachHang}}</td>
+    <td>  {{data.TenLoaiHang}}</td>
+    <td>  {{data.GiamGia}}</td>
+    <td>  {{data.TenNguoiNhan}}</td>
+    <td>  {{data.createdAt}}</td>
+    <td>  {{data.TongChiPhi}}</td>
+    <td>  {{data.TienGiamGia}}</td>
+    <td>  {{(data.TongChiPhi-0)+ (data.TienGiamGia-0)}} </td>
+    <td><button (click)="Detail(data._id)" class="btn">Chi tiết</button></td>
+
+  </tr>
+</tbody>
+</table>

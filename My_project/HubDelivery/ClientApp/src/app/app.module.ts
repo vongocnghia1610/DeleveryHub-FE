@@ -47,6 +47,7 @@ import { LayoutnotloginComponent } from './layoutnotlogin/layoutnotlogin.compone
 import { ShoworderComponent } from './showorder/showorder.component';
 import { DetailorderComponent } from './detailorder/detailorder.component';
 import { ThongKeAdminComponent } from './thongkeadmin/thongkeadmin.component';
+import { DoiSoatAdminComponent } from './doisoatadmin/doisoatadmin.component';
 
 
 @NgModule({
@@ -132,6 +133,7 @@ import { ThongKeAdminComponent } from './thongkeadmin/thongkeadmin.component';
 
     ThongKeAdminComponent,
 
+    DoiSoatAdminComponent,
 
 
 
@@ -187,6 +189,7 @@ import { ThongKeAdminComponent } from './thongkeadmin/thongkeadmin.component';
       { path: 'showorder', component: ShoworderComponent},
       { path: 'detailorder', component: DetailorderComponent},
       { path: 'thongkeadmin', component: ThongKeAdminComponent},
+      { path: 'doisoatadmin', component: DoiSoatAdminComponent},
 
     ])
   ],

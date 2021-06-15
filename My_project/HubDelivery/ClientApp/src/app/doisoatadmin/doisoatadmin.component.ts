@@ -8,11 +8,11 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-;istenterprise',
-  templateUrl: './thongkeadmin.component.html',
-  styleUrls: ['./thongkeadmin.component.css']
+  templateUrl: './doisoatadmin.component.html',
+  styleUrls: ['./doisoatadmin.component.css']
 })
 
-export class ThongKeAdminComponent implements OnInit {
+export class DoiSoatAdminComponent implements OnInit {
 
   active: boolean = true;
   array: any = []
@@ -57,24 +57,27 @@ export class ThongKeAdminComponent implements OnInit {
     var token = currentUser.token; // your token
     console.log(token);
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
+    var param =
+    {
+      IDDoanhNghiep: localStorage.getItem('enterprise')
+    }
+    console.log(param);
+
+    return this.http.get(`https://be-b010.herokuapp.com/admin/hach-toan-doi-soat-trong-thang`, { headers: headers, params: param }).subscribe((res) => {
 
 
-    return this.http.get(`https://be-b010.herokuapp.com/admin/show-thongke-thang`, { headers: headers }).subscribe((res) => {
       alert("Thống kê tháng " + this.thangnay);
       var data = Object.entries(res)
       console.log(data);
       this.array = Object.values(data[0][1])
       this.a = Object.values(data)
       console.log(this.a);
-      this.tongtien = this.a[1][1]["TongTien"];
-      this.tongdonhang = this.a[1][1]["TongDonHang"];
-      this.tongtiengiam = this.a[1][1]["TongTienGiam"];
-      this.tongtienduadoanhnghiep = this.a[1][1]["TongTienDuaDoanhNghiep"];
-      this.tongtienloi5 = this.a[1][1]["TienLoi5"];
-      this.tonggoidaban = this.a[2][1]["SoGoiDaBan"];
-      this.tongtienbangoi = this.a[2][1]["TienGoiDichVu"];
-      this.tongdoanhthu = this.a[3][1]["TongTatCaTien"];
-      this.tongloinhuan = this.a[3][1]["TienLoi"];
+      this.tongtien = this.a[1][1]["TienDoanhNghiepThuDuoc"];
+      this.tongdonhang = this.a[1][1]["SoDonHang"];
+      this.tongtiengiam = this.a[1][1]["TienGiamGia"];
+      this.tongtienduadoanhnghiep = this.a[1][1]["TienDuaDoanhNghiep"];
+      this.tongtienloi5 = this.a[1][1]["TienLayDoanhNghiep"];
+
       this.check = true;
 
 
@@ -88,8 +91,13 @@ export class ThongKeAdminComponent implements OnInit {
     console.log(token);
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
+    var param =
+    {
+      IDDoanhNghiep: localStorage.getItem('enterprise')
+    }
+    console.log(param);
 
-    return this.http.get(`https://be-b010.herokuapp.com/admin/show-thongke-thang-truoc`, { headers: headers }).subscribe((res) => {
+    return this.http.get(`https://be-b010.herokuapp.com/admin/hach-toan-doi-soat-thang-truoc`, { headers: headers, params: param }).subscribe((res) => {
 
       alert("Thống kê tháng " + this.thangtruoc);
       var data = Object.entries(res)
@@ -97,15 +105,12 @@ export class ThongKeAdminComponent implements OnInit {
       this.array = Object.values(data[0][1])
       this.a = Object.values(data)
       console.log(this.a);
-      this.tongtien = this.a[1][1]["TongTien"];
-      this.tongdonhang = this.a[1][1]["TongDonHang"];
-      this.tongtiengiam = this.a[1][1]["TongTienGiam"];
-      this.tongtienduadoanhnghiep = this.a[1][1]["TongTienDuaDoanhNghiep"];
-      this.tongtienloi5 = this.a[1][1]["TienLoi5"];
-      this.tonggoidaban = this.a[2][1]["SoGoiDaBan"];
-      this.tongtienbangoi = this.a[2][1]["TienGoiDichVu"];
-      this.tongdoanhthu = this.a[3][1]["TongTatCaTien"];
-      this.tongloinhuan = this.a[3][1]["TienLoi"];
+      this.tongtien = this.a[1][1]["TienDoanhNghiepThuDuoc"];
+      this.tongdonhang = this.a[1][1]["SoDonHang"];
+      this.tongtiengiam = this.a[1][1]["TienGiamGia"];
+      this.tongtienduadoanhnghiep = this.a[1][1]["TienDuaDoanhNghiep"];
+      this.tongtienloi5 = this.a[1][1]["TienLayDoanhNghiep"];
+
       this.check = true;
 
     });
@@ -114,7 +119,7 @@ export class ThongKeAdminComponent implements OnInit {
 
     localStorage.setItem('enterprise', j)
     console.log(localStorage.getItem('enterprise'))
-    this.router.navigate(['/doisoatadmin']);
+    this.router.navigate(['/order']);
   }
 
 }
