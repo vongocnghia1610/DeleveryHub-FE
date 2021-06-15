@@ -32,7 +32,7 @@ export class ConfirmenterpriseComponent implements OnInit {
 
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
         
-   this.http.get(`http://54.255.93.14/admin/show-enterprises-inactive`, {headers:headers}).subscribe((res)=>
+   this.http.get(`https://be-b010.herokuapp.com/admin/show-enterprises-inactive`, {headers:headers}).subscribe((res)=>
 
     {
      this.array=Object.entries(res)
@@ -54,7 +54,7 @@ export class ConfirmenterpriseComponent implements OnInit {
       idDoanhNghiep:j
     }
         
-     this.http.put(`http://54.255.93.14/admin/confirm-doanhnghiep`, data, {headers:headers}).subscribe(result=>{
+     this.http.put(`https://be-b010.herokuapp.com/admin/confirm-doanhnghiep`, data, {headers:headers}).subscribe(result=>{
      console.log(result)
      if(result){
      alert("Xác nhận thành công")

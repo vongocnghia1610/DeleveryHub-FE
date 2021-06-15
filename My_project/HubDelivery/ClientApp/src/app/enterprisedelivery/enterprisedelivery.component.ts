@@ -47,7 +47,7 @@ export class EnterprisedeliveryComponent implements OnInit {
       console.log(token);
       headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
   
-   return this.http.get(`http://54.255.93.14/me/information`, {headers:headers});
+   return this.http.get(`https://be-b010.herokuapp.com/me/information`, {headers:headers});
     }
 
 }

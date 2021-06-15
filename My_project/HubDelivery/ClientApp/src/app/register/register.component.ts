@@ -24,7 +24,7 @@ export class RegisterComponent implements OnInit {
   }
   register(data):Observable<any>{
     console.log("I am server");
-    return this.http.post(`http://54.255.93.14/auth/register-khachhang`, data);
+    return this.http.post(`https://be-b010.herokuapp.com/auth/register-khachhang`, data);
   }
   initForm(){
     this.formGroup= new FormGroup({

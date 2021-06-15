@@ -27,7 +27,7 @@ export class OrderkhachhangComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    this.http.get(`http://54.255.93.14/enterprises/show-order-by-customers`, { headers: headers }).subscribe((res) => {
+    this.http.get(`https://be-b010.herokuapp.com/enterprises/show-order-by-customers`, { headers: headers }).subscribe((res) => {
 
 
       this.array = Object.entries(res)
@@ -52,7 +52,7 @@ export class OrderkhachhangComponent implements OnInit {
       idDonHang: j
     }
 
-    //     this.http.get(`http://54.255.93.14/enterprises/show-order-by-customers`, {headers:headers}).subscribe((res)=>
+    //     this.http.get(`https://be-b010.herokuapp.com/enterprises/show-order-by-customers`, {headers:headers}).subscribe((res)=>
 
     // {
 
@@ -79,7 +79,7 @@ export class OrderkhachhangComponent implements OnInit {
       }
       if (this.message[0][1] == "Đang Giao") {
 
-        this.http.put(`http://54.255.93.14/enterprises/update-delivered-order`, a, { headers: headers }).subscribe(data => {
+        this.http.put(`https://be-b010.herokuapp.com/enterprises/update-delivered-order`, a, { headers: headers }).subscribe(data => {
           this.message = Object.entries(data)
 
 
@@ -129,7 +129,7 @@ export class OrderkhachhangComponent implements OnInit {
       }
       if (this.message[0][1] == "Chờ xác nhận") {
 
-        this.http.put(`http://54.255.93.14/enterprises/update-delivering-order`, a, { headers: headers }).subscribe(data => {
+        this.http.put(`https://be-b010.herokuapp.com/enterprises/update-delivering-order`, a, { headers: headers }).subscribe(data => {
           this.message = Object.entries(data)
 
 
@@ -164,7 +164,7 @@ export class OrderkhachhangComponent implements OnInit {
     console.log(token);
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
-    return this.http.get(`http://54.255.93.14/enterprises/show-order-by-customers`, { headers: headers });
+    return this.http.get(`https://be-b010.herokuapp.com/enterprises/show-order-by-customers`, { headers: headers });
 
 
   }

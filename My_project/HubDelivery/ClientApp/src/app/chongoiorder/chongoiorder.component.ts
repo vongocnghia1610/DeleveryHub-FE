@@ -27,7 +27,7 @@ export class ChonGoiOrderComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    this.http.get(`http://54.255.93.14/customers/show-shipping-package`).subscribe((res) => {
+    this.http.get(`https://be-b010.herokuapp.com/customers/show-shipping-package`).subscribe((res) => {
 
 
       this.array = Object.entries(res)

@@ -87,7 +87,7 @@ loading: boolean = false;
     console.log(token);
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
- return this.http.get(`http://54.255.93.14/me/information`, {headers:headers});
+ return this.http.get(`https://be-b010.herokuapp.com/me/information`, {headers:headers});
 
   
   }
@@ -151,7 +151,7 @@ this.getdata();
   //   headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
     
         
-  //       return this.http.put(`http://54.255.93.14/me/edit-profile-enterprise`, data, {headers:headers});
+  //       return this.http.put(`https://be-b010.herokuapp.com/me/edit-profile-enterprise`, data, {headers:headers});
   //     }
       
      

@@ -4,7 +4,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
-
 import { AppComponent } from './app.component';
 
 import { LayoutComponent } from './layout/layout.component';
@@ -18,7 +17,7 @@ import { OrderComponent } from './order/order.component';
 import { DangkidoanhnghiepvanchuyenComponent } from './dangkidoanhnghiepvanchuyen/dangkidoanhnghiepvanchuyen.component';
 import { AdminComponent } from './admin/admin.component';
 import { QuanlidoanhnghiepComponent } from './quanli_doanhnghiep/quanli_doanhnghiep.component';
-import { from } from 'rxjs/observable/from';
+
 
 import { ProfileDoanhnghiepComponent } from './profile-doanhnghiep/profile-doanhnghiep.component';
 import { DichvukhachhangComponent } from './dichvukhachhang/dichvukhachhang.component';
@@ -47,6 +46,7 @@ import { ChonGoiOrderComponent } from './chongoiorder/chongoiorder.component';
 import { LayoutnotloginComponent } from './layoutnotlogin/layoutnotlogin.component';
 import { ShoworderComponent } from './showorder/showorder.component';
 import { DetailorderComponent } from './detailorder/detailorder.component';
+import { ThongKeAdminComponent } from './thongkeadmin/thongkeadmin.component';
 
 
 @NgModule({
@@ -130,7 +130,7 @@ import { DetailorderComponent } from './detailorder/detailorder.component';
 
     DetailorderComponent,
 
-
+    ThongKeAdminComponent,
 
 
 
@@ -140,7 +140,6 @@ import { DetailorderComponent } from './detailorder/detailorder.component';
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
-
     FormsModule,
 
     ReactiveFormsModule,
@@ -187,7 +186,8 @@ import { DetailorderComponent } from './detailorder/detailorder.component';
       { path: 'chongoiorder', component: ChonGoiOrderComponent },
       { path: 'showorder', component: ShoworderComponent},
       { path: 'detailorder', component: DetailorderComponent},
-     
+      { path: 'thongkeadmin', component: ThongKeAdminComponent},
+
 
 
     ])

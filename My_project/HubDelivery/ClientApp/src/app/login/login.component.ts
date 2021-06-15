@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
   }
   login(data):Observable<any>{
     
-    return this.http.post(`http://54.255.93.14/auth/login`, data);
+    return this.http.post(`https://be-b010.herokuapp.com/auth/login`, data);
   }
   initForm(){
     this.role=false
@@ -104,7 +104,7 @@ export class LoginComponent implements OnInit {
  
  
   // postUser(Email, Password) {
-  //   this.httpClient.post<any>('http://54.255.93.14/auth/login', { Email,  Password}).subscribe(
+  //   this.httpClient.post<any>('https://be-b010.herokuapp.com/auth/login', { Email,  Password}).subscribe(
   //     response => {
         
   //       // Tự lưu vô cookie or local storage nha hehe, nhớ follow github bạn tui: github.com/hongvinhmobile
@@ -123,7 +123,7 @@ export class LoginComponent implements OnInit {
   //     GiaKg: "1000"
   //   }
   //   headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', 'Bearer eyJhbGciOiJIUzI1NiJ9.NjA4NmRkYmM0NDAzNjYyNWYwYzM4Y2Ew.bdOswdUuC9jpmUW6erX3SoGGkC7Avz7hOAMh-6YJGSk');
-  //   this.httpClient.post<any>('http://54.255.93.14:3000/enterprises/create-shipping-package', body, { headers: headers }).subscribe(
+  //   this.httpClient.post<any>('https://be-b010.herokuapp.com:3000/enterprises/create-shipping-package', body, { headers: headers }).subscribe(
   //     response => {
   //       console.log(response.data);
   //     });

@@ -13,7 +13,8 @@
   <thead>
   <tr >
     <th  style="text-align: center">Trạng thái</th>
-    <th  style="text-align: center">Tên product type</th>
+    <th  style="text-align: center">ID</th>
+    <th  style="text-align: center">Loại hàng hóa</th>
     <th style="text-align: center">Số kí</th>
     
     
@@ -24,6 +25,8 @@
   <tr *ngFor="let data of array ">
 
     <td>  {{data.Status}}</td>
+    <td>  {{data._id}}</td>
+
     <td>  {{data.LoaiHangHoa}}</td>
     <td>  {{data.SoKy}}</td>
    
@@ -31,7 +34,7 @@
     
    
     
-   <td> <button  (click)="Xoa(data_id)" >Xóa</button><button  (click)="currentData(data._id)">Chỉnh sửa</button></td>
+   <td> <button  (click)="Xoa(data._id)" >Xóa</button><button  (click)="currentData(data._id)">Chỉnh sửa</button></td>
 
   </tr>
 </tbody>

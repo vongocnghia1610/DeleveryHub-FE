@@ -131,8 +131,7 @@ export class OrderComponent implements OnInit {
       var token = currentUser.token; // your token
 
       headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
-
-
+      console.log(this.formGroup.value);
       this.http.post(`http://54.255.93.14/customers/create-donhang`, this.formGroup.value, { headers: headers }).subscribe(data => {
 
         console.log(data);

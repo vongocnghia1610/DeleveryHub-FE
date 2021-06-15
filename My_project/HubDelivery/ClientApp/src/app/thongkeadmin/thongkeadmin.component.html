@@ -1,0 +1,58 @@
+
+<app-admin></app-admin>
+  <div class="txtname"> Tổng tiền tất cả đơn hàng </div>
+  <!-- <input type="text" disabled class="name" formControlName="idDoanhNghiep" /> -->
+  <div class="txtngsinh"> Tổng tiền gói khách hàng đã giảm</div>
+  <!-- <input type="text" disabled class="ngsinh" formControlName="Ten" /> -->
+  <div class="txtaddress">Tổng đơn hàng</div>
+  <!-- <input type="text" class="address"  formControlName="DiaChi"/> -->
+  <div class="txtsodienthoai"> Tổng tiền đưa doanh nghiệp</div>
+  <!-- <input type="number" class="sodienthoai"  formControlName="SoDienThoai"/> -->
+  <div class="txttienloi"> Tổng tiền lời (5%)</div>
+  <!-- <input type="number" class="sodienthoai"  formControlName="SoDienThoai"/> -->
+  <button (click)="thangnay()" class="btnthangnay">Tháng này</button>
+  <button (click)="thangtruoc()" class="btnthangtruoc">Tháng trước</button>
+
+<table class="contain" border="1" >
+  <thead>
+  <tr >
+    <th  style="text-align: center">Logo doanh nghiệp</th>
+    <th  style="text-align: center">ID doanh nghiệp</th>
+    <th  style="text-align: center">Tên doanh nghiệp</th>
+    <th  style="text-align: center">Số đơn hàng</th>
+    <th style="text-align: center">Tiền các đơn hàng</th>
+    <!-- <th  style="text-align: center">Giấy phép</th>
+    <th  style="text-align: center">Logo</th> -->
+    <th style="text-align: center">Tiền gói khách hàng đã giảm</th>
+   
+    <th  style="text-align: center">Tổng tiền đưa cho doanh nghiệp</th>
+    <th  style="text-align: center">Tiền lời (5%)</th>
+
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let data of array ">
+
+    <td>  <img src="{{data.LogoDoanhNghiep}}"  height="100px" width="100px"/></td>
+    <td>  {{data.idDoanhNgiep}}</td>
+    <td>  {{data.TenDoanhNghiep}}</td>
+    <!-- <td>  {{data.GiayPhep}}</td>
+    <td>  {{data.Logo}}</td> -->
+    <td>  {{data.SoDonHang}}</td>
+    <td>  {{data.TienDoanhNghiep}}</td>
+    <td>  {{data.TienGiamGia}}</td>
+    <td>  {{data.TienDuaDoanhNghiep}}</td>
+    <td>  {{data.TienLayDoanhNghiep}}</td>
+    
+    
+    
+   
+    
+   <td><button (click)="currentData(data.idDoanhNghiep)">Chi tiết</button></td>
+
+  </tr>
+</tbody>
+</table>
+
+<input matStartDate placeholder="Start date" formControlName="start">
+<input matEndDate placeholder="End date" formControlName="end">

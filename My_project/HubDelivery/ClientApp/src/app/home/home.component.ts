@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
 //     var token = currentUser.token; // your token
 //     console.log(token);
     
-//  return this.http.get(`http://54.255.93.14/me/information`, {headers:headers});
+//  return this.http.get(`https://be-b010.herokuapp.com/me/information`, {headers:headers});
 
   
 //   }

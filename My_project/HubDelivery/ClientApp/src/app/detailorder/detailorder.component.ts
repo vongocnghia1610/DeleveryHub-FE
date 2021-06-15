@@ -37,7 +37,7 @@ export class DetailorderComponent implements OnInit {
     var token = currentUser.token; // your token
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
     this.i=0;
-   this.http.get(`http://54.255.93.14/customers/show-order`, {headers:headers}).subscribe((res)=>
+   this.http.get(`https://be-b010.herokuapp.com/customers/show-order`, {headers:headers}).subscribe((res)=>
 
     { this.j=localStorage.getItem('idorder')
     console.log(this.j)

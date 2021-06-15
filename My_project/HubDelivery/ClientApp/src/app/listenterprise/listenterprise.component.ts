@@ -39,7 +39,7 @@ export class listEnterpriseComponent implements OnInit {
         console.log(token);
         headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
             
-     return this.http.get(`http://54.255.93.14/admin/show-enterprises`, {headers:headers}).subscribe(data=>
+     return this.http.get(`https://be-b010.herokuapp.com/admin/show-enterprises`, {headers:headers}).subscribe(data=>
      
      {
       this.getdata();
@@ -66,7 +66,7 @@ export class listEnterpriseComponent implements OnInit {
     console.log(token);
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
         
-   this.http.get(`http://54.255.93.14/admin/show-enterprises`, {headers:headers}).subscribe((res)=>
+   this.http.get(`https://be-b010.herokuapp.com/admin/show-enterprises`, {headers:headers}).subscribe((res)=>
 
     {
      this.array=Object.entries(res)
@@ -85,7 +85,7 @@ export class listEnterpriseComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
     
         
-        return this.http.put(`http://54.255.93.14/admin/editprofile-enterprise`, data, {headers:headers});
+        return this.http.put(`https://be-b010.herokuapp.com/admin/editprofile-enterprise`, data, {headers:headers});
       }
   updateenterprise(){
 
