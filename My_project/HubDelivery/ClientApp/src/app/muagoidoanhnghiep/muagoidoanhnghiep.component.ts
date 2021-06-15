@@ -28,7 +28,7 @@ export class MuagoidoanhnghiepComponent implements OnInit {
   getdata() {
 
 
-    this.http.get(`http://54.255.93.14/enterprises/show-goidoanhnghiep`).subscribe((res) => {
+    this.http.get(`https://be-b010.herokuapp.com/enterprises/show-goidoanhnghiep`).subscribe((res) => {
 
 
       this.kq = Object.entries(res)
@@ -51,7 +51,7 @@ export class MuagoidoanhnghiepComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    this.http.get(`http://54.255.93.14/me/information`, { headers: headers }).subscribe(data => {
+    this.http.get(`https://be-b010.herokuapp.com/me/information`, { headers: headers }).subscribe(data => {
       console.log(data)
       this.array = Object.entries(data)
 
@@ -70,7 +70,7 @@ export class MuagoidoanhnghiepComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    this.http.get(`http://54.255.93.14/me/information`, { headers: headers }).subscribe(data => {
+    this.http.get(`https://be-b010.herokuapp.com/me/information`, { headers: headers }).subscribe(data => {
 
       this.array = Object.entries(data)
 
@@ -80,7 +80,7 @@ export class MuagoidoanhnghiepComponent implements OnInit {
         let x = {
           id_GoiDichVu: j
         }
-        this.http.post(`http://54.255.93.14/enterprises/create-bill-package`, x, { headers: headers }).subscribe(result => {
+        this.http.post(`https://be-b010.herokuapp.com/enterprises/create-bill-package`, x, { headers: headers }).subscribe(result => {
           console.log(result)
 
           this.link = Object.entries(result)
@@ -108,7 +108,7 @@ export class MuagoidoanhnghiepComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    this.http.get(`http://54.255.93.14/me/information`, { headers: headers }).subscribe(data => {
+    this.http.get(`https://be-b010.herokuapp.com/me/information`, { headers: headers }).subscribe(data => {
 
       this.array = Object.entries(data)
 
@@ -118,7 +118,7 @@ export class MuagoidoanhnghiepComponent implements OnInit {
       let x = {
         id_GoiDichVu: j
       }
-      this.http.post(`http://54.255.93.14/enterprises/create_payment_vnpayurl_package`, x, { headers: headers }).subscribe(result => {
+      this.http.post(`https://be-b010.herokuapp.com/enterprises/create_payment_vnpayurl_package`, x, { headers: headers }).subscribe(result => {
         console.log(result)
 
         this.link = Object.entries(result)
@@ -146,7 +146,7 @@ export class MuagoidoanhnghiepComponent implements OnInit {
 
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
     console.log("I am server");
-    return this.http.post(`http://54.255.93.14/enterprises/create-bill-package`, data, { headers: headers });
+    return this.http.post(`https://be-b010.herokuapp.com/enterprises/create-bill-package`, data, { headers: headers });
   }
 
 

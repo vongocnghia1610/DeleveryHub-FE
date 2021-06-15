@@ -40,7 +40,7 @@ export class ProfileComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    this.http.get(`http://54.255.93.14/me/information`, { headers: headers }).subscribe(data => {
+    this.http.get(`https://be-b010.herokuapp.com/me/information`, { headers: headers }).subscribe(data => {
       console.log(JSON.stringify(data))
       var jsonvalue = JSON.stringify(data)
       var valueFromJson  = JSON.parse(jsonvalue)
@@ -76,7 +76,7 @@ export class ProfileComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    return this.http.put(`http://54.255.93.14/me/edit-profile-customer`, data, { headers: headers });
+    return this.http.put(`https://be-b010.herokuapp.com/me/edit-profile-customer`, data, { headers: headers });
   }
 
 

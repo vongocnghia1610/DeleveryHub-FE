@@ -110,7 +110,7 @@ export class DangkidoanhnghiepvanchuyenComponent implements OnInit {
         
       
         // headers = headers.set('Content-Type', 'multipart/form-data').set('Accept','application/json' );
-      // this.http.post(`http://54.255.93.14/auth/register-doanhnghiep`,this.formGroup.value, {headers:headers}).subscribe((result) =>{
+      // this.http.post(`https://be-b010.herokuapp.com/auth/register-doanhnghiep`,this.formGroup.value, {headers:headers}).subscribe((result) =>{
       
       //   if(result)
       //    console.log( result);

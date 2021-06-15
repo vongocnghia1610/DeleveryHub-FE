@@ -22,7 +22,7 @@ export class ShowgoikhachhangComponent implements OnInit {
     
     
     
-   this.http.get(`http://54.255.93.14/customers/show_goikhachhang`).subscribe((res)=>
+   this.http.get(`https://be-b010.herokuapp.com/customers/show_goikhachhang`).subscribe((res)=>
 
     {
     
@@ -47,7 +47,7 @@ export class ShowgoikhachhangComponent implements OnInit {
      idGoiKhachHang:j
    }
    
-   return this.http.put(`http://54.255.93.14/admin/deleted-goikhachhang`,data,{headers:headers} ).subscribe(
+   return this.http.put(`https://be-b010.herokuapp.com/admin/deleted-goikhachhang`,data,{headers:headers} ).subscribe(
      
     result=>{
       

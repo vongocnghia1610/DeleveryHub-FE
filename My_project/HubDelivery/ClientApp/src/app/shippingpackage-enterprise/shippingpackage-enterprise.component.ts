@@ -42,7 +42,7 @@ export class ShippingpackageEnterpriseComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    this.http.get(`http://54.255.93.14/enterprises/show-product-type`, { headers: headers }).subscribe((res) => {
+    this.http.get(`https://be-b010.herokuapp.com/enterprises/show-product-type`, { headers: headers }).subscribe((res) => {
 
 
       this.mang = Object.entries(res)
@@ -60,7 +60,7 @@ export class ShippingpackageEnterpriseComponent implements OnInit {
     console.log(token);
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
-    this.http.get(`http://54.255.93.14/enterprises/show-shipping-package-by-enterprise`, { headers: headers }).subscribe((res) => {
+    this.http.get(`https://be-b010.herokuapp.com/enterprises/show-shipping-package-by-enterprise`, { headers: headers }).subscribe((res) => {
 
 
       this.array = Object.entries(res)
@@ -78,7 +78,7 @@ export class ShippingpackageEnterpriseComponent implements OnInit {
     console.log(token);
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
-    this.http.get(`http://54.255.93.14/enterprises/show-shipping-package-by-enterprise`, { headers: headers }).subscribe(data => {
+    this.http.get(`https://be-b010.herokuapp.com/enterprises/show-shipping-package-by-enterprise`, { headers: headers }).subscribe(data => {
       this.array = Object.entries(data)
       this.array = Object.values(this.array[0][1])
 
@@ -114,7 +114,7 @@ export class ShippingpackageEnterpriseComponent implements OnInit {
     {
       idPackage: j
     }
-    return this.http.put(`http://54.255.93.14/enterprises/delete-shipping-package`, data, { headers: headers }).subscribe(
+    return this.http.put(`https://be-b010.herokuapp.com/enterprises/delete-shipping-package`, data, { headers: headers }).subscribe(
 
       result => {
         console.log("aa")
@@ -135,7 +135,7 @@ export class ShippingpackageEnterpriseComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
     console.log(data)
-    return this.http.put(`http://54.255.93.14/enterprises/update-shipping-package`, data, { headers: headers });
+    return this.http.put(`https://be-b010.herokuapp.com/enterprises/update-shipping-package`, data, { headers: headers });
   }
 
   updateshippingpackake() {

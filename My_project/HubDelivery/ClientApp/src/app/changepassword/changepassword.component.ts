@@ -30,7 +30,7 @@ headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', t
 
     
     console.log("I am server");
-    return this.http.put(`http://54.255.93.14/me/change-password`, data, {headers:headers});
+    return this.http.put(`https://be-b010.herokuapp.com/me/change-password`, data, {headers:headers});
   }
   initForm(){
     this.formGroup= new FormGroup({

@@ -47,7 +47,7 @@ export class CreateshippingpackageComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    this.http.get(`http://54.255.93.14/enterprises/show-product-type`, { headers: headers }).subscribe((res) => {
+    this.http.get(`https://be-b010.herokuapp.com/enterprises/show-product-type`, { headers: headers }).subscribe((res) => {
 
 
       this.array = Object.entries(res)
@@ -72,7 +72,7 @@ export class CreateshippingpackageComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    return this.http.post(`http://54.255.93.14/enterprises/create-shipping-package`, data, { headers: headers });
+    return this.http.post(`https://be-b010.herokuapp.com/enterprises/create-shipping-package`, data, { headers: headers });
   }
 
 

@@ -19,7 +19,7 @@ export class GoiCustomerComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit() {
-    this.http.get(`http://54.255.93.14/customers/show_goikhachhang`).subscribe((res) => {
+    this.http.get(`https://be-b010.herokuapp.com/customers/show_goikhachhang`).subscribe((res) => {
 
 
       this.kq = Object.entries(res)
@@ -37,7 +37,7 @@ export class GoiCustomerComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    this.http.get(`http://54.255.93.14/me/information`, { headers: headers }).subscribe(data => {
+    this.http.get(`https://be-b010.herokuapp.com/me/information`, { headers: headers }).subscribe(data => {
       console.log(data)
 
       var result = JSON.stringify(data);
@@ -74,7 +74,7 @@ export class GoiCustomerComponent implements OnInit {
         let x = {
           id_GoiDichVu: j
         }
-        this.http.post(`http://54.255.93.14/customers/create-bill-package`, x, { headers: headers }).subscribe(result => {
+        this.http.post(`https://be-b010.herokuapp.com/customers/create-bill-package`, x, { headers: headers }).subscribe(result => {
           console.log(result)
 
           this.link = Object.entries(result)
@@ -101,14 +101,14 @@ export class GoiCustomerComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    this.http.get(`http://54.255.93.14/me/information`, { headers: headers }).subscribe(data => {
+    this.http.get(`https://be-b010.herokuapp.com/me/information`, { headers: headers }).subscribe(data => {
 
       
       if (this.goihientai["data"]["SoDonHang"] == null || this.goihientai["data"]["SoDonHang"] <= 0 || Date.parse(this.goihientai["data"]["NgayHetHan"]) < Date.now()) {
         let x = {
           id_GoiDichVu: j
         }
-        this.http.post(`http://54.255.93.14/customers/create_payment_vnpayurl_package`, x, { headers: headers }).subscribe(result => {
+        this.http.post(`https://be-b010.herokuapp.com/customers/create_payment_vnpayurl_package`, x, { headers: headers }).subscribe(result => {
           console.log(result)
 
           this.link = Object.entries(result)
@@ -135,7 +135,7 @@ export class GoiCustomerComponent implements OnInit {
 
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
     console.log("I am server");
-    return this.http.post(`http://54.255.93.14/enterprises/create-bill-package`, data, { headers: headers });
+    return this.http.post(`https://be-b010.herokuapp.com/enterprises/create-bill-package`, data, { headers: headers });
   }
 
 

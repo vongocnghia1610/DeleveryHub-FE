@@ -50,8 +50,8 @@
   
 
   <input type="number" class="ipsdt" (change)="tinhtien()" formControlName="KhoiLuong" required/>
-  <input class="ipdiachinhan" type="text" formControlName="NoiGiaoHang" required/>
-  <input class="ipdiachigui" type="text" formControlName="TenLoaiHang" required/>
+  <input class="ipdiachinhan" type="text" formControlName="TenLoaiHang" required/>
+  <input class="ipdiachigui" type="text" formControlName="NoiGiaoHang" required/>
   <input class="ipnguoinhan" type="text" formControlName="TenNguoiNhan" required/>
   <select  class="ipnguoigui" formControlName="NoiLayHang" required>
     <option *ngFor="let data of a" value={{data.address}}>{{data.address}}</option>

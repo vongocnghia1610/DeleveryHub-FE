@@ -36,7 +36,7 @@ export class ShowcustomerComponent implements OnInit {
         console.log(token);
         headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
             
-     return this.http.get(`http://54.255.93.14/admin/show-customers`, {headers:headers}).subscribe(data=>
+     return this.http.get(`https://be-b010.herokuapp.com/admin/show-customers`, {headers:headers}).subscribe(data=>
      
      {
       this.getdata();
@@ -61,7 +61,7 @@ export class ShowcustomerComponent implements OnInit {
 
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
         
-   this.http.get(`http://54.255.93.14/admin/show-customers`, {headers:headers}).subscribe((res)=>
+   this.http.get(`https://be-b010.herokuapp.com/admin/show-customers`, {headers:headers}).subscribe((res)=>
 
     {
      this.array=Object.entries(res)
@@ -80,7 +80,7 @@ export class ShowcustomerComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
     
         
-        return this.http.put(`http://54.255.93.14/admin/editprofile-customer`, data, {headers:headers});
+        return this.http.put(`https://be-b010.herokuapp.com/admin/editprofile-customer`, data, {headers:headers});
       }
   updatekhachhang(){
 

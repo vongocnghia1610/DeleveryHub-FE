@@ -24,7 +24,7 @@ array:any=[]
     // headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
     
     
-   this.http.get(`http://54.255.93.14/enterprises/show-goidoanhnghiep`).subscribe((res)=>
+   this.http.get(`https://be-b010.herokuapp.com/enterprises/show-goidoanhnghiep`).subscribe((res)=>
 
     {
     
@@ -49,7 +49,7 @@ array:any=[]
      idGoiDoanhNghiep:j
    }
    
-   return this.http.put(`http://54.255.93.14/admin/deleted-goidoanhnghiep`,data,{headers:headers} ).subscribe(
+   return this.http.put(`https://be-b010.herokuapp.com/admin/deleted-goidoanhnghiep`,data,{headers:headers} ).subscribe(
      
     result=>{
       

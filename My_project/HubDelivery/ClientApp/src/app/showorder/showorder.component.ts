@@ -28,7 +28,7 @@ export class ShoworderComponent implements OnInit {
     var token = currentUser.token; // your token
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
     
-   this.http.get(`http://54.255.93.14/customers/show-order`, {headers:headers}).subscribe((res)=>
+   this.http.get(`https://be-b010.herokuapp.com/customers/show-order`, {headers:headers}).subscribe((res)=>
 
     {
     

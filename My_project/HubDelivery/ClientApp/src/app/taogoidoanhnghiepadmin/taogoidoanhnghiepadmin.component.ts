@@ -30,7 +30,7 @@ console.log(token);
 headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    return this.http.post(`http://54.255.93.14/admin/create-goidoanhnghiep`, data, {headers:headers});
+    return this.http.post(`https://be-b010.herokuapp.com/admin/create-goidoanhnghiep`, data, {headers:headers});
   }
   initForm(){
     this.formGroup= new FormGroup({

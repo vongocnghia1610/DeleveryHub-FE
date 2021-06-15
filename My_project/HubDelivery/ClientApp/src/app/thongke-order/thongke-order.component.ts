@@ -33,7 +33,7 @@ export class ThongkeOrderComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
     
 
-    this.http.get(`http://54.255.93.14/enterprises/show-order-in-one-week-by-enterprise`, { headers: headers }).subscribe((res) => {
+    this.http.get(`https://be-b010.herokuapp.com/enterprises/show-order-in-one-week-by-enterprise`, { headers: headers }).subscribe((res) => {
 
     
       this.array = Object.entries(res)
@@ -234,7 +234,7 @@ export class ThongkeOrderComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    this.http.get(`http://54.255.93.14/enterprises/show-order-in-three-month-by-enterprise`, { headers: headers }).subscribe((res) => {
+    this.http.get(`https://be-b010.herokuapp.com/enterprises/show-order-in-three-month-by-enterprise`, { headers: headers }).subscribe((res) => {
 
 
       this.array = Object.entries(res)
@@ -369,7 +369,7 @@ export class ThongkeOrderComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    this.http.get(`http://54.255.93.14/enterprises/show-order-in-one-year-by-enterprise`, { headers: headers }).subscribe((res) => {
+    this.http.get(`https://be-b010.herokuapp.com/enterprises/show-order-in-one-year-by-enterprise`, { headers: headers }).subscribe((res) => {
 
 
       this.array = Object.entries(res)

@@ -76,7 +76,7 @@ console.log(token);
 headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
     
-    return this.http.put(`http://54.255.93.14/admin/update-goikhachhang`, data, {headers:headers});
+    return this.http.put(`https://be-b010.herokuapp.com/admin/update-goikhachhang`, data, {headers:headers});
   }
   
  
@@ -105,7 +105,7 @@ headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', t
        
     
         
-     return this.http.get(`http://54.255.93.14/customers/show_goikhachhang`);
+     return this.http.get(`https://be-b010.herokuapp.com/customers/show_goikhachhang`);
     
       
       }

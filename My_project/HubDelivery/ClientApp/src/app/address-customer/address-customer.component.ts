@@ -36,7 +36,7 @@ export class AddressCustomerComponent implements OnInit {
     console.log(token);
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
-    return this.http.get(`http://54.255.93.14/customers/show_diachi`, { headers: headers }).subscribe(data => {
+    return this.http.get(`https://be-b010.herokuapp.com/customers/show_diachi`, { headers: headers }).subscribe(data => {
       this.getdata();
       this.array = Object.entries(data)
       this.array = Object.values(this.array[0][1])
@@ -59,7 +59,7 @@ export class AddressCustomerComponent implements OnInit {
 
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
-    this.http.get(`http://54.255.93.14/customers/show_diachi`, { headers: headers }).subscribe((res) => {
+    this.http.get(`https://be-b010.herokuapp.com/customers/show_diachi`, { headers: headers }).subscribe((res) => {
       this.array = Object.entries(res)
       this.array = Object.values(this.array[0][1])
       console.log(this.array);
@@ -76,7 +76,7 @@ export class AddressCustomerComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    return this.http.put(`http://54.255.93.14/me/edit-address`, data, { headers: headers });
+    return this.http.put(`https://be-b010.herokuapp.com/me/edit-address`, data, { headers: headers });
   }
   updateaddress() {
 
@@ -106,7 +106,7 @@ export class AddressCustomerComponent implements OnInit {
     headers = headers.set('Access-Control-Allow-Origin', '*').set('Authorization', token);
 
 
-    return this.http.post(`http://54.255.93.14/me/add-address`, data, { headers: headers });
+    return this.http.post(`https://be-b010.herokuapp.com/me/add-address`, data, { headers: headers });
   }
   addaddress() {
 
@@ -144,7 +144,7 @@ export class AddressCustomerComponent implements OnInit {
       _id: j
     }
 
-    return this.http.put(`http://54.255.93.14/me/delete-address`, data, { headers: headers }).subscribe(
+    return this.http.put(`https://be-b010.herokuapp.com/me/delete-address`, data, { headers: headers }).subscribe(
 
       result => {
 
