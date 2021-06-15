@@ -13,9 +13,9 @@
   <button (click)="thangnay()" class="btnthangnay">Tháng này</button>
   <button (click)="thangtruoc()" class="btnthangtruoc">Tháng trước</button>
 
-<table class="contain" border="1" >
+<table class="contain" border="1" *ngIf="!active">
   <thead>
-  <tr >
+  <tr>
     <th  style="text-align: center">Logo doanh nghiệp</th>
     <th  style="text-align: center">ID doanh nghiệp</th>
     <th  style="text-align: center">Tên doanh nghiệp</th>
@@ -48,11 +48,8 @@
     
    
     
-   <td><button (click)="currentData(data.idDoanhNghiep)">Chi tiết</button></td>
+   <td><button (click)="currentData(data.idDoanhNghiep)" class="btn">Chi tiết</button></td>
 
   </tr>
 </tbody>
 </table>
-
-<input matStartDate placeholder="Start date" formControlName="start">
-<input matEndDate placeholder="End date" formControlName="end">

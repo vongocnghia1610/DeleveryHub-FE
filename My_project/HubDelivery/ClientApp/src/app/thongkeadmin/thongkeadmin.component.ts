@@ -14,13 +14,12 @@ import { Router } from '@angular/router';
 
 export class ThongKeAdminComponent implements OnInit {
 
-
+  active: boolean = true;
   array: any = []
   a = []
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit() {
-
     this.getdata();
   }
 
@@ -36,8 +35,8 @@ export class ThongKeAdminComponent implements OnInit {
       this.array = Object.entries(res)
       this.array = Object.values(this.array[0][1])
       console.log(this.array);
+      this.active = false;
       return this.array;
-
     });
   }
   thangnay() {

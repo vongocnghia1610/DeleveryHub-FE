@@ -141,8 +141,8 @@ import { ThongKeAdminComponent } from './thongkeadmin/thongkeadmin.component';
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
-
     ReactiveFormsModule,
+    
     RouterModule.forRoot([
       { path: 'register', component: RegisterComponent },
       { path: 'dangkidoanhnghiepvanchuyen', component: DangkidoanhnghiepvanchuyenComponent },
@@ -187,8 +187,6 @@ import { ThongKeAdminComponent } from './thongkeadmin/thongkeadmin.component';
       { path: 'showorder', component: ShoworderComponent},
       { path: 'detailorder', component: DetailorderComponent},
       { path: 'thongkeadmin', component: ThongKeAdminComponent},
-
-
 
     ])
   ],
